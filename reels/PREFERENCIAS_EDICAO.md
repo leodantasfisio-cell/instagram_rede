@@ -1,13 +1,28 @@
 # Preferências de edição — Rede Escoliose RN
 
-O que a equipe já escolheu nas edições. Vale para todo Reel novo, a menos que
-peçam diferente. **Atualize este arquivo sempre que uma escolha nova for feita**
-(o que mudou, em qual vídeo, e o motivo quando houver), com a mais recente
-valendo sobre as anteriores.
+**Isto não é um manual de regras.** É um registro do que a equipe escolheu em
+cada edição, para entender o *feeling* do perfil: o que costuma agradar, o que
+costuma sair, que ritmo e que estética combinam com a Rede. Use como ponto de
+partida e com bom senso: cada vídeo pode pedir algo diferente, e vale propor
+ideias novas (dizendo quando foge do que a equipe vem escolhendo).
+
+A única exceção é o processo de aprovação abaixo, que a equipe pediu "sempre".
+
+Depois de cada edição, anote aqui o que a equipe escolheu (o que mudou, em qual
+vídeo e o motivo, quando houver) e ajuste o resumo do estilo se algo mudou.
+
+## O feeling, em poucas linhas
+
+Profissional e acolhedor, com cara de tecnologia, mas sem exagero. A equipe
+gosta de movimento que **explica** (etapas, gráficos, 3D, tela dividida) e de
+imagens reais da clínica; tende a cortar o que é enfeite ou texto demais na tela
+(título de gancho, resumo final, legendas na última versão). Prefere vídeos mais
+curtos e diretos, abrindo com a fala mais curiosa, e não se incomoda com o
+ambiente real ao fundo.
 
 Tom, público e o que nunca dizer: `instagram/voice.md`.
 
-## Processo
+## Processo (fixo)
 
 - **Sempre mandar prévia para aprovação** antes da versão final: vídeo em meia
   resolução (`--scale=0.5`) mais uma folha de imagens dos momentos principais.
@@ -15,7 +30,9 @@ Tom, público e o que nunca dizer: `instagram/voice.md`.
 - Antes de propor a edição, mostrar o roteiro de cortes e o que sai.
 - Conferir o vídeo final transcrevendo o áudio (nenhuma palavra cortada no meio).
 
-## Abertura e ritmo
+## O que vem funcionando
+
+### Abertura e ritmo
 
 - **Sem título/texto de gancho na abertura.** O gancho é a própria fala: abrir
   com 2–3 s da frase mais curiosa do vídeo (ex.: "1 mais 1 não é 2, é 11") e
@@ -25,7 +42,7 @@ Tom, público e o que nunca dizer: `instagram/voice.md`.
 - Cortes secos dentro do assunto; nas viradas de assunto, clarão branco curto
   com "soco" de zoom e um whoosh discreto.
 
-## Visual
+### Visual
 
 - **Fundo original, sem desfoque** (a equipe não vê problema no mural de fotos).
 - Identidade azul e branca, fonte Montserrat.
@@ -39,7 +56,7 @@ Tom, público e o que nunca dizer: `instagram/voice.md`.
 - **Legendas: desligadas** (escolha mais recente, vídeo da avaliação, v3).
   Quando usadas, eram karaokê com palavras-chave em faixa azul.
 
-## Imagens de apoio
+### Imagens de apoio
 
 - Fonte: Drive `MARKETING / GESTÃO DE CANAIS / MÍDIAS REDE ESCOLIOSE` (subpastas
   `COLETES 3D`, `DESTAQUES RESULTADOS`, `AGOSTO/26 midias`). Gerar imagem com IA
@@ -51,14 +68,14 @@ Tom, público e o que nunca dizer: `instagram/voice.md`.
 - Pacientes só de costas ou de lado, sem rosto, nome ou dado legível; confirmar
   autorização de imagem.
 
-## Final
+### Final
 
 - Tela final **sem resumo das etapas**: só "Agende sua avaliação gratuita",
   botão "pelo WhatsApp" e @rede_escoliose_rn.
 - Remover frases que soem como promessa (ex.: "evite a cirurgia"), mesmo que
   ditas no vídeo.
 
-## Som
+### Som
 
 - Áudio da fala limpo e nivelado (-14 LUFS). Efeitos sonoros sintetizados e
   discretos (whoosh, pop). Sem música até a equipe mandar um arquivo de uso livre.

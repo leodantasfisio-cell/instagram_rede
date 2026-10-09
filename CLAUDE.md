@@ -9,8 +9,9 @@ Conteúdo de Instagram da Rede Escoliose RN (@rede_escoliose_rn).
 
 ## Ao editar vídeos
 
-1. Leia `reels/PREFERENCIAS_EDICAO.md` antes de começar e siga o que está lá.
-2. Mande sempre uma prévia para aprovação antes da versão final.
-3. Toda vez que a equipe fizer uma escolha de edição (pedir para tirar, mudar
-   ou manter algo), registre em `reels/PREFERENCIAS_EDICAO.md`, inclusive no
-   histórico, e faça commit junto com a mudança.
+1. Leia `reels/PREFERENCIAS_EDICAO.md` antes de começar. Não são regras: é o
+   histórico das escolhas da equipe, para captar o estilo do perfil. Use como
+   referência e com bom senso; pode propor coisas novas.
+2. Mande sempre uma prévia para aprovação antes da versão final (isso, sim, é fixo).
+3. Depois de cada edição, anote em `reels/PREFERENCIAS_EDICAO.md` o que a equipe
+   escolheu e o que isso diz sobre o estilo, e faça commit junto com a mudança.
