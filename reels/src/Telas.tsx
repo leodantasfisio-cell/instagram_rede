@@ -101,16 +101,16 @@ export const Cta: React.FC<{titulo: string; subtitulo: string}> = ({titulo, subt
 };
 
 export const CapaTexto: React.FC<{titulo: string; subtitulo?: string}> = ({titulo, subtitulo}) => (
-  // Fica no centro para não ser cortado na grade 3:4 do perfil.
+  // Abaixo do rosto e dentro da área que a grade 3:4 do perfil mostra.
   <AbsoluteFill
     style={{
-      justifyContent: 'center',
+      justifyContent: 'flex-end',
       alignItems: 'center',
-      background: `linear-gradient(180deg, rgba(11,46,102,0.15) 0%, rgba(11,46,102,0.55) 45%, rgba(11,46,102,0.15) 100%)`,
+      paddingBottom: 380,
+      background: `linear-gradient(180deg, rgba(11,46,102,0) 40%, rgba(11,46,102,0.7) 85%)`,
       fontFamily: fonte,
       textAlign: 'center',
       gap: 28,
-      padding: 80,
     }}
   >
     <div

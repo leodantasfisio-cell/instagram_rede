@@ -26,14 +26,21 @@ export const Legendas: React.FC<{palavras: Palavra[]; palavrasChave: string[]}> 
     <AbsoluteFill style={{justifyContent: 'flex-end', alignItems: 'center', paddingBottom: 560}}>
       <div
         style={{
-          maxWidth: 880,
-          textAlign: 'center',
+          maxWidth: 900,
+          display: 'flex',
+          flexWrap: 'wrap',
+          justifyContent: 'center',
+          columnGap: 30,
+          rowGap: 6,
           fontFamily: fonte,
           fontWeight: 800,
           fontSize: 66,
           lineHeight: 1.18,
           color: cores.branco,
-          textShadow: `0 4px 18px ${cores.sombra}, 0 0 3px rgba(0,0,0,0.6)`,
+          // Contorno escuro para ler sobre qualquer fundo.
+          WebkitTextStroke: '8px rgba(5, 20, 50, 0.9)',
+          paintOrder: 'stroke fill',
+          textShadow: `0 6px 20px ${cores.sombra}`,
           transform: `translateY(${interpolate(entrada, [0, 1], [14, 0])}px)`,
           opacity: entrada,
         }}
@@ -46,8 +53,11 @@ export const Legendas: React.FC<{palavras: Palavra[]; palavrasChave: string[]}> 
               key={i}
               style={{
                 display: 'inline-block',
-                margin: '0 9px',
-                color: chave ? cores.azulClaro : cores.branco,
+                color: cores.branco,
+                // Palavra-chave: faixa azul da marca atrás do texto.
+                ...(chave
+                  ? {background: cores.azul, borderRadius: 14, padding: '0 14px', WebkitTextStroke: '0px', textShadow: 'none'}
+                  : {}),
                 transform: `scale(${falando ? 1.06 : 1})`,
               }}
             >

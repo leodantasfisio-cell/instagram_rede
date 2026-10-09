@@ -17,7 +17,8 @@ gancho, tela final com chamada para o WhatsApp e capa.
 5. **Gerar**: `npm run render` (vídeo em `out/reel.mp4`) e `npm run capa`
    (capa em `out/capa.png`).
 
-O `data/edicao.json` versionado é só um exemplo de teste.
+`scripts/montar_edicao.py` gera o `data/edicao.json` a partir do `data/roteiro.json`
+(trechos que ficam, correções de legenda, gancho, chamada e capa).
 
 ## Regras
 
