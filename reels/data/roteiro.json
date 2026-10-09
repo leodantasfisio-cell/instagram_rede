@@ -2,28 +2,70 @@
   "video": "video_avaliacao_reels.MOV",
   "pausaMax": 0.45,
   "manter": [
-    [1, 15],
-    [16, 41],
-    [42, 58],
-    [59, 87],
-    [94, 98],
-    [99, 131],
-    [132, 133],
-    [137, 146],
-    [151, 165],
-    [166, 186],
-    [187, 212],
-    [213, 223],
-    [224, 240],
-    [241, 258]
+    [
+      1,
+      15
+    ],
+    [
+      16,
+      41
+    ],
+    [
+      42,
+      58
+    ],
+    [
+      59,
+      87
+    ],
+    [
+      93,
+      98
+    ],
+    [
+      99,
+      131
+    ],
+    [
+      132,
+      133
+    ],
+    [
+      137,
+      146
+    ],
+    [
+      151,
+      165
+    ],
+    [
+      166,
+      186
+    ],
+    [
+      187,
+      212
+    ],
+    [
+      213,
+      223
+    ],
+    [
+      224,
+      240
+    ],
+    [
+      241,
+      258
+    ]
   ],
   "_descartado": {
     "0": "'pronto' e ajuste da câmera no início",
-    "88-93": "primeira vez de 'não esqueça esse raio-X' (repetição)",
     "134-136": "'por essas diretrizes' (repetição)",
     "147-150": "primeira vez de 'se recomenda fisioterapia específica' (repetição)",
     "259-265": "'e evite a cirurgia o quanto antes': soa como promessa de resultado (voice.md)",
-    "266": "'pronto' no final"
+    "266": "'pronto' no final",
+    "88-92": "primeira vez de 'não esqueça esse raio-X' (repetição)"
   },
   "correcoes": {
     "1": "Você",
@@ -37,22 +79,48 @@
     "60": "raio-X",
     "61": "",
     "77": "Cobb,",
-    "94": "Não",
+    "94": "não",
     "97": "raio-X.",
     "98": "",
     "114": "ortopédico",
     "118": "SOSORT,",
     "141": "Cobb",
     "146": "graus,",
-    "258": "avaliação."
+    "258": "avaliação.",
+    "93": "Então"
   },
   "palavrasChave": [
-    "avaliação", "avaliação.", "família", "escaneamento", "3D", "softwares",
-    "raio-X", "raio-X.", "Cobb", "SOSORT", "diretrizes", "fisioterapia",
-    "específica", "colete", "colete,", "próximos", "passos"
+    "avaliação",
+    "avaliação.",
+    "família",
+    "escaneamento",
+    "3D",
+    "softwares",
+    "raio-X",
+    "raio-X.",
+    "Cobb",
+    "SOSORT",
+    "diretrizes",
+    "fisioterapia",
+    "específica",
+    "colete",
+    "colete,",
+    "próximos",
+    "passos"
   ],
-  "gancho": {"texto": "10, 25 ou 50 graus: o que muda no tratamento da escoliose?", "duracao": 3.2},
-  "cta": {"titulo": "Agende sua avaliação gratuita", "subtitulo": "pelo WhatsApp", "duracao": 3.5},
-  "capa": {"titulo": "Como funciona a avaliação", "subtitulo": "Escoliose · passo a passo", "frame": 4},
+  "gancho": {
+    "texto": "10, 25 ou 50 graus: o que muda no tratamento da escoliose?",
+    "duracao": 3.2
+  },
+  "cta": {
+    "titulo": "Agende sua avaliação gratuita",
+    "subtitulo": "pelo WhatsApp",
+    "duracao": 3.5
+  },
+  "capa": {
+    "titulo": "Como funciona a avaliação",
+    "subtitulo": "Escoliose · passo a passo",
+    "frame": 4
+  },
   "musica": null
 }
