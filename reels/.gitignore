@@ -4,3 +4,4 @@ public/media/
 data/*.wav
 data/pausas.txt
 data/transcricao.json
+modelos/

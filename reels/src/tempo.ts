@@ -1,39 +1,42 @@
-import type {Corte, Edicao, Palavra} from './tipos';
+import {Easing, interpolate} from 'remotion';
+import type {Corte, Edicao, Palavra, Tela} from './tipos';
 
-export type Trecho = Corte & {inicioNoReel: number};
+export type Trecho = Corte & {inicioNoReel: number; duracaoNoReel: number};
 
 // Coloca os cortes em sequência na linha do tempo do Reel.
-export const montarTrechos = (cortes: Corte[]): Trecho[] => {
+export const montarTrechos = (cortes: Corte[], velocidade = 1): Trecho[] => {
   let t = 0;
   return cortes.map((c) => {
-    const trecho = {...c, inicioNoReel: t};
-    t += c.ate - c.de;
+    const duracaoNoReel = (c.ate - c.de) / velocidade;
+    const trecho = {...c, inicioNoReel: t, duracaoNoReel};
+    t += duracaoNoReel;
     return trecho;
   });
 };
 
-export const duracaoFala = (cortes: Corte[]) =>
-  cortes.reduce((s, c) => s + (c.ate - c.de), 0);
+export const duracaoFala = (e: Edicao) =>
+  e.cortes.reduce((s, c) => s + (c.ate - c.de), 0) / (e.velocidade || 1);
 
-export const duracaoTotal = (e: Edicao) => duracaoFala(e.cortes) + e.cta.duracao;
+export const duracaoTotal = (e: Edicao) => duracaoFala(e) + e.cta.duracao;
 
-// Converte as palavras do tempo original para o tempo do Reel.
-// Palavras fora dos cortes são descartadas.
-export const palavrasNoReel = (palavras: Palavra[], trechos: Trecho[]): Palavra[] => {
-  const saida: Palavra[] = [];
-  for (const p of palavras) {
-    const meio = (p.inicio + p.fim) / 2;
-    const t = trechos.find((c) => meio >= c.de && meio < c.ate);
-    if (!t) continue;
-    const desloc = t.inicioNoReel - t.de;
-    saida.push({
-      texto: p.texto,
-      inicio: Math.max(p.inicio, t.de) + desloc,
-      fim: Math.min(p.fim, t.ate) + desloc,
-    });
+// 0 = tela cheia, 1 = tela dividida; com transição suave nas pontas.
+export const divisao = (telas: Tela[], t: number, transicao = 0.35) => {
+  let v = 0;
+  for (const tela of telas) {
+    v = Math.max(
+      v,
+      interpolate(t, [tela.de - transicao, tela.de, tela.ate, tela.ate + transicao], [0, 1, 1, 0], {
+        extrapolateLeft: 'clamp',
+        extrapolateRight: 'clamp',
+        easing: Easing.inOut(Easing.cubic),
+      }),
+    );
   }
-  return saida;
+  return v;
 };
+
+export const telaAtual = (telas: Tela[], t: number, transicao = 0.35) =>
+  telas.find((tela) => t >= tela.de - transicao && t < tela.ate + transicao) ?? null;
 
 const normalizar = (s: string) =>
   s

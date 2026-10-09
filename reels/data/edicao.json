@@ -1,30 +1,35 @@
 {
  "fps": 30,
  "fonte": "media/fonte.mp4",
+ "velocidade": 1.1,
  "cortes": [
+  {
+   "de": 115.0,
+   "ate": 117.59
+  },
   {
    "de": 5.91,
    "ate": 12.16
   },
   {
    "de": 12.66,
+   "ate": 20.29
+  },
+  {
+   "de": 22.55,
    "ate": 40.074
   },
   {
    "de": 40.599,
-   "ate": 47.64
+   "ate": 43.82
   },
   {
    "de": 56.66,
    "ate": 59.44
   },
   {
-   "de": 60.29,
-   "ate": 68.962
-  },
-  {
-   "de": 69.396,
-   "ate": 76.44
+   "de": 62.62,
+   "ate": 68.7
   },
   {
    "de": 76.67,
@@ -36,7 +41,7 @@
   },
   {
    "de": 94.35,
-   "ate": 110.741
+   "ate": 107.49
   },
   {
    "de": 111.06,
@@ -47,1234 +52,965 @@
    "ate": 125.11
   },
   {
-   "de": 130.02,
-   "ate": 137.75
-  },
-  {
    "de": 139.09,
    "ate": 146.14
   }
  ],
- "transcricao": [
-  {
-   "texto": "Você",
-   "inicio": 6.29,
-   "fim": 7.17
-  },
-  {
-   "texto": "agendou",
-   "inicio": 7.17,
-   "fim": 7.81
-  },
-  {
-   "texto": "uma",
-   "inicio": 7.81,
-   "fim": 8.05
-  },
-  {
-   "texto": "avaliação",
-   "inicio": 8.05,
-   "fim": 8.59
-  },
-  {
-   "texto": "aqui",
-   "inicio": 8.59,
-   "fim": 8.97
-  },
-  {
-   "texto": "com",
-   "inicio": 8.97,
-   "fim": 9.19
-  },
-  {
-   "texto": "a",
-   "inicio": 9.19,
-   "fim": 9.21
-  },
-  {
-   "texto": "nossa",
-   "inicio": 9.21,
-   "fim": 9.37
-  },
-  {
-   "texto": "equipe",
-   "inicio": 9.37,
-   "fim": 10.05
-  },
-  {
-   "texto": "o",
-   "inicio": 10.05,
-   "fim": 10.53
-  },
-  {
-   "texto": "que",
-   "inicio": 10.53,
-   "fim": 10.79
-  },
-  {
-   "texto": "que",
-   "inicio": 10.79,
-   "fim": 10.89
-  },
-  {
-   "texto": "vai",
-   "inicio": 10.89,
-   "fim": 11.09
-  },
-  {
-   "texto": "acontecer",
-   "inicio": 11.09,
-   "fim": 11.55
-  },
-  {
-   "texto": "aqui?",
-   "inicio": 11.55,
-   "fim": 12.01
-  },
-  {
-   "texto": "Primeiro,",
-   "inicio": 12.89,
-   "fim": 13.81
-  },
-  {
-   "texto": "nós",
-   "inicio": 13.81,
-   "fim": 14.37
-  },
-  {
-   "texto": "realizamos",
-   "inicio": 14.37,
-   "fim": 14.91
-  },
-  {
-   "texto": "uma",
-   "inicio": 14.91,
-   "fim": 15.17
-  },
-  {
-   "texto": "conversa",
-   "inicio": 15.17,
-   "fim": 15.83
-  },
-  {
-   "texto": "com",
-   "inicio": 15.83,
-   "fim": 16.09
-  },
-  {
-   "texto": "o",
-   "inicio": 16.09,
-   "fim": 16.23
-  },
-  {
-   "texto": "paciente",
-   "inicio": 16.23,
-   "fim": 16.69
-  },
-  {
-   "texto": "ou",
-   "inicio": 16.69,
-   "fim": 16.87
-  },
-  {
-   "texto": "a",
-   "inicio": 16.87,
-   "fim": 17.01
-  },
-  {
-   "texto": "paciente",
-   "inicio": 17.01,
-   "fim": 17.47
-  },
-  {
-   "texto": "e",
-   "inicio": 17.47,
-   "fim": 17.75
-  },
-  {
-   "texto": "a",
-   "inicio": 17.75,
-   "fim": 17.89
-  },
-  {
-   "texto": "família",
-   "inicio": 17.89,
-   "fim": 18.27
-  },
-  {
-   "texto": "para",
-   "inicio": 18.27,
-   "fim": 18.87
-  },
-  {
-   "texto": "entender",
-   "inicio": 18.87,
-   "fim": 19.37
-  },
-  {
-   "texto": "toda",
-   "inicio": 19.37,
-   "fim": 19.77
-  },
-  {
-   "texto": "a",
-   "inicio": 19.77,
-   "fim": 20.07
-  },
-  {
-   "texto": "história",
-   "inicio": 20.07,
-   "fim": 20.31
-  },
-  {
-   "texto": "e",
-   "inicio": 20.31,
-   "fim": 20.73
-  },
-  {
-   "texto": "em",
-   "inicio": 20.73,
-   "fim": 20.89
-  },
-  {
-   "texto": "qual",
-   "inicio": 20.89,
-   "fim": 21.01
-  },
-  {
-   "texto": "momento",
-   "inicio": 21.01,
-   "fim": 21.59
-  },
-  {
-   "texto": "essa",
-   "inicio": 21.59,
-   "fim": 21.95
-  },
-  {
-   "texto": "escoliose",
-   "inicio": 21.95,
-   "fim": 22.37
-  },
-  {
-   "texto": "está.",
-   "inicio": 22.37,
-   "fim": 22.83
-  },
-  {
-   "texto": "Depois,",
-   "inicio": 22.83,
-   "fim": 24.57
-  },
-  {
-   "texto": "realizamos",
-   "inicio": 24.57,
-   "fim": 25.37
-  },
-  {
-   "texto": "uma",
-   "inicio": 25.37,
-   "fim": 25.61
-  },
-  {
-   "texto": "avaliação",
-   "inicio": 25.61,
-   "fim": 26.13
-  },
-  {
-   "texto": "clínica",
-   "inicio": 26.13,
-   "fim": 26.87
-  },
-  {
-   "texto": "e",
-   "inicio": 26.87,
-   "fim": 27.27
-  },
-  {
-   "texto": "postural",
-   "inicio": 27.27,
-   "fim": 27.89
-  },
-  {
-   "texto": "com",
-   "inicio": 27.89,
-   "fim": 28.27
-  },
-  {
-   "texto": "escaneamento",
-   "inicio": 28.27,
-   "fim": 28.85
-  },
-  {
-   "texto": "3D",
-   "inicio": 28.85,
-   "fim": 29.69
-  },
-  {
-   "texto": "e",
-   "inicio": 29.69,
-   "fim": 30.05
-  },
-  {
-   "texto": "analisamos",
-   "inicio": 30.05,
-   "fim": 30.79
-  },
-  {
-   "texto": "essas",
-   "inicio": 30.79,
-   "fim": 31.15
-  },
-  {
-   "texto": "informações",
-   "inicio": 31.15,
-   "fim": 31.83
-  },
-  {
-   "texto": "utilizando",
-   "inicio": 31.83,
-   "fim": 33.17
-  },
-  {
-   "texto": "softwares",
-   "inicio": 33.17,
-   "fim": 33.87
-  },
-  {
-   "texto": "específicos.",
-   "inicio": 33.87,
-   "fim": 34.75
-  },
-  {
-   "texto": "O",
-   "inicio": 34.75,
-   "fim": 35.67
-  },
-  {
-   "texto": "raio-X",
-   "inicio": 35.67,
-   "fim": 36.27
-  },
-  {
-   "texto": "é",
-   "inicio": 36.27,
-   "fim": 36.63
-  },
-  {
-   "texto": "fundamental",
-   "inicio": 36.63,
-   "fim": 37.51
-  },
-  {
-   "texto": "para",
-   "inicio": 37.51,
-   "fim": 38.03
-  },
-  {
-   "texto": "que",
-   "inicio": 38.03,
-   "fim": 38.17
-  },
-  {
-   "texto": "possamos",
-   "inicio": 38.17,
-   "fim": 38.55
-  },
-  {
-   "texto": "calcular",
-   "inicio": 38.55,
-   "fim": 39.19
-  },
-  {
-   "texto": "o",
-   "inicio": 39.19,
-   "fim": 39.53
-  },
-  {
-   "texto": "ângulo",
-   "inicio": 39.53,
-   "fim": 39.79
-  },
-  {
-   "texto": "de",
-   "inicio": 39.79,
-   "fim": 41.33
-  },
-  {
-   "texto": "curvatura,",
-   "inicio": 41.33,
-   "fim": 41.93
-  },
-  {
-   "texto": "que",
-   "inicio": 42.15,
-   "fim": 42.15
-  },
-  {
-   "texto": "chamamos",
-   "inicio": 42.15,
-   "fim": 42.47
-  },
-  {
-   "texto": "de",
-   "inicio": 42.47,
-   "fim": 42.67
-  },
-  {
-   "texto": "ângulo",
-   "inicio": 42.67,
-   "fim": 42.83
-  },
-  {
-   "texto": "de",
-   "inicio": 42.83,
-   "fim": 43.09
-  },
-  {
-   "texto": "Cobb,",
-   "inicio": 43.09,
-   "fim": 43.67
-  },
-  {
-   "texto": "um",
-   "inicio": 43.87,
-   "fim": 44.05
-  },
-  {
-   "texto": "dos",
-   "inicio": 44.05,
-   "fim": 44.27
-  },
-  {
-   "texto": "principais",
-   "inicio": 44.27,
-   "fim": 44.75
-  },
-  {
-   "texto": "indicadores",
-   "inicio": 44.75,
-   "fim": 45.45
-  },
-  {
-   "texto": "para",
-   "inicio": 45.45,
-   "fim": 45.87
-  },
-  {
-   "texto": "os",
-   "inicio": 45.87,
-   "fim": 46.05
-  },
-  {
-   "texto": "melhores",
-   "inicio": 46.05,
-   "fim": 46.35
-  },
-  {
-   "texto": "caminhos",
-   "inicio": 46.35,
-   "fim": 46.95
-  },
-  {
-   "texto": "a",
-   "inicio": 46.95,
-   "fim": 47.23
-  },
-  {
-   "texto": "seguir.",
-   "inicio": 47.23,
-   "fim": 47.49
-  },
-  {
-   "texto": "Então",
-   "inicio": 56.83,
-   "fim": 57.13
-  },
-  {
-   "texto": "não",
-   "inicio": 57.13,
-   "fim": 57.79
-  },
-  {
-   "texto": "esqueça",
-   "inicio": 57.79,
-   "fim": 58.33
-  },
-  {
-   "texto": "o",
-   "inicio": 58.33,
-   "fim": 58.51
-  },
-  {
-   "texto": "raio-X.",
-   "inicio": 58.51,
-   "fim": 59.29
-  },
-  {
-   "texto": "E",
-   "inicio": 60.37,
-   "fim": 60.59
-  },
-  {
-   "texto": "aqui",
-   "inicio": 60.59,
-   "fim": 61.01
-  },
-  {
-   "texto": "eu",
-   "inicio": 61.01,
-   "fim": 61.45
-  },
-  {
-   "texto": "chamo",
-   "inicio": 61.45,
-   "fim": 61.71
-  },
-  {
-   "texto": "a",
-   "inicio": 61.71,
-   "fim": 61.81
-  },
-  {
-   "texto": "atenção",
-   "inicio": 61.81,
-   "fim": 62.45
-  },
-  {
-   "texto": "para",
-   "inicio": 62.45,
-   "fim": 62.87
-  },
-  {
-   "texto": "as",
-   "inicio": 62.87,
-   "fim": 63.15
-  },
-  {
-   "texto": "diretrizes",
-   "inicio": 63.15,
-   "fim": 63.83
-  },
-  {
-   "texto": "da",
-   "inicio": 63.83,
-   "fim": 64.01
-  },
-  {
-   "texto": "Sociedade",
-   "inicio": 64.01,
-   "fim": 64.59
-  },
-  {
-   "texto": "Internacional",
-   "inicio": 64.59,
-   "fim": 65.31
-  },
-  {
-   "texto": "para",
-   "inicio": 65.31,
-   "fim": 65.63
-  },
-  {
-   "texto": "o",
-   "inicio": 65.63,
-   "fim": 65.77
-  },
-  {
-   "texto": "tratamento",
-   "inicio": 65.77,
-   "fim": 66.17
-  },
-  {
-   "texto": "ortopédico",
-   "inicio": 66.17,
-   "fim": 66.83
-  },
-  {
-   "texto": "da",
-   "inicio": 66.83,
-   "fim": 66.97
-  },
-  {
-   "texto": "escoliose,",
-   "inicio": 66.97,
-   "fim": 67.55
-  },
-  {
-   "texto": "a",
-   "inicio": 67.95,
-   "fim": 68.11
-  },
-  {
-   "texto": "SOSORT,",
-   "inicio": 68.11,
-   "fim": 68.55
-  },
-  {
-   "texto": "as",
-   "inicio": 69.45,
-   "fim": 69.83
-  },
-  {
-   "texto": "quais",
-   "inicio": 69.83,
-   "fim": 70.37
-  },
-  {
-   "texto": "todos",
-   "inicio": 70.37,
-   "fim": 70.99
-  },
-  {
-   "texto": "os",
-   "inicio": 70.99,
-   "fim": 71.31
-  },
-  {
-   "texto": "especialistas",
-   "inicio": 71.31,
-   "fim": 71.95
-  },
-  {
-   "texto": "em",
-   "inicio": 71.95,
-   "fim": 72.17
-  },
-  {
-   "texto": "tratamento",
-   "inicio": 72.17,
-   "fim": 72.67
-  },
-  {
-   "texto": "da",
-   "inicio": 72.67,
-   "fim": 72.81
-  },
-  {
-   "texto": "escoliose",
-   "inicio": 72.81,
-   "fim": 73.43
-  },
-  {
-   "texto": "precisam",
-   "inicio": 73.43,
-   "fim": 74.35
-  },
-  {
-   "texto": "tomar",
-   "inicio": 74.35,
-   "fim": 74.73
-  },
-  {
-   "texto": "como",
-   "inicio": 74.73,
-   "fim": 75.01
-  },
-  {
-   "texto": "referência.",
-   "inicio": 75.01,
-   "fim": 76.29
-  },
-  {
-   "texto": "Pelas",
-   "inicio": 76.91,
-   "fim": 77.05
-  },
-  {
-   "texto": "diretrizes,",
-   "inicio": 77.05,
-   "fim": 78.21
-  },
-  {
-   "texto": "escoliose",
-   "inicio": 80.21,
-   "fim": 80.71
-  },
-  {
-   "texto": "com",
-   "inicio": 80.71,
-   "fim": 80.97
-  },
-  {
-   "texto": "ângulo",
-   "inicio": 80.97,
-   "fim": 81.27
-  },
-  {
-   "texto": "de",
-   "inicio": 81.27,
-   "fim": 81.53
-  },
-  {
-   "texto": "Cobb",
-   "inicio": 81.53,
-   "fim": 81.75
-  },
-  {
-   "texto": "entre",
-   "inicio": 81.75,
-   "fim": 82.19
-  },
-  {
-   "texto": "10",
-   "inicio": 82.19,
-   "fim": 82.59
-  },
-  {
-   "texto": "e",
-   "inicio": 82.59,
-   "fim": 82.61
-  },
-  {
-   "texto": "25",
-   "inicio": 82.61,
-   "fim": 83.03
-  },
-  {
-   "texto": "graus,",
-   "inicio": 83.03,
-   "fim": 83.61
-  },
-  {
-   "texto": "se",
-   "inicio": 94.46,
-   "fim": 94.6
-  },
-  {
-   "texto": "recomenda",
-   "inicio": 94.6,
-   "fim": 95.3
-  },
-  {
-   "texto": "a",
-   "inicio": 95.3,
-   "fim": 95.58
-  },
-  {
-   "texto": "fisioterapia",
-   "inicio": 95.58,
-   "fim": 96.28
-  },
-  {
-   "texto": "específica",
-   "inicio": 96.28,
-   "fim": 97.14
-  },
-  {
-   "texto": "e",
-   "inicio": 97.14,
-   "fim": 97.48
-  },
-  {
-   "texto": "não",
-   "inicio": 97.48,
-   "fim": 97.76
-  },
-  {
-   "texto": "ficar",
-   "inicio": 97.76,
-   "fim": 98.28
-  },
-  {
-   "texto": "só",
-   "inicio": 98.28,
-   "fim": 98.68
-  },
-  {
-   "texto": "observando",
-   "inicio": 98.68,
-   "fim": 99.5
-  },
-  {
-   "texto": "para",
-   "inicio": 99.5,
-   "fim": 99.84
-  },
-  {
-   "texto": "ver",
-   "inicio": 99.84,
-   "fim": 100.0
-  },
-  {
-   "texto": "se",
-   "inicio": 100.0,
-   "fim": 100.2
-  },
-  {
-   "texto": "melhora",
-   "inicio": 100.2,
-   "fim": 100.46
-  },
-  {
-   "texto": "sozinha.",
-   "inicio": 100.46,
-   "fim": 101.36
-  },
-  {
-   "texto": "Passou",
-   "inicio": 101.36,
-   "fim": 101.98
-  },
-  {
-   "texto": "de",
-   "inicio": 101.98,
-   "fim": 102.12
-  },
-  {
-   "texto": "25",
-   "inicio": 102.12,
-   "fim": 102.84
-  },
-  {
-   "texto": "graus",
-   "inicio": 102.84,
-   "fim": 103.38
-  },
-  {
-   "texto": "até",
-   "inicio": 103.38,
-   "fim": 103.74
-  },
-  {
-   "texto": "45,",
-   "inicio": 103.74,
-   "fim": 104.34
-  },
-  {
-   "texto": "50",
-   "inicio": 104.38,
-   "fim": 104.72
-  },
-  {
-   "texto": "graus,",
-   "inicio": 104.72,
-   "fim": 105.32
-  },
-  {
-   "texto": "se",
-   "inicio": 105.52,
-   "fim": 105.74
-  },
-  {
-   "texto": "recomenda",
-   "inicio": 105.74,
-   "fim": 106.2
-  },
-  {
-   "texto": "o",
-   "inicio": 106.2,
-   "fim": 106.52
-  },
-  {
-   "texto": "uso",
-   "inicio": 106.52,
-   "fim": 106.7
-  },
-  {
-   "texto": "do",
-   "inicio": 106.7,
-   "fim": 107.02
-  },
-  {
-   "texto": "colete,",
-   "inicio": 107.02,
-   "fim": 107.34
-  },
-  {
-   "texto": "ou",
-   "inicio": 107.54,
-   "fim": 107.62
-  },
-  {
-   "texto": "seja,",
-   "inicio": 107.62,
-   "fim": 108.26
-  },
-  {
-   "texto": "acrescenta",
-   "inicio": 108.58,
-   "fim": 109.1
-  },
-  {
-   "texto": "o",
-   "inicio": 109.1,
-   "fim": 109.26
-  },
-  {
-   "texto": "colete",
-   "inicio": 109.26,
-   "fim": 109.8
-  },
-  {
-   "texto": "no",
-   "inicio": 109.8,
-   "fim": 110.08
-  },
-  {
-   "texto": "tratamento.",
-   "inicio": 110.08,
-   "fim": 110.98
-  },
-  {
-   "texto": "Essa",
-   "inicio": 111.22,
-   "fim": 111.58
-  },
-  {
-   "texto": "associação,",
-   "inicio": 111.58,
-   "fim": 112.48
-  },
-  {
-   "texto": "ela",
-   "inicio": 112.48,
-   "fim": 112.74
-  },
-  {
-   "texto": "é",
-   "inicio": 112.74,
-   "fim": 113.02
-  },
-  {
-   "texto": "muito",
-   "inicio": 113.02,
-   "fim": 113.38
-  },
-  {
-   "texto": "importante.",
-   "inicio": 113.38,
-   "fim": 113.92
-  },
-  {
-   "texto": "É",
-   "inicio": 114.24,
-   "fim": 114.44
-  },
-  {
-   "texto": "aquela",
-   "inicio": 114.44,
-   "fim": 114.68
-  },
-  {
-   "texto": "soma",
-   "inicio": 114.68,
-   "fim": 115.04
-  },
-  {
-   "texto": "em",
-   "inicio": 115.04,
-   "fim": 115.16
-  },
-  {
-   "texto": "que",
-   "inicio": 115.16,
-   "fim": 115.28
-  },
+ "legendas": [
   {
    "texto": "1",
-   "inicio": 115.28,
-   "fim": 115.4
+   "inicio": 0.255,
+   "fim": 0.364
   },
   {
    "texto": "mais",
-   "inicio": 115.4,
-   "fim": 115.58
+   "inicio": 0.364,
+   "fim": 0.527
   },
   {
    "texto": "1",
-   "inicio": 115.58,
-   "fim": 115.94
+   "inicio": 0.527,
+   "fim": 0.855
   },
   {
    "texto": "não",
-   "inicio": 115.94,
-   "fim": 116.2
+   "inicio": 0.855,
+   "fim": 1.091
   },
   {
    "texto": "é",
-   "inicio": 116.2,
-   "fim": 116.32
+   "inicio": 1.091,
+   "fim": 1.2
   },
   {
    "texto": "2,",
-   "inicio": 116.32,
-   "fim": 116.66
+   "inicio": 1.2,
+   "fim": 1.509
   },
   {
    "texto": "é",
-   "inicio": 116.84,
-   "fim": 116.98
+   "inicio": 1.673,
+   "fim": 1.8
   },
   {
    "texto": "11,",
-   "inicio": 116.98,
-   "fim": 117.44
+   "inicio": 1.8,
+   "fim": 2.218
   },
   {
-   "texto": "por",
-   "inicio": 117.92,
-   "fim": 118.04
+   "texto": "Você",
+   "inicio": 2.7,
+   "fim": 3.5
   },
   {
-   "texto": "um",
-   "inicio": 118.04,
-   "fim": 118.32
-  },
-  {
-   "texto": "potencializar",
-   "inicio": 118.32,
-   "fim": 119.36
-  },
-  {
-   "texto": "a",
-   "inicio": 119.36,
-   "fim": 119.6
-  },
-  {
-   "texto": "ação",
-   "inicio": 119.6,
-   "fim": 119.72
-  },
-  {
-   "texto": "do",
-   "inicio": 119.72,
-   "fim": 119.94
-  },
-  {
-   "texto": "outro.",
-   "inicio": 119.94,
-   "fim": 120.2
-  },
-  {
-   "texto": "E",
-   "inicio": 120.6,
-   "fim": 120.96
-  },
-  {
-   "texto": "quando",
-   "inicio": 120.96,
-   "fim": 121.2
-  },
-  {
-   "texto": "passa",
-   "inicio": 121.2,
-   "fim": 121.5
-  },
-  {
-   "texto": "de",
-   "inicio": 121.5,
-   "fim": 121.7
-  },
-  {
-   "texto": "50",
-   "inicio": 121.7,
-   "fim": 122.0
-  },
-  {
-   "texto": "graus,",
-   "inicio": 122.0,
-   "fim": 122.46
-  },
-  {
-   "texto": "já",
-   "inicio": 122.54,
-   "fim": 122.68
-  },
-  {
-   "texto": "se",
-   "inicio": 122.68,
-   "fim": 122.96
-  },
-  {
-   "texto": "fala",
-   "inicio": 122.96,
-   "fim": 123.22
-  },
-  {
-   "texto": "sobre",
-   "inicio": 123.22,
-   "fim": 123.88
-  },
-  {
-   "texto": "cirurgia.",
-   "inicio": 123.88,
-   "fim": 124.96
-  },
-  {
-   "texto": "Nosso",
-   "inicio": 130.4,
-   "fim": 131.28
-  },
-  {
-   "texto": "objetivo",
-   "inicio": 131.28,
-   "fim": 131.8
-  },
-  {
-   "texto": "é",
-   "inicio": 131.8,
-   "fim": 132.12
-  },
-  {
-   "texto": "que",
-   "inicio": 132.12,
-   "fim": 132.24
-  },
-  {
-   "texto": "você",
-   "inicio": 132.24,
-   "fim": 132.56
-  },
-  {
-   "texto": "saia",
-   "inicio": 132.56,
-   "fim": 132.82
-  },
-  {
-   "texto": "daqui,",
-   "inicio": 132.82,
-   "fim": 133.28
-  },
-  {
-   "texto": "entendendo",
-   "inicio": 133.62,
-   "fim": 134.14
-  },
-  {
-   "texto": "a",
-   "inicio": 134.14,
-   "fim": 134.28
-  },
-  {
-   "texto": "sua",
-   "inicio": 134.28,
-   "fim": 134.42
-  },
-  {
-   "texto": "escoliose",
-   "inicio": 134.42,
-   "fim": 134.9
-  },
-  {
-   "texto": "e",
-   "inicio": 134.9,
-   "fim": 135.34
-  },
-  {
-   "texto": "sabendo",
-   "inicio": 135.34,
-   "fim": 135.92
-  },
-  {
-   "texto": "quais",
-   "inicio": 135.92,
-   "fim": 136.18
-  },
-  {
-   "texto": "os",
-   "inicio": 136.18,
-   "fim": 136.5
-  },
-  {
-   "texto": "próximos",
-   "inicio": 136.5,
-   "fim": 136.98
-  },
-  {
-   "texto": "passos.",
-   "inicio": 136.98,
-   "fim": 137.6
-  },
-  {
-   "texto": "Se",
-   "inicio": 139.22,
-   "fim": 139.36
-  },
-  {
-   "texto": "você",
-   "inicio": 139.36,
-   "fim": 139.7
-  },
-  {
-   "texto": "tem",
-   "inicio": 139.7,
-   "fim": 139.86
-  },
-  {
-   "texto": "um",
-   "inicio": 139.86,
-   "fim": 140.22
-  },
-  {
-   "texto": "filho",
-   "inicio": 140.22,
-   "fim": 140.46
-  },
-  {
-   "texto": "ou",
-   "inicio": 140.46,
-   "fim": 140.78
-  },
-  {
-   "texto": "filha",
-   "inicio": 140.78,
-   "fim": 141.12
-  },
-  {
-   "texto": "com",
-   "inicio": 141.12,
-   "fim": 141.32
-  },
-  {
-   "texto": "escoliose",
-   "inicio": 141.32,
-   "fim": 141.9
-  },
-  {
-   "texto": "ou",
-   "inicio": 141.9,
-   "fim": 142.42
-  },
-  {
-   "texto": "alguma",
-   "inicio": 142.42,
-   "fim": 142.86
-  },
-  {
-   "texto": "outra",
-   "inicio": 142.86,
-   "fim": 143.14
-  },
-  {
-   "texto": "deformidade",
-   "inicio": 143.14,
-   "fim": 143.84
-  },
-  {
-   "texto": "na",
-   "inicio": 143.84,
-   "fim": 144.1
-  },
-  {
-   "texto": "coluna,",
-   "inicio": 144.1,
-   "fim": 144.56
-  },
-  {
-   "texto": "agenda",
-   "inicio": 145.06,
-   "fim": 145.34
+   "texto": "agendou",
+   "inicio": 3.5,
+   "fim": 4.082
   },
   {
    "texto": "uma",
-   "inicio": 145.34,
-   "fim": 145.5
+   "inicio": 4.082,
+   "fim": 4.3
+  },
+  {
+   "texto": "avaliação",
+   "inicio": 4.3,
+   "fim": 4.791
+  },
+  {
+   "texto": "aqui",
+   "inicio": 4.791,
+   "fim": 5.136
+  },
+  {
+   "texto": "com",
+   "inicio": 5.136,
+   "fim": 5.336
+  },
+  {
+   "texto": "a",
+   "inicio": 5.336,
+   "fim": 5.355
+  },
+  {
+   "texto": "nossa",
+   "inicio": 5.355,
+   "fim": 5.5
+  },
+  {
+   "texto": "equipe",
+   "inicio": 5.5,
+   "fim": 6.118
+  },
+  {
+   "texto": "o",
+   "inicio": 6.118,
+   "fim": 6.555
+  },
+  {
+   "texto": "que",
+   "inicio": 6.555,
+   "fim": 6.791
+  },
+  {
+   "texto": "que",
+   "inicio": 6.791,
+   "fim": 6.882
+  },
+  {
+   "texto": "vai",
+   "inicio": 6.882,
+   "fim": 7.064
+  },
+  {
+   "texto": "acontecer",
+   "inicio": 7.064,
+   "fim": 7.482
+  },
+  {
+   "texto": "aqui?",
+   "inicio": 7.482,
+   "fim": 7.9
+  },
+  {
+   "texto": "Primeiro,",
+   "inicio": 8.245,
+   "fim": 9.082
+  },
+  {
+   "texto": "nós",
+   "inicio": 9.082,
+   "fim": 9.591
+  },
+  {
+   "texto": "realizamos",
+   "inicio": 9.591,
+   "fim": 10.082
+  },
+  {
+   "texto": "uma",
+   "inicio": 10.082,
+   "fim": 10.318
+  },
+  {
+   "texto": "conversa",
+   "inicio": 10.318,
+   "fim": 10.918
+  },
+  {
+   "texto": "com",
+   "inicio": 10.918,
+   "fim": 11.155
+  },
+  {
+   "texto": "o",
+   "inicio": 11.155,
+   "fim": 11.282
+  },
+  {
+   "texto": "paciente",
+   "inicio": 11.282,
+   "fim": 11.7
+  },
+  {
+   "texto": "ou",
+   "inicio": 11.7,
+   "fim": 11.864
+  },
+  {
+   "texto": "a",
+   "inicio": 11.864,
+   "fim": 11.991
+  },
+  {
+   "texto": "paciente",
+   "inicio": 11.991,
+   "fim": 12.409
+  },
+  {
+   "texto": "e",
+   "inicio": 12.409,
+   "fim": 12.664
+  },
+  {
+   "texto": "a",
+   "inicio": 12.664,
+   "fim": 12.791
+  },
+  {
+   "texto": "família",
+   "inicio": 12.791,
+   "fim": 13.136
+  },
+  {
+   "texto": "para",
+   "inicio": 13.136,
+   "fim": 13.682
+  },
+  {
+   "texto": "entender",
+   "inicio": 13.682,
+   "fim": 14.136
+  },
+  {
+   "texto": "toda",
+   "inicio": 14.136,
+   "fim": 14.5
+  },
+  {
+   "texto": "a",
+   "inicio": 14.5,
+   "fim": 14.773
+  },
+  {
+   "texto": "história.",
+   "inicio": 14.773,
+   "fim": 14.973
+  },
+  {
+   "texto": "Depois,",
+   "inicio": 15.227,
+   "fim": 16.809
+  },
+  {
+   "texto": "realizamos",
+   "inicio": 16.809,
+   "fim": 17.536
+  },
+  {
+   "texto": "uma",
+   "inicio": 17.536,
+   "fim": 17.755
+  },
+  {
+   "texto": "avaliação",
+   "inicio": 17.755,
+   "fim": 18.227
+  },
+  {
+   "texto": "clínica",
+   "inicio": 18.227,
+   "fim": 18.9
+  },
+  {
+   "texto": "e",
+   "inicio": 18.9,
+   "fim": 19.264
+  },
+  {
+   "texto": "postural",
+   "inicio": 19.264,
+   "fim": 19.827
+  },
+  {
+   "texto": "com",
+   "inicio": 19.827,
+   "fim": 20.173
+  },
+  {
+   "texto": "escaneamento",
+   "inicio": 20.173,
+   "fim": 20.7
+  },
+  {
+   "texto": "3D",
+   "inicio": 20.7,
+   "fim": 21.464
+  },
+  {
+   "texto": "e",
+   "inicio": 21.464,
+   "fim": 21.791
+  },
+  {
+   "texto": "analisamos",
+   "inicio": 21.791,
+   "fim": 22.464
+  },
+  {
+   "texto": "essas",
+   "inicio": 22.464,
+   "fim": 22.791
+  },
+  {
+   "texto": "informações",
+   "inicio": 22.791,
+   "fim": 23.409
+  },
+  {
+   "texto": "utilizando",
+   "inicio": 23.409,
+   "fim": 24.627
+  },
+  {
+   "texto": "softwares",
+   "inicio": 24.627,
+   "fim": 25.264
+  },
+  {
+   "texto": "específicos.",
+   "inicio": 25.264,
+   "fim": 26.045
+  },
+  {
+   "texto": "O",
+   "inicio": 26.064,
+   "fim": 26.9
+  },
+  {
+   "texto": "raio-X",
+   "inicio": 26.9,
+   "fim": 27.445
+  },
+  {
+   "texto": "é",
+   "inicio": 27.445,
+   "fim": 27.773
+  },
+  {
+   "texto": "fundamental",
+   "inicio": 27.773,
+   "fim": 28.573
+  },
+  {
+   "texto": "para",
+   "inicio": 28.573,
+   "fim": 29.045
+  },
+  {
+   "texto": "que",
+   "inicio": 29.045,
+   "fim": 29.173
+  },
+  {
+   "texto": "possamos",
+   "inicio": 29.173,
+   "fim": 29.518
+  },
+  {
+   "texto": "calcular",
+   "inicio": 29.518,
+   "fim": 30.1
+  },
+  {
+   "texto": "o",
+   "inicio": 30.1,
+   "fim": 30.409
+  },
+  {
+   "texto": "ângulo",
+   "inicio": 30.409,
+   "fim": 30.645
+  },
+  {
+   "texto": "de",
+   "inicio": 30.645,
+   "fim": 31.568
+  },
+  {
+   "texto": "curvatura,",
+   "inicio": 31.568,
+   "fim": 32.113
+  },
+  {
+   "texto": "que",
+   "inicio": 32.313,
+   "fim": 32.313
+  },
+  {
+   "texto": "chamamos",
+   "inicio": 32.313,
+   "fim": 32.604
+  },
+  {
+   "texto": "de",
+   "inicio": 32.604,
+   "fim": 32.786
+  },
+  {
+   "texto": "ângulo",
+   "inicio": 32.786,
+   "fim": 32.931
+  },
+  {
+   "texto": "de",
+   "inicio": 32.931,
+   "fim": 33.168
+  },
+  {
+   "texto": "Cobb.",
+   "inicio": 33.168,
+   "fim": 33.695
+  },
+  {
+   "texto": "Então",
+   "inicio": 33.986,
+   "fim": 34.259
+  },
+  {
+   "texto": "não",
+   "inicio": 34.259,
+   "fim": 34.859
+  },
+  {
+   "texto": "esqueça",
+   "inicio": 34.859,
+   "fim": 35.35
+  },
+  {
+   "texto": "o",
+   "inicio": 35.35,
+   "fim": 35.514
+  },
+  {
+   "texto": "raio-X.",
+   "inicio": 35.514,
+   "fim": 36.223
+  },
+  {
+   "texto": "As",
+   "inicio": 36.586,
+   "fim": 36.841
+  },
+  {
+   "texto": "diretrizes",
+   "inicio": 36.841,
+   "fim": 37.459
+  },
+  {
+   "texto": "da",
+   "inicio": 37.459,
+   "fim": 37.623
+  },
+  {
+   "texto": "Sociedade",
+   "inicio": 37.623,
+   "fim": 38.15
+  },
+  {
+   "texto": "Internacional",
+   "inicio": 38.15,
+   "fim": 38.805
+  },
+  {
+   "texto": "para",
+   "inicio": 38.805,
+   "fim": 39.095
+  },
+  {
+   "texto": "o",
+   "inicio": 39.095,
+   "fim": 39.223
+  },
+  {
+   "texto": "tratamento",
+   "inicio": 39.223,
+   "fim": 39.586
+  },
+  {
+   "texto": "ortopédico",
+   "inicio": 39.586,
+   "fim": 40.186
+  },
+  {
+   "texto": "da",
+   "inicio": 40.186,
+   "fim": 40.314
+  },
+  {
+   "texto": "escoliose,",
+   "inicio": 40.314,
+   "fim": 40.841
+  },
+  {
+   "texto": "a",
+   "inicio": 41.205,
+   "fim": 41.35
+  },
+  {
+   "texto": "SOSORT.",
+   "inicio": 41.35,
+   "fim": 41.75
+  },
+  {
+   "texto": "Pelas",
+   "inicio": 42.105,
+   "fim": 42.232
+  },
+  {
+   "texto": "diretrizes,",
+   "inicio": 42.232,
+   "fim": 43.286
+  },
+  {
+   "texto": "escoliose",
+   "inicio": 43.695,
+   "fim": 44.15
+  },
+  {
+   "texto": "com",
+   "inicio": 44.15,
+   "fim": 44.386
+  },
+  {
+   "texto": "ângulo",
+   "inicio": 44.386,
+   "fim": 44.659
+  },
+  {
+   "texto": "de",
+   "inicio": 44.659,
+   "fim": 44.895
+  },
+  {
+   "texto": "Cobb",
+   "inicio": 44.895,
+   "fim": 45.095
+  },
+  {
+   "texto": "entre",
+   "inicio": 45.095,
+   "fim": 45.495
+  },
+  {
+   "texto": "10",
+   "inicio": 45.495,
+   "fim": 45.859
+  },
+  {
+   "texto": "e",
+   "inicio": 45.859,
+   "fim": 45.877
+  },
+  {
+   "texto": "25",
+   "inicio": 45.877,
+   "fim": 46.259
+  },
+  {
+   "texto": "graus,",
+   "inicio": 46.259,
+   "fim": 46.768
+  },
+  {
+   "texto": "se",
+   "inicio": 46.868,
+   "fim": 46.995
+  },
+  {
+   "texto": "recomenda",
+   "inicio": 46.995,
+   "fim": 47.632
+  },
+  {
+   "texto": "a",
+   "inicio": 47.632,
+   "fim": 47.886
+  },
+  {
+   "texto": "fisioterapia",
+   "inicio": 47.886,
+   "fim": 48.523
+  },
+  {
+   "texto": "específica",
+   "inicio": 48.523,
+   "fim": 49.305
+  },
+  {
+   "texto": "e",
+   "inicio": 49.305,
+   "fim": 49.614
+  },
+  {
+   "texto": "não",
+   "inicio": 49.614,
+   "fim": 49.868
+  },
+  {
+   "texto": "ficar",
+   "inicio": 49.868,
+   "fim": 50.341
+  },
+  {
+   "texto": "só",
+   "inicio": 50.341,
+   "fim": 50.705
+  },
+  {
+   "texto": "observando",
+   "inicio": 50.705,
+   "fim": 51.45
+  },
+  {
+   "texto": "para",
+   "inicio": 51.45,
+   "fim": 51.759
+  },
+  {
+   "texto": "ver",
+   "inicio": 51.759,
+   "fim": 51.905
+  },
+  {
+   "texto": "se",
+   "inicio": 51.905,
+   "fim": 52.086
+  },
+  {
+   "texto": "melhora",
+   "inicio": 52.086,
+   "fim": 52.323
+  },
+  {
+   "texto": "sozinha.",
+   "inicio": 52.323,
+   "fim": 53.123
+  },
+  {
+   "texto": "Passou",
+   "inicio": 53.141,
+   "fim": 53.705
+  },
+  {
+   "texto": "de",
+   "inicio": 53.705,
+   "fim": 53.832
+  },
+  {
+   "texto": "25",
+   "inicio": 53.832,
+   "fim": 54.486
+  },
+  {
+   "texto": "graus",
+   "inicio": 54.486,
+   "fim": 54.977
+  },
+  {
+   "texto": "até",
+   "inicio": 54.977,
+   "fim": 55.305
+  },
+  {
+   "texto": "45,",
+   "inicio": 55.305,
+   "fim": 55.85
+  },
+  {
+   "texto": "50",
+   "inicio": 55.886,
+   "fim": 56.195
+  },
+  {
+   "texto": "graus,",
+   "inicio": 56.195,
+   "fim": 56.741
+  },
+  {
+   "texto": "se",
+   "inicio": 56.923,
+   "fim": 57.123
+  },
+  {
+   "texto": "recomenda",
+   "inicio": 57.123,
+   "fim": 57.541
+  },
+  {
+   "texto": "o",
+   "inicio": 57.541,
+   "fim": 57.832
+  },
+  {
+   "texto": "uso",
+   "inicio": 57.832,
+   "fim": 57.995
+  },
+  {
+   "texto": "do",
+   "inicio": 57.995,
+   "fim": 58.286
+  },
+  {
+   "texto": "colete.",
+   "inicio": 58.286,
+   "fim": 58.577
+  },
+  {
+   "texto": "Essa",
+   "inicio": 58.859,
+   "fim": 59.186
+  },
+  {
+   "texto": "associação,",
+   "inicio": 59.186,
+   "fim": 60.005
+  },
+  {
+   "texto": "ela",
+   "inicio": 60.005,
+   "fim": 60.241
+  },
+  {
+   "texto": "é",
+   "inicio": 60.241,
+   "fim": 60.495
+  },
+  {
+   "texto": "muito",
+   "inicio": 60.495,
+   "fim": 60.823
+  },
+  {
+   "texto": "importante.",
+   "inicio": 60.823,
+   "fim": 61.314
+  },
+  {
+   "texto": "É",
+   "inicio": 61.605,
+   "fim": 61.786
+  },
+  {
+   "texto": "aquela",
+   "inicio": 61.786,
+   "fim": 62.005
+  },
+  {
+   "texto": "soma",
+   "inicio": 62.005,
+   "fim": 62.332
+  },
+  {
+   "texto": "em",
+   "inicio": 62.332,
+   "fim": 62.441
+  },
+  {
+   "texto": "que",
+   "inicio": 62.441,
+   "fim": 62.55
+  },
+  {
+   "texto": "1",
+   "inicio": 62.55,
+   "fim": 62.659
+  },
+  {
+   "texto": "mais",
+   "inicio": 62.659,
+   "fim": 62.823
+  },
+  {
+   "texto": "1",
+   "inicio": 62.823,
+   "fim": 63.15
+  },
+  {
+   "texto": "não",
+   "inicio": 63.15,
+   "fim": 63.386
+  },
+  {
+   "texto": "é",
+   "inicio": 63.386,
+   "fim": 63.495
+  },
+  {
+   "texto": "2,",
+   "inicio": 63.495,
+   "fim": 63.805
+  },
+  {
+   "texto": "é",
+   "inicio": 63.968,
+   "fim": 64.095
+  },
+  {
+   "texto": "11,",
+   "inicio": 64.095,
+   "fim": 64.514
+  },
+  {
+   "texto": "por",
+   "inicio": 64.95,
+   "fim": 65.059
+  },
+  {
+   "texto": "um",
+   "inicio": 65.059,
+   "fim": 65.314
+  },
+  {
+   "texto": "potencializar",
+   "inicio": 65.314,
+   "fim": 66.259
+  },
+  {
+   "texto": "a",
+   "inicio": 66.259,
+   "fim": 66.477
+  },
+  {
+   "texto": "ação",
+   "inicio": 66.477,
+   "fim": 66.586
+  },
+  {
+   "texto": "do",
+   "inicio": 66.586,
+   "fim": 66.786
+  },
+  {
+   "texto": "outro.",
+   "inicio": 66.786,
+   "fim": 67.023
+  },
+  {
+   "texto": "E",
+   "inicio": 67.232,
+   "fim": 67.559
+  },
+  {
+   "texto": "quando",
+   "inicio": 67.559,
+   "fim": 67.777
+  },
+  {
+   "texto": "passa",
+   "inicio": 67.777,
+   "fim": 68.05
+  },
+  {
+   "texto": "de",
+   "inicio": 68.05,
+   "fim": 68.232
+  },
+  {
+   "texto": "50",
+   "inicio": 68.232,
+   "fim": 68.505
+  },
+  {
+   "texto": "graus,",
+   "inicio": 68.505,
+   "fim": 68.923
+  },
+  {
+   "texto": "já",
+   "inicio": 68.995,
+   "fim": 69.123
+  },
+  {
+   "texto": "se",
+   "inicio": 69.123,
+   "fim": 69.377
+  },
+  {
+   "texto": "fala",
+   "inicio": 69.377,
+   "fim": 69.614
+  },
+  {
+   "texto": "sobre",
+   "inicio": 69.614,
+   "fim": 70.214
+  },
+  {
+   "texto": "cirurgia.",
+   "inicio": 70.214,
+   "fim": 71.195
+  },
+  {
+   "texto": "Se",
+   "inicio": 71.45,
+   "fim": 71.577
+  },
+  {
+   "texto": "você",
+   "inicio": 71.577,
+   "fim": 71.886
+  },
+  {
+   "texto": "tem",
+   "inicio": 71.886,
+   "fim": 72.032
+  },
+  {
+   "texto": "um",
+   "inicio": 72.032,
+   "fim": 72.359
+  },
+  {
+   "texto": "filho",
+   "inicio": 72.359,
+   "fim": 72.577
+  },
+  {
+   "texto": "ou",
+   "inicio": 72.577,
+   "fim": 72.868
+  },
+  {
+   "texto": "filha",
+   "inicio": 72.868,
+   "fim": 73.177
+  },
+  {
+   "texto": "com",
+   "inicio": 73.177,
+   "fim": 73.359
+  },
+  {
+   "texto": "escoliose",
+   "inicio": 73.359,
+   "fim": 73.886
+  },
+  {
+   "texto": "ou",
+   "inicio": 73.886,
+   "fim": 74.359
+  },
+  {
+   "texto": "alguma",
+   "inicio": 74.359,
+   "fim": 74.759
+  },
+  {
+   "texto": "outra",
+   "inicio": 74.759,
+   "fim": 75.014
+  },
+  {
+   "texto": "deformidade",
+   "inicio": 75.014,
+   "fim": 75.65
+  },
+  {
+   "texto": "na",
+   "inicio": 75.65,
+   "fim": 75.886
+  },
+  {
+   "texto": "coluna,",
+   "inicio": 75.886,
+   "fim": 76.305
+  },
+  {
+   "texto": "agenda",
+   "inicio": 76.759,
+   "fim": 77.014
+  },
+  {
+   "texto": "uma",
+   "inicio": 77.014,
+   "fim": 77.159
   },
   {
    "texto": "avaliação.",
-   "inicio": 145.5,
-   "fim": 146.16
+   "inicio": 77.159,
+   "fim": 77.741
   }
  ],
  "palavrasChave": [
@@ -1297,14 +1033,74 @@
   "passos"
  ],
  "gancho": {
-  "texto": "10, 25 ou 50 graus: o que muda no tratamento da escoliose?",
-  "duracao": 3.2
+  "texto": "10°, 25° ou 50°?",
+  "subtexto": "o que muda no tratamento da escoliose",
+  "duracao": 3.0
  },
- "apoio": [],
+ "apoio": [
+  {
+   "arquivo": "media/apoio/conversa.mp4",
+   "em": 10.318,
+   "duracao": 3.0,
+   "area": "cheia"
+  },
+  {
+   "arquivo": "media/apoio/raiox_medicao.mp4",
+   "em": 26.9,
+   "duracao": 2.2,
+   "area": "cheia"
+  },
+  {
+   "arquivo": "media/apoio/raiox_tela.mp4",
+   "em": 33.986,
+   "duracao": 2.6,
+   "area": "cheia"
+  },
+  {
+   "arquivo": "media/apoio/colete_ajuste.mp4",
+   "em": 56.923,
+   "duracao": 2.0,
+   "area": "baixo"
+  },
+  {
+   "arquivo": "media/apoio/impressao3d.mp4",
+   "em": 58.859,
+   "duracao": 2.6,
+   "area": "baixo"
+  }
+ ],
+ "telas": [
+  {
+   "tipo": "escaneamento",
+   "de": 15.227,
+   "ate": 26.345000000000002,
+   "titulo": "Avaliação clínica e postural",
+   "numero": 2
+  },
+  {
+   "tipo": "cobb",
+   "de": 29.173,
+   "ate": 33.995,
+   "titulo": "Ângulo de Cobb",
+   "numero": 3
+  },
+  {
+   "tipo": "escala",
+   "de": 42.105,
+   "ate": 71.49499999999999,
+   "titulo": "Diretrizes da SOSORT",
+   "numero": null
+  }
+ ],
  "cta": {
   "titulo": "Agende sua avaliação gratuita",
   "subtitulo": "pelo WhatsApp",
-  "duracao": 3.5
+  "duracao": 4.5,
+  "resumo": [
+   "Conversa com a família",
+   "Avaliação com escaneamento 3D",
+   "Raio-X e ângulo de Cobb"
+  ]
  },
  "capa": {
   "titulo": "Como funciona a avaliação",
@@ -1316,47 +1112,58 @@
   {
    "numero": 1,
    "titulo": "Conversa com o paciente e a família",
-   "de": 6.48,
-   "ate": 16.42
+   "de": 8.245,
+   "ate": 14.973,
+   "tela": null
   },
   {
    "numero": 2,
    "titulo": "Avaliação clínica e postural com escaneamento 3D",
-   "de": 16.42,
-   "ate": 28.34
+   "de": 15.227,
+   "ate": 26.045,
+   "tela": "escaneamento"
   },
   {
    "numero": 3,
    "titulo": "Raio-X para medir o ângulo de Cobb",
-   "de": 28.34,
-   "ate": 43.335
+   "de": 26.064,
+   "ate": 36.223,
+   "tela": "cobb"
   }
  ],
  "escala": {
   "titulo": "Diretrizes da SOSORT",
-  "de": 61.191,
-  "ate": 96.192,
+  "de": 42.105,
+  "ate": 71.99499999999999,
   "faixas": [
    {
     "graus": "10° a 25°",
+    "numero": "10–25°",
     "texto": "Fisioterapia específica",
-    "em": 63.171
+    "em": 45.495
    },
    {
     "graus": "25° a 45-50°",
+    "numero": "25–50°",
     "texto": "Colete + fisioterapia",
-    "em": 72.341
+    "em": 53.832
    },
    {
     "graus": "Acima de 50°",
+    "numero": "+50°",
     "texto": "Já se fala em cirurgia",
-    "em": 91.432
+    "em": 68.232
    }
   ]
  },
  "enfase": [
-  30.22,
-  40.875,
-  82.922
- ]
+  27.773,
+  76.759
+ ],
+ "transicoes": [
+  2.7,
+  36.586,
+  71.45
+ ],
+ "efeitos": true
 }

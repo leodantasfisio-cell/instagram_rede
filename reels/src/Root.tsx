@@ -10,11 +10,11 @@ const edicao = edicaoJson as Edicao;
 
 // A capa usa um frame do Reel editado (capa.frame, em segundos do Reel).
 const Capa: React.FC<{edicao: Edicao}> = ({edicao}) => {
-  const trechos = montarTrechos(edicao.cortes);
+  const trechos = montarTrechos(edicao.cortes, edicao.velocidade);
   const t =
-    trechos.find((c) => edicao.capa.frame >= c.inicioNoReel && edicao.capa.frame < c.inicioNoReel + c.ate - c.de) ??
+    trechos.find((c) => edicao.capa.frame >= c.inicioNoReel && edicao.capa.frame < c.inicioNoReel + c.duracaoNoReel) ??
     trechos[0];
-  const origem = t.de + (edicao.capa.frame - t.inicioNoReel);
+  const origem = t.de + (edicao.capa.frame - t.inicioNoReel) * edicao.velocidade;
   return (
     <AbsoluteFill style={{backgroundColor: '#000'}}>
       <OffthreadVideo

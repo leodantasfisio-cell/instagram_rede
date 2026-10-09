@@ -1,11 +1,12 @@
 import {AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import {cores, fonte} from './marca';
-import {agruparLegendas, ehPalavraChave} from './tempo';
-import type {Palavra} from './tipos';
+import {agruparLegendas, divisao, ehPalavraChave} from './tempo';
+import type {Palavra, Tela} from './tipos';
 
-export const Legendas: React.FC<{palavras: Palavra[]; palavrasChave: string[]}> = ({
+export const Legendas: React.FC<{palavras: Palavra[]; palavrasChave: string[]; telas: Tela[]}> = ({
   palavras,
   palavrasChave,
+  telas,
 }) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
@@ -20,10 +21,11 @@ export const Legendas: React.FC<{palavras: Palavra[]; palavrasChave: string[]}> 
   if (!grupo) return null;
 
   const entrada = spring({frame: frame - Math.round(grupo[0].inicio * fps), fps, config: {damping: 200}, durationInFrames: 6});
+  // Tela cheia: acima da interface do Reels. Tela dividida: na linha do meio.
+  const baixo = interpolate(divisao(telas, t), [0, 1], [560, 880]);
 
   return (
-    // Acima da área ocupada pela interface do Reels (legenda do post, botões).
-    <AbsoluteFill style={{justifyContent: 'flex-end', alignItems: 'center', paddingBottom: 560}}>
+    <AbsoluteFill style={{justifyContent: 'flex-end', alignItems: 'center', paddingBottom: baixo}}>
       <div
         style={{
           maxWidth: 900,
@@ -47,6 +49,8 @@ export const Legendas: React.FC<{palavras: Palavra[]; palavrasChave: string[]}> 
       >
         {grupo.map((p, i) => {
           const falando = t >= p.inicio && t < p.fim;
+          // Karaokê: palavras ainda não ditas ficam mais apagadas.
+          const dita = t >= p.inicio;
           const chave = ehPalavraChave(p.texto, palavrasChave);
           return (
             <span
@@ -54,11 +58,12 @@ export const Legendas: React.FC<{palavras: Palavra[]; palavrasChave: string[]}> 
               style={{
                 display: 'inline-block',
                 color: cores.branco,
+                opacity: dita ? 1 : 0.5,
                 // Palavra-chave: faixa azul da marca atrás do texto.
-                ...(chave
+                ...(chave && dita
                   ? {background: cores.azul, borderRadius: 14, padding: '0 14px', WebkitTextStroke: '0px', textShadow: 'none'}
                   : {}),
-                transform: `scale(${falando ? 1.06 : 1})`,
+                transform: `scale(${falando ? 1.08 : 1})`,
               }}
             >
               {p.texto}

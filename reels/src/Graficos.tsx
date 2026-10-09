@@ -1,6 +1,6 @@
 import {AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import {cores, fonte} from './marca';
-import type {Escala, Etapa} from './tipos';
+import type {Etapa} from './tipos';
 
 const sair = (frame: number, total: number) =>
   interpolate(frame, [total - 8, total], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
@@ -49,110 +49,6 @@ export const CartaoEtapa: React.FC<{etapa: Etapa; total: number}> = ({etapa, tot
         <div style={{color: cores.azulEscuro, fontWeight: 800, fontSize: 44, lineHeight: 1.15}}>
           {etapa.titulo}
         </div>
-      </div>
-    </AbsoluteFill>
-  );
-};
-
-// Faixas de graus das diretrizes, aparecendo conforme cada uma é citada.
-export const EscalaGraus: React.FC<{escala: Escala; total: number}> = ({escala, total}) => {
-  const frame = useCurrentFrame();
-  const {fps} = useVideoConfig();
-  const entra = spring({frame, fps, config: {damping: 200}, durationInFrames: 12});
-  const tons = [cores.azulClaro, cores.azul, cores.azulEscuro];
-  return (
-    <AbsoluteFill style={{alignItems: 'center', paddingTop: 170}}>
-      <div
-        style={{
-          width: 940,
-          padding: '26px 30px 30px',
-          borderRadius: 32,
-          background: 'rgba(255,255,255,0.96)',
-          boxShadow: '0 14px 40px rgba(5,20,50,0.3)',
-          fontFamily: fonte,
-          opacity: Math.min(entra, sair(frame, total)),
-          transform: `translateY(${interpolate(entra, [0, 1], [-40, 0])}px)`,
-        }}
-      >
-        <div
-          style={{
-            color: cores.azul,
-            fontWeight: 800,
-            fontSize: 30,
-            letterSpacing: 3,
-            textTransform: 'uppercase',
-            marginBottom: 18,
-          }}
-        >
-          {escala.titulo}
-        </div>
-        {escala.faixas.map((f, i) => {
-          const local = frame - Math.round((f.em - escala.de) * fps);
-          const barra = spring({frame: local, fps, config: {damping: 200}, durationInFrames: 14});
-          const texto = spring({frame: local - 6, fps, config: {damping: 200}, durationInFrames: 10});
-          // Faixa já citada fica mais clara quando a próxima aparece.
-          const proxima = escala.faixas[i + 1];
-          const ativa = !proxima || frame < Math.round((proxima.em - escala.de) * fps);
-          return (
-            <div
-              key={i}
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: 22,
-                marginTop: i ? 14 : 0,
-                opacity: local < 0 ? 0.18 : ativa ? 1 : 0.55,
-              }}
-            >
-              <div
-                style={{
-                  flexShrink: 0,
-                  width: 300,
-                  height: 76,
-                  borderRadius: 18,
-                  background: '#E6EEF9',
-                  overflow: 'hidden',
-                  position: 'relative',
-                }}
-              >
-                <div
-                  style={{
-                    position: 'absolute',
-                    inset: 0,
-                    width: `${barra * 100}%`,
-                    background: tons[i] ?? cores.azul,
-                  }}
-                />
-                <div
-                  style={{
-                    position: 'absolute',
-                    inset: 0,
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    color: barra > 0.5 ? cores.branco : cores.azulEscuro,
-                    fontWeight: 800,
-                    fontSize: 36,
-                  }}
-                >
-                  {f.graus}
-                </div>
-              </div>
-              <div
-                style={{
-                  color: cores.azulEscuro,
-                  fontWeight: 700,
-                  fontSize: 40,
-                  lineHeight: 1.1,
-                  opacity: local < 0 ? 0 : texto,
-                  transform: `translateX(${interpolate(texto, [0, 1], [24, 0])}px)`,
-                }}
-              >
-                {f.texto}
-              </div>
-            </div>
-          );
-        })}
       </div>
     </AbsoluteFill>
   );

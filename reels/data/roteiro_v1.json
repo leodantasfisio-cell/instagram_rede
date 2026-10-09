@@ -3,16 +3,12 @@
   "pausaMax": 0.45,
   "manter": [
     [
-      198,
-      205
-    ],
-    [
       1,
       15
     ],
     [
       16,
-      34
+      41
     ],
     [
       42,
@@ -20,15 +16,15 @@
     ],
     [
       59,
-      77
+      87
     ],
     [
       93,
       98
     ],
     [
-      106,
-      118
+      99,
+      131
     ],
     [
       132,
@@ -44,7 +40,7 @@
     ],
     [
       166,
-      179
+      186
     ],
     [
       187,
@@ -53,6 +49,10 @@
     [
       213,
       223
+    ],
+    [
+      224,
+      240
     ],
     [
       241,
@@ -65,13 +65,7 @@
     "147-150": "primeira vez de 'se recomenda fisioterapia específica' (repetição)",
     "259-265": "'e evite a cirurgia o quanto antes': soa como promessa de resultado (voice.md)",
     "266": "'pronto' no final",
-    "88-92": "primeira vez de 'não esqueça esse raio-X' (repetição)",
-    "35-41": "'e em qual momento essa escoliose está' (encurtar)",
-    "78-87": "'um dos principais indicadores...' (encurtar)",
-    "99-105": "'E aqui eu chamo a atenção para' (encurtar)",
-    "119-131": "'as quais todos os especialistas... referência' (encurtar)",
-    "180-186": "'ou seja, acrescenta o colete no tratamento' (repete a ideia)",
-    "224-240": "'Nosso objetivo é que você saia daqui...' (encurtar)"
+    "88-92": "primeira vez de 'não esqueça esse raio-X' (repetição)"
   },
   "correcoes": {
     "1": "Você",
@@ -84,21 +78,16 @@
     "58": "específicos.",
     "60": "raio-X",
     "61": "",
-    "77": "Cobb.",
+    "77": "Cobb,",
     "94": "não",
     "97": "raio-X.",
     "98": "",
     "114": "ortopédico",
-    "118": "SOSORT.",
+    "118": "SOSORT,",
     "141": "Cobb",
     "146": "graus,",
     "258": "avaliação.",
-    "93": "Então",
-    "34": "história.",
-    "106": "As",
-    "198": "1",
-    "205": "11,",
-    "179": "colete."
+    "93": "Então"
   },
   "palavrasChave": [
     "avaliação",
@@ -120,19 +109,13 @@
     "passos"
   ],
   "gancho": {
-    "texto": "10°, 25° ou 50°?",
-    "subtexto": "o que muda no tratamento da escoliose",
-    "duracao": 3.0
+    "texto": "10, 25 ou 50 graus: o que muda no tratamento da escoliose?",
+    "duracao": 3.2
   },
   "cta": {
     "titulo": "Agende sua avaliação gratuita",
     "subtitulo": "pelo WhatsApp",
-    "duracao": 4.5,
-    "resumo": [
-      "Conversa com a família",
-      "Avaliação com escaneamento 3D",
-      "Raio-X e ângulo de Cobb"
-    ]
+    "duracao": 3.5
   },
   "capa": {
     "titulo": "Como funciona a avaliação",
@@ -145,43 +128,38 @@
       "numero": 1,
       "titulo": "Conversa com o paciente e a família",
       "de": 16,
-      "ate": 34
+      "ate": 41
     },
     {
       "numero": 2,
       "titulo": "Avaliação clínica e postural com escaneamento 3D",
       "de": 42,
-      "ate": 58,
-      "tela": "escaneamento"
+      "ate": 58
     },
     {
       "numero": 3,
       "titulo": "Raio-X para medir o ângulo de Cobb",
       "de": 59,
-      "ate": 98,
-      "tela": "cobb"
+      "ate": 98
     }
   ],
   "escala": {
-    "de": 132,
+    "de": 137,
     "ate": 223,
     "titulo": "Diretrizes da SOSORT",
     "faixas": [
       {
         "graus": "10° a 25°",
-        "numero": "10–25°",
         "texto": "Fisioterapia específica",
         "em": 143
       },
       {
         "graus": "25° a 45-50°",
-        "numero": "25–50°",
         "texto": "Colete + fisioterapia",
         "em": 168
       },
       {
         "graus": "Acima de 50°",
-        "numero": "+50°",
         "texto": "Já se fala em cirurgia",
         "em": 217
       }
@@ -189,68 +167,7 @@
   },
   "enfase": [
     63,
-    256
-  ],
-  "versao": "v2: ~75 s, abertura '1 mais 1 não é 2, é 11', velocidade 1,1x",
-  "velocidade": 1.1,
-  "fonte": "media/fonte.mp4",
-  "transicoes": [
-    1,
-    106,
-    241
-  ],
-  "apoio": [
-    {
-      "arquivo": "media/apoio/conversa.mp4",
-      "palavra": 20,
-      "duracao": 3.0,
-      "area": "cheia"
-    },
-    {
-      "arquivo": "media/apoio/raiox_medicao.mp4",
-      "palavra": 60,
-      "duracao": 2.2,
-      "area": "cheia"
-    },
-    {
-      "arquivo": "media/apoio/raiox_tela.mp4",
-      "palavra": 93,
-      "duracao": 2.6,
-      "area": "cheia"
-    },
-    {
-      "arquivo": "media/apoio/colete_ajuste.mp4",
-      "palavra": 174,
-      "duracao": 2.0,
-      "area": "baixo"
-    },
-    {
-      "arquivo": "media/apoio/impressao3d.mp4",
-      "palavra": 187,
-      "duracao": 2.6,
-      "area": "baixo"
-    }
-  ],
-  "telas": [
-    {
-      "tipo": "escaneamento",
-      "de": 42,
-      "ate": 58,
-      "titulo": "Avaliação clínica e postural",
-      "numero": 2
-    },
-    {
-      "tipo": "cobb",
-      "de": 66,
-      "ate": 77,
-      "titulo": "Ângulo de Cobb",
-      "numero": 3
-    },
-    {
-      "tipo": "escala",
-      "de": 132,
-      "ate": 223,
-      "titulo": "Diretrizes da SOSORT"
-    }
+    93,
+    191
   ]
 }
