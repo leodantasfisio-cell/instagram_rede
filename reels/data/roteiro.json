@@ -122,5 +122,52 @@
     "subtitulo": "Escoliose · passo a passo",
     "frame": 4
   },
-  "musica": null
+  "musica": null,
+  "etapas": [
+    {
+      "numero": 1,
+      "titulo": "Conversa com o paciente e a família",
+      "de": 16,
+      "ate": 41
+    },
+    {
+      "numero": 2,
+      "titulo": "Avaliação clínica e postural com escaneamento 3D",
+      "de": 42,
+      "ate": 58
+    },
+    {
+      "numero": 3,
+      "titulo": "Raio-X para medir o ângulo de Cobb",
+      "de": 59,
+      "ate": 98
+    }
+  ],
+  "escala": {
+    "de": 137,
+    "ate": 223,
+    "titulo": "Diretrizes da SOSORT",
+    "faixas": [
+      {
+        "graus": "10° a 25°",
+        "texto": "Fisioterapia específica",
+        "em": 143
+      },
+      {
+        "graus": "25° a 45-50°",
+        "texto": "Colete + fisioterapia",
+        "em": 168
+      },
+      {
+        "graus": "Acima de 50°",
+        "texto": "Já se fala em cirurgia",
+        "em": 217
+      }
+    ]
+  },
+  "enfase": [
+    63,
+    93,
+    191
+  ]
 }

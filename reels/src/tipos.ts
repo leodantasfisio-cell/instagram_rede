@@ -24,4 +24,17 @@ export type Edicao = {
   cta: {titulo: string; subtitulo: string; duracao: number};
   capa: {titulo: string; subtitulo?: string; frame: number};
   musica: {arquivo: string; volume: number} | null;
+  // Tempos do Reel, calculados por scripts/montar_edicao.py.
+  etapas: Etapa[];
+  escala: Escala | null;
+  enfase: number[];
+};
+
+export type Etapa = {numero: number; titulo: string; de: number; ate: number};
+
+export type Escala = {
+  titulo: string;
+  de: number;
+  ate: number;
+  faixas: {graus: string; texto: string; em: number}[];
 };

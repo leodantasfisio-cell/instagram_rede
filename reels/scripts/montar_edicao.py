@@ -87,6 +87,36 @@ for i in legendas:
     p["texto"] = texto
     transcricao.append(p)
 
+# Tempo do Reel para um instante do vídeo original (ou o início do próximo corte).
+def no_reel(t):
+    acumulado = 0.0
+    for c in cortes:
+        if t < c["de"]:
+            return round(acumulado, 3)
+        if t <= c["ate"]:
+            return round(acumulado + t - c["de"], 3)
+        acumulado += c["ate"] - c["de"]
+    return round(acumulado, 3)
+
+
+inicio = lambda i: no_reel(palavras[i]["inicio"])
+fim = lambda i: no_reel(palavras[i]["fim"])
+
+etapas = [
+    {"numero": e["numero"], "titulo": e["titulo"], "de": inicio(e["de"]), "ate": fim(e["ate"])}
+    for e in roteiro.get("etapas", [])
+]
+escala = None
+if roteiro.get("escala"):
+    e = roteiro["escala"]
+    escala = {
+        "titulo": e["titulo"],
+        "de": inicio(e["de"]),
+        "ate": fim(e["ate"]) + 1.5,
+        "faixas": [{"graus": f["graus"], "texto": f["texto"], "em": inicio(f["em"])} for f in e["faixas"]],
+    }
+enfase = [inicio(i) for i in roteiro.get("enfase", [])]
+
 edicao = {
     "fps": 30,
     "fonte": "media/fonte.mp4",
@@ -98,6 +128,9 @@ edicao = {
     "cta": roteiro["cta"],
     "capa": roteiro["capa"],
     "musica": roteiro.get("musica"),
+    "etapas": etapas,
+    "escala": escala,
+    "enfase": enfase,
 }
 (dados / "edicao.json").write_text(json.dumps(edicao, ensure_ascii=False, indent=1))
 total = sum(c["ate"] - c["de"] for c in cortes)
