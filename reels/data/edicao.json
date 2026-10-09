@@ -1,0 +1,21 @@
+{
+  "fps": 30,
+  "fonte": "media/fonte.mp4",
+  "cortes": [{"de": 0.5, "ate": 4.0}, {"de": 5.0, "ate": 9.0}],
+  "transcricao": [
+    {"texto": "TESTE", "inicio": 0.6, "fim": 1.0},
+    {"texto": "de", "inicio": 1.0, "fim": 1.2},
+    {"texto": "legenda", "inicio": 1.2, "fim": 1.8},
+    {"texto": "com", "inicio": 1.8, "fim": 2.0},
+    {"texto": "avaliação", "inicio": 2.0, "fim": 2.8},
+    {"texto": "e", "inicio": 5.2, "fim": 5.3},
+    {"texto": "escaneamento", "inicio": 5.3, "fim": 6.1},
+    {"texto": "3D.", "inicio": 6.1, "fim": 6.6}
+  ],
+  "palavrasChave": ["avaliação", "escaneamento", "3D"],
+  "gancho": {"texto": "TEXTO DE TESTE DO GANCHO", "duracao": 2.5},
+  "apoio": [],
+  "cta": {"titulo": "Agende sua avaliação gratuita", "subtitulo": "pelo WhatsApp", "duracao": 3},
+  "capa": {"titulo": "TÍTULO DE TESTE", "subtitulo": "subtítulo", "frame": 1},
+  "musica": null
+}
