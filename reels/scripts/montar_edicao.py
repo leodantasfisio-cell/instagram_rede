@@ -8,7 +8,10 @@ Uso: python3 scripts/montar_edicao.py
 """
 import json
 import re
+import wave
 from pathlib import Path
+
+import numpy as np
 
 raiz = Path(__file__).resolve().parent.parent
 dados = raiz / "data"
@@ -21,6 +24,28 @@ pausa_max = roteiro.get("pausaMax", 0.45)
 valores = [float(v) for v in re.findall(r"[0-9.]+", (dados / "pausas.txt").read_text())]
 silencios = list(zip(valores[0::2], valores[1::2]))
 
+with wave.open(str(dados / "fonte.wav")) as w:
+    taxa = w.getframerate()
+    audio = np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16).astype(np.float32) / 32768
+
+
+def nivel(t, janela=0.03):
+    trecho = audio[max(0, int(t * taxa)) : int((t + janela) * taxa)]
+    return 20 * np.log10(np.sqrt((trecho**2).mean()) + 1e-9) if len(trecho) else -99
+
+
+def recuar_ate_silencio(t, limite=0.3, silencio=-40, minimo=0.08):
+    # Os tempos do Whisper às vezes começam depois da fala: recua até achar
+    # um silêncio de pelo menos `minimo` segundos (ignora oclusivas, como o "c").
+    recuo = 0.0
+    while recuo < limite:
+        janela = [nivel(t - recuo - k * 0.01) for k in range(int(minimo / 0.01))]
+        if max(janela) <= silencio:
+            break
+        recuo += 0.01
+    return t - recuo
+
+
 cortes = []
 legendas = []
 for de_i, ate_i in roteiro["manter"]:
@@ -31,6 +56,7 @@ for de_i, ate_i in roteiro["manter"]:
         ini = max(ini, palavras[de_i - 1]["fim"] + 0.02)
     if ate_i + 1 < len(palavras):
         fim = min(fim, palavras[ate_i + 1]["inicio"] - 0.02)
+    ini = recuar_ate_silencio(ini)
     # Tira as pausas longas de dentro do trecho, deixando um respiro curto.
     trechos = [[ini, fim]]
     for s_ini, s_fim in silencios:
@@ -40,7 +66,14 @@ for de_i, ate_i in roteiro["manter"]:
         if ultimo[0] < s_ini and s_fim < ultimo[1]:
             trechos[-1] = [ultimo[0], s_ini + 0.12]
             trechos.append([s_fim - 0.10, ultimo[1]])
-    cortes += [{"de": round(a, 3), "ate": round(b, 3)} for a, b in trechos if b - a > 0.15]
+    for a, b in trechos:
+        if b - a <= 0.15:
+            continue
+        # Trechos que se encostam viram um só, sem repetir áudio.
+        if cortes and a <= cortes[-1]["ate"] + 0.05:
+            cortes[-1]["ate"] = round(max(b, cortes[-1]["ate"]), 3)
+        else:
+            cortes.append({"de": round(a, 3), "ate": round(b, 3)})
     legendas += [i for i in range(de_i, ate_i + 1)]
 
 correcoes = {int(k): v for k, v in roteiro.get("correcoes", {}).items()}
