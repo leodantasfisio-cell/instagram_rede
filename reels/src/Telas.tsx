@@ -85,12 +85,13 @@ export const Cta: React.FC<{titulo: string; subtitulo: string; resumo?: string[]
         opacity: fundo,
         background: `radial-gradient(circle at 50% 30%, ${cores.azul} 0%, ${cores.azulEscuro} 90%)`,
         alignItems: 'center',
-        paddingTop: 300,
+        // Sem resumo, o bloco fica centralizado.
+        ...(resumo.length ? {paddingTop: 300} : {justifyContent: 'center', paddingBottom: 200}),
         fontFamily: fonte,
         color: cores.branco,
       }}
     >
-      <div style={{display: 'flex', flexDirection: 'column', gap: 22, width: 820}}>
+      <div style={{display: resumo.length ? 'flex' : 'none', flexDirection: 'column', gap: 22, width: 820}}>
         {resumo.map((r, i) => {
           const e = spring({frame: frame - 4 - i * 6, fps, config: {damping: 200}, durationInFrames: 10});
           return (
@@ -130,7 +131,7 @@ export const Cta: React.FC<{titulo: string; subtitulo: string; resumo?: string[]
       </div>
       <div
         style={{
-          marginTop: 90,
+          marginTop: resumo.length ? 90 : 0,
           fontWeight: 800,
           fontSize: 78,
           lineHeight: 1.1,

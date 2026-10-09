@@ -165,17 +165,21 @@ export const Reel: React.FC<{edicao: Edicao}> = ({edicao}) => {
         </Sequence>
       ))}
 
-      <Sequence durationInFrames={fimFala}>
-        <Legendas palavras={edicao.legendas} palavrasChave={edicao.palavrasChave} telas={edicao.telas} />
-      </Sequence>
+      {edicao.mostrarLegendas !== false ? (
+        <Sequence durationInFrames={fimFala}>
+            <Legendas palavras={edicao.legendas} palavrasChave={edicao.palavrasChave} telas={edicao.telas} />
+        </Sequence>
+      ) : null}
 
       <Sequence durationInFrames={fimFala}>
         <BarraProgresso total={fimFala} />
       </Sequence>
 
-      <Sequence durationInFrames={f(edicao.gancho.duracao)}>
-        <Gancho texto={edicao.gancho.texto} subtexto={edicao.gancho.subtexto} duracao={edicao.gancho.duracao} />
-      </Sequence>
+      {edicao.gancho ? (
+        <Sequence durationInFrames={f(edicao.gancho.duracao)}>
+          <Gancho texto={edicao.gancho.texto} subtexto={edicao.gancho.subtexto} duracao={edicao.gancho.duracao} />
+        </Sequence>
+      ) : null}
 
       {edicao.transicoes.map((em, i) => (
         <Sequence key={i} from={f(em)} durationInFrames={8}>
@@ -201,7 +205,7 @@ export const Reel: React.FC<{edicao: Edicao}> = ({edicao}) => {
           {(edicao.escala?.faixas ?? []).map((fx, i) => (
             <Som key={`f${i}`} arquivo="sfx/pop.wav" em={fx.em} volume={0.6} />
           ))}
-          <Som arquivo="sfx/brilho.wav" em={0.05} volume={0.5} />
+          {edicao.gancho ? <Som arquivo="sfx/brilho.wav" em={0.05} volume={0.5} /> : null}
           <Som arquivo="sfx/brilho.wav" em={fimFala / fps + 0.5} volume={0.5} />
         </>
       ) : null}

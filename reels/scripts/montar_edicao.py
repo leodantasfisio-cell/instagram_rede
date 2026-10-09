@@ -161,6 +161,7 @@ edicao = {
     "enfase": [inicio(i) for i in roteiro.get("enfase", [])],
     "transicoes": [inicios_intervalo[i] for i in roteiro.get("transicoes", [])],
     "efeitos": True,
+    "mostrarLegendas": roteiro.get("legendas", True),
 }
 (dados / "edicao.json").write_text(json.dumps(edicao, ensure_ascii=False, indent=1))
 print(f"{len(cortes)} cortes, fala {duracao_fala:.1f} s + chamada {edicao['cta']['duracao']} s (velocidade {velocidade}x)")

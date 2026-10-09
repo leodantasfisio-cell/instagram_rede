@@ -119,20 +119,11 @@
     "próximos",
     "passos"
   ],
-  "gancho": {
-    "texto": "10°, 25° ou 50°?",
-    "subtexto": "o que muda no tratamento da escoliose",
-    "duracao": 3.0
-  },
+  "gancho": null,
   "cta": {
     "titulo": "Agende sua avaliação gratuita",
     "subtitulo": "pelo WhatsApp",
-    "duracao": 4.5,
-    "resumo": [
-      "Conversa com a família",
-      "Avaliação com escaneamento 3D",
-      "Raio-X e ângulo de Cobb"
-    ]
+    "duracao": 4.5
   },
   "capa": {
     "titulo": "Como funciona a avaliação",
@@ -223,12 +214,6 @@
       "palavra": 174,
       "duracao": 2.0,
       "area": "baixo"
-    },
-    {
-      "arquivo": "media/apoio/impressao3d.mp4",
-      "palavra": 187,
-      "duracao": 2.6,
-      "area": "baixo"
     }
   ],
   "telas": [
@@ -252,5 +237,6 @@
       "ate": 223,
       "titulo": "Diretrizes da SOSORT"
     }
-  ]
+  ],
+  "legendas": false
 }

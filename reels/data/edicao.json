@@ -1032,11 +1032,7 @@
   "próximos",
   "passos"
  ],
- "gancho": {
-  "texto": "10°, 25° ou 50°?",
-  "subtexto": "o que muda no tratamento da escoliose",
-  "duracao": 3.0
- },
+ "gancho": null,
  "apoio": [
   {
    "arquivo": "media/apoio/conversa.mp4",
@@ -1060,12 +1056,6 @@
    "arquivo": "media/apoio/colete_ajuste.mp4",
    "em": 56.923,
    "duracao": 2.0,
-   "area": "baixo"
-  },
-  {
-   "arquivo": "media/apoio/impressao3d.mp4",
-   "em": 58.859,
-   "duracao": 2.6,
    "area": "baixo"
   }
  ],
@@ -1095,12 +1085,7 @@
  "cta": {
   "titulo": "Agende sua avaliação gratuita",
   "subtitulo": "pelo WhatsApp",
-  "duracao": 4.5,
-  "resumo": [
-   "Conversa com a família",
-   "Avaliação com escaneamento 3D",
-   "Raio-X e ângulo de Cobb"
-  ]
+  "duracao": 4.5
  },
  "capa": {
   "titulo": "Como funciona a avaliação",
@@ -1165,5 +1150,6 @@
   36.586,
   71.45
  ],
- "efeitos": true
+ "efeitos": true,
+ "mostrarLegendas": false
 }

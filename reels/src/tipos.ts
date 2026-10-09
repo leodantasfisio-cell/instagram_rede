@@ -38,7 +38,7 @@ export type Edicao = {
   cortes: Corte[];
   legendas: Palavra[];
   palavrasChave: string[];
-  gancho: {texto: string; subtexto?: string; duracao: number};
+  gancho: {texto: string; subtexto?: string; duracao: number} | null;
   apoio: Apoio[];
   cta: {titulo: string; subtitulo: string; duracao: number; resumo?: string[]};
   capa: {titulo: string; subtitulo?: string; frame: number};
@@ -49,4 +49,5 @@ export type Edicao = {
   enfase: number[];
   transicoes: number[];
   efeitos: boolean;
+  mostrarLegendas?: boolean;
 };
