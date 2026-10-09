@@ -34,7 +34,7 @@ Tom, público e o que nunca dizer: `instagram/voice.md`.
 
 ### Abertura e ritmo
 
-- **Sem título/texto de gancho na abertura.** O gancho é a própria fala: abrir
+- Na v3 saiu o título de gancho na tela: preferiram que o gancho fosse a fala. Abrir
   com 2–3 s da frase mais curiosa do vídeo (ex.: "1 mais 1 não é 2, é 11") e
   depois voltar ao início normal.
 - Reels de **~75–85 s**: cortar repetições, frases de transição e explicações
@@ -44,17 +44,18 @@ Tom, público e o que nunca dizer: `instagram/voice.md`.
 
 ### Visual
 
-- **Fundo original, sem desfoque** (a equipe não vê problema no mural de fotos).
+- Fundo original: o desfoque foi testado e descartado (a equipe não vê problema
+  no mural de fotos).
 - Identidade azul e branca, fonte Montserrat.
-- Aprovado e mantido: cartões numerados das etapas (1, 2, 3), **tela dividida**
+- Agradaram: cartões numerados das etapas (1, 2, 3), **tela dividida**
   quando há explicação visual (gráfico em cima, fala embaixo), coluna 3D girando
   no escaneamento, ilustração do ângulo de Cobb, escala das diretrizes com
   números em 3D, aproximação lenta da câmera e close nos momentos de ênfase,
   barra de progresso azul no topo.
 - Ilustrações próprias levam a marca "Ilustração"; nunca alterar radiografias
   ou medidas reais.
-- **Legendas: desligadas** (escolha mais recente, vídeo da avaliação, v3).
-  Quando usadas, eram karaokê com palavras-chave em faixa azul.
+- Legendas: desligadas na v3 do vídeo da avaliação. Antes eram karaokê com
+  palavras-chave em faixa azul. Vale perguntar a cada vídeo.
 
 ### Imagens de apoio
 
@@ -64,13 +65,14 @@ Tom, público e o que nunca dizer: `instagram/voice.md`.
 - Preferidos: escaneamento com tablet (`20260415_115948.mp4`), modelagem 3D do
   colete no software (`20260622_091611.mp4`), explicação do raio-X ao paciente,
   medição na radiografia, colocação e ajuste do colete.
-- **Não usar a impressora 3D (Bambu Lab)** como imagem de apoio (removida na v3).
+- A impressora 3D (Bambu Lab) foi tirada da v3: não convenceu como apoio para a
+  fala sobre colete. Pode caber num vídeo sobre fabricação.
 - Pacientes só de costas ou de lado, sem rosto, nome ou dado legível; confirmar
   autorização de imagem.
 
 ### Final
 
-- Tela final **sem resumo das etapas**: só "Agende sua avaliação gratuita",
+- Tela final: o resumo das etapas saiu na v3; ficou só "Agende sua avaliação gratuita",
   botão "pelo WhatsApp" e @rede_escoliose_rn.
 - Remover frases que soem como promessa (ex.: "evite a cirurgia"), mesmo que
   ditas no vídeo.
