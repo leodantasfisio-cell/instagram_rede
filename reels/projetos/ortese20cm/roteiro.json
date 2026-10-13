@@ -298,7 +298,7 @@
     "muletas2": "IMG_9868",
     "explicacao_original": "IMG_9857"
   },
-  "legendas": true,
+  "legendas": false,
   "correcoes": {
     "hortase,": "órtese,",
     "20": "20",

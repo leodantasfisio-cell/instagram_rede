@@ -119,6 +119,9 @@ Também publica órteses: chamar sempre de **órtese** quando for o caso.
   paciente andando, impacto no "20 cm"); imagem congelada com setas apontando
   encaixe, prolongamento e base (sem legenda nesse trecho); Reel encurtado para
   ~41 s de conteúdo. Ficaram de fora por ora: música e final em loop.
+- v4: **tiraram a legenda** (tinham pedido na v2). Ficaram só as pílulas curtas
+  e as setas. Nas duas marcas, a última escolha tem sido sem legenda contínua:
+  vale perguntar a cada vídeo em vez de assumir.
 - Conversas paralelas de fundo que soem negativas ou confusas ("não mudou muito")
   ficam sem som, mesmo com o áudio original.
 
