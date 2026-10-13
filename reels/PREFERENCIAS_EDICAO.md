@@ -1,4 +1,9 @@
-# Preferências de edição — Rede Escoliose RN
+# Preferências de edição
+
+Duas marcas: Rede Escoliose RN (seções abaixo) e Centro de Amputados (seção
+"Centro de Amputados" no fim). O feeling de uma não vale automaticamente para a outra.
+
+## Rede Escoliose RN
 
 **Isto não é um manual de regras.** É um registro do que a equipe escolheu em
 cada edição, para entender o *feeling* do perfil: o que costuma agradar, o que
@@ -88,6 +93,24 @@ Reels aprovados, com linha do tempo e estilo detalhados (cópia em Google Doc no
 Drive, pasta `MÍDIAS REDE ESCOLIOSE / REELS EDITADOS`):
 
 - `referencias/2026-10-09_avaliacao_v3.md`: "Como funciona a avaliação" (v3).
+
+## Centro de Amputados (@centroamputadosrn)
+
+Briefing: `instagram/centroamputados_briefing.md` (verde #00843D, grafite, Montserrat).
+Também publica órteses: chamar sempre de **órtese** quando for o caso.
+
+- **Reel da órtese para 20 cm de diferença** (out/2026, clipes de `MIDIAS ORTESES
+  GERAIS / Orteses out`, projeto `projetos/ortese20cm`): pediram Reel "super
+  dinâmico" para engajamento. v1 tinha tela dividida com ilustração das pernas e
+  sem legendas → v2: **tiraram a tela dividida**, pediram **legendas** e **áudio
+  melhor**. Indica que aqui preferem a fala e as imagens reais em tela cheia, com
+  legenda (o briefing também pede legendas legíveis).
+- Funcionou na v1 e ficou: gancho com o número forte da fala ("20 cm") girando em
+  3D, cortes rápidos com zoom de entrada, fabricação acelerada, pílulas de texto
+  curtas sincronizadas com a palavra dita, transições alternando clarão e zoom
+  com desfoque, tela final verde com pergunta para compartilhamento.
+- Áudio: clipes de oficina/clínica são ruidosos; usar `scripts/limpar_audio.py`
+  (noisereduce + EQ de voz + gate + compressão) e masterizar o Reel em -14 LUFS.
 
 ## Notas técnicas
 

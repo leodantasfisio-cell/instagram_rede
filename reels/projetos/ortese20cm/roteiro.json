@@ -6,36 +6,265 @@
   "velocidadeFala": 1.1,
   "_tipos": "fala = profissional falando, com o próprio áudio; voz = áudio da explicação sobre imagens; ambiente = som real da cena",
   "blocos": [
-    {"id": "gancho", "voz": {"arquivo": "explicacao", "de": 12.2, "ate": 14.95},
-     "imagens": [{"arquivo": "menino", "de": 8.0}],
-     "destaque": {"valor": "20 cm", "sub": "de diferença entre as pernas"}},
-    {"id": "problema", "fala": {"arquivo": "explicacao", "de": 57.0, "ate": 61.65}, "painel": "pernas"},
-    {"id": "calcado", "fala": {"arquivo": "explicacao", "de": 15.55, "ate": 19.98},
-     "pilulas": ["20 cm no calçado?"]},
-    {"id": "inviavel", "fala": {"arquivo": "explicacao", "de": 21.55, "ate": 24.95},
-     "pilulas": ["Peso", "Instabilidade"]},
-    {"id": "fabricacao", "voz": {"arquivo": "explicacao", "de": 30.6, "ate": 35.95},
-     "imagens": [{"arquivo": "serra", "de": 1.0}, {"arquivo": "furadeira", "de": 0.5},
-                 {"arquivo": "lixadeira", "de": 6.0}, {"arquivo": "soprador", "de": 2.0}],
-     "velocidadeImagens": 1.6, "pilulas": ["Encaixe tipo AFO"]},
-    {"id": "prolongamento", "fala": {"arquivo": "explicacao", "de": 38.4, "ate": 42.0},
-     "pilulas": ["Prolongamento", "Base de apoio"]},
-    {"id": "estabilidade", "voz": {"arquivo": "explicacao", "de": 44.0, "ate": 46.35},
-     "imagens": [{"arquivo": "base", "de": 0.0}], "pilulas": ["Mais estabilidade"]},
-    {"id": "objetivo", "voz": {"arquivo": "explicacao", "de": 46.55, "ate": 53.8},
-     "imagens": [{"arquivo": "colocando", "de": 2.0}, {"arquivo": "ajuste", "de": 3.0}, {"arquivo": "barras", "de": 10.0}],
-     "pilulas": ["Quadril nivelado"]},
-    {"id": "voces_vao_ver", "voz": {"arquivo": "explicacao", "de": 61.8, "ate": 62.4},
-     "imagens": [{"arquivo": "passos", "de": 8.4}]},
-    {"id": "passos", "ambiente": {"arquivo": "passos", "de": 9.0, "ate": 12.4}},
-    {"id": "muletas", "ambiente": {"arquivo": "muletas2", "de": 13.0, "ate": 16.4, "volume": 0.5}},
-    {"id": "menino", "ambiente": {"arquivo": "menino", "de": 0.0, "ate": 6.9}},
-    {"id": "muito_bem", "ambiente": {"arquivo": "muletas", "de": 41.3, "ate": 43.9}}
+    {
+      "id": "gancho",
+      "voz": {
+        "arquivo": "explicacao",
+        "de": 12.2,
+        "ate": 15.25
+      },
+      "imagens": [
+        {
+          "arquivo": "menino",
+          "de": 8.0
+        }
+      ],
+      "destaque": {
+        "valor": "20 cm",
+        "sub": "de diferença entre as pernas"
+      }
+    },
+    {
+      "id": "problema",
+      "fala": {
+        "arquivo": "explicacao",
+        "de": 57.0,
+        "ate": 61.82
+      },
+      "pilulas": [
+        {
+          "texto": "Perna longa",
+          "em": 59.6
+        },
+        {
+          "texto": "Perna curta",
+          "em": 61.0
+        }
+      ]
+    },
+    {
+      "id": "calcado",
+      "fala": {
+        "arquivo": "explicacao",
+        "de": 15.55,
+        "ate": 20.35
+      },
+      "pilulas": [
+        {
+          "texto": "20 cm no calçado?",
+          "em": 19.7
+        }
+      ]
+    },
+    {
+      "id": "inviavel",
+      "fala": {
+        "arquivo": "explicacao",
+        "de": 21.55,
+        "ate": 24.95
+      },
+      "pilulas": [
+        {
+          "texto": "Peso",
+          "em": 23.0
+        },
+        {
+          "texto": "Instabilidade",
+          "em": 24.0
+        }
+      ]
+    },
+    {
+      "id": "fabricacao",
+      "voz": {
+        "arquivo": "explicacao",
+        "de": 30.6,
+        "ate": 35.95
+      },
+      "imagens": [
+        {
+          "arquivo": "serra",
+          "de": 1.0
+        },
+        {
+          "arquivo": "furadeira",
+          "de": 0.5
+        },
+        {
+          "arquivo": "lixadeira",
+          "de": 6.0
+        },
+        {
+          "arquivo": "soprador",
+          "de": 2.0
+        }
+      ],
+      "velocidadeImagens": 1.6,
+      "pilulas": [
+        {
+          "texto": "Encaixe tipo AFO",
+          "em": 34.4
+        }
+      ]
+    },
+    {
+      "id": "prolongamento",
+      "fala": {
+        "arquivo": "explicacao",
+        "de": 38.4,
+        "ate": 42.0
+      },
+      "pilulas": [
+        {
+          "texto": "Prolongamento",
+          "em": 39.7
+        },
+        {
+          "texto": "Base de apoio",
+          "em": 40.9
+        }
+      ]
+    },
+    {
+      "id": "estabilidade",
+      "voz": {
+        "arquivo": "explicacao",
+        "de": 44.0,
+        "ate": 46.35
+      },
+      "imagens": [
+        {
+          "arquivo": "base",
+          "de": 0.0
+        }
+      ],
+      "pilulas": [
+        {
+          "texto": "Mais estabilidade",
+          "em": 45.5
+        }
+      ]
+    },
+    {
+      "id": "objetivo",
+      "voz": {
+        "arquivo": "explicacao",
+        "de": 46.55,
+        "ate": 54.0
+      },
+      "imagens": [
+        {
+          "arquivo": "colocando",
+          "de": 2.0
+        },
+        {
+          "arquivo": "ajuste",
+          "de": 3.0
+        },
+        {
+          "arquivo": "barras",
+          "de": 10.0
+        }
+      ],
+      "pilulas": [
+        {
+          "texto": "Quadril nivelado",
+          "em": 52.1
+        }
+      ]
+    },
+    {
+      "id": "voces_vao_ver",
+      "voz": {
+        "arquivo": "explicacao",
+        "de": 61.8,
+        "ate": 62.4
+      },
+      "imagens": [
+        {
+          "arquivo": "passos",
+          "de": 8.4
+        }
+      ]
+    },
+    {
+      "id": "passos",
+      "ambiente": {
+        "arquivo": "passos",
+        "de": 9.0,
+        "ate": 12.4
+      },
+      "legenda": false
+    },
+    {
+      "id": "muletas",
+      "ambiente": {
+        "arquivo": "muletas2",
+        "de": 13.0,
+        "ate": 16.4,
+        "volume": 0.5
+      },
+      "legenda": false
+    },
+    {
+      "id": "menino",
+      "ambiente": {
+        "arquivo": "menino",
+        "de": 0.0,
+        "ate": 7.3
+      }
+    },
+    {
+      "id": "muito_bem",
+      "ambiente": {
+        "arquivo": "muletas",
+        "de": 41.3,
+        "ate": 43.9
+      }
+    }
   ],
   "cta": {
     "titulo": "Conhece alguém que precisa ver isso?",
     "botao": "Envie para essa pessoa",
     "rodape": "Dúvidas sobre órteses? Fale com a gente",
     "duracao": 4.0
-  }
+  },
+  "clipes": {
+    "explicacao": "IMG_9857",
+    "menino": "IMG_9873",
+    "serra": "IMG_9858",
+    "furadeira": "IMG_9859",
+    "lixadeira": "IMG_9861",
+    "soprador": "IMG_9860",
+    "base": "IMG_9855",
+    "colocando": "IMG_9862",
+    "ajuste": "IMG_9849",
+    "barras": "IMG_9864",
+    "passos": "IMG_9863",
+    "sorriso": "IMG_9872",
+    "muletas": "IMG_9866",
+    "muletas2": "IMG_9868"
+  },
+  "legendas": true,
+  "correcoes": {
+    "hortase,": "órtese,",
+    "20": "20",
+    "AFO,": "AFO,"
+  },
+  "palavrasChave": [
+    "20",
+    "centímetros",
+    "calçado,",
+    "peso",
+    "instabilidade,",
+    "órtese,",
+    "AFO,",
+    "prolongamento",
+    "apoio",
+    "estabilidade.",
+    "quadril",
+    "caminhada,",
+    "menino,",
+    "bem!"
+  ]
 }

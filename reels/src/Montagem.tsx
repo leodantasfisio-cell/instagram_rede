@@ -10,7 +10,9 @@ import {
   useCurrentFrame,
   useVideoConfig,
 } from 'remotion';
+import {Legendas} from './Legendas';
 import {aplicarMarca, cores, fonte, marcaAtiva, marcas} from './marca';
+import type {Palavra} from './tipos';
 
 // Reel montado a partir de vários clipes (ver scripts/montar_montagem.py).
 export type TrechoVideo = {arquivo: string; de: number; velocidade: number; em: number; duracao: number; volume: number};
@@ -28,6 +30,8 @@ export type EdicaoMontagem = {
   blocos: Bloco[];
   cta: {titulo: string; botao: string; rodape: string; duracao: number};
   duracaoFala: number;
+  legendas?: Palavra[];
+  palavrasChave?: string[];
 };
 
 const DESCIDA = 470;
@@ -346,6 +350,12 @@ export const Montagem: React.FC<{edicao: EdicaoMontagem}> = ({edicao}) => {
           )}
         </Sequence>
       ))}
+
+      {edicao.legendas?.length ? (
+        <Sequence durationInFrames={fimFala}>
+          <Legendas palavras={edicao.legendas} palavrasChave={edicao.palavrasChave ?? []} telas={[]} />
+        </Sequence>
+      ) : null}
 
       <Sequence durationInFrames={fimFala}>
         <Progresso total={fimFala} />
