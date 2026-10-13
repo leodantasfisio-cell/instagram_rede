@@ -1,5 +1,7 @@
 import {AbsoluteFill, Composition, OffthreadVideo, Still, staticFile} from 'remotion';
 import edicaoJson from '../data/edicao.json';
+import ortese20cmJson from '../projetos/ortese20cm/edicao.json';
+import {Montagem, type EdicaoMontagem} from './Montagem';
 import './marca';
 import {Reel} from './Reel';
 import {CapaTexto} from './Telas';
@@ -38,6 +40,15 @@ export const Root: React.FC = () => (
       fps={edicao.fps}
       durationInFrames={Math.round(duracaoTotal(edicao) * edicao.fps)}
       defaultProps={{edicao}}
+    />
+    <Composition
+      id="Ortese20cm"
+      component={Montagem}
+      width={1080}
+      height={1920}
+      fps={30}
+      durationInFrames={Math.round(((ortese20cmJson as EdicaoMontagem).duracaoFala + (ortese20cmJson as EdicaoMontagem).cta.duracao) * 30)}
+      defaultProps={{edicao: ortese20cmJson as EdicaoMontagem}}
     />
     <Still id="Capa" component={Capa} width={1080} height={1920} defaultProps={{edicao}} />
   </>

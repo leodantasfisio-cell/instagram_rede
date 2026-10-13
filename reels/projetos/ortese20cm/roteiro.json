@@ -1,0 +1,41 @@
+{
+  "titulo": "Órtese para 20 cm de diferença entre as pernas",
+  "marca": "centroAmputados",
+  "conta": "@centroamputadosrn",
+  "pasta": "media/ortese20cm",
+  "velocidadeFala": 1.1,
+  "_tipos": "fala = profissional falando, com o próprio áudio; voz = áudio da explicação sobre imagens; ambiente = som real da cena",
+  "blocos": [
+    {"id": "gancho", "voz": {"arquivo": "explicacao", "de": 12.2, "ate": 14.95},
+     "imagens": [{"arquivo": "menino", "de": 8.0}],
+     "destaque": {"valor": "20 cm", "sub": "de diferença entre as pernas"}},
+    {"id": "problema", "fala": {"arquivo": "explicacao", "de": 57.0, "ate": 61.65}, "painel": "pernas"},
+    {"id": "calcado", "fala": {"arquivo": "explicacao", "de": 15.55, "ate": 19.98},
+     "pilulas": ["20 cm no calçado?"]},
+    {"id": "inviavel", "fala": {"arquivo": "explicacao", "de": 21.55, "ate": 24.95},
+     "pilulas": ["Peso", "Instabilidade"]},
+    {"id": "fabricacao", "voz": {"arquivo": "explicacao", "de": 30.6, "ate": 35.95},
+     "imagens": [{"arquivo": "serra", "de": 1.0}, {"arquivo": "furadeira", "de": 0.5},
+                 {"arquivo": "lixadeira", "de": 6.0}, {"arquivo": "soprador", "de": 2.0}],
+     "velocidadeImagens": 1.6, "pilulas": ["Encaixe tipo AFO"]},
+    {"id": "prolongamento", "fala": {"arquivo": "explicacao", "de": 38.4, "ate": 42.0},
+     "pilulas": ["Prolongamento", "Base de apoio"]},
+    {"id": "estabilidade", "voz": {"arquivo": "explicacao", "de": 44.0, "ate": 46.35},
+     "imagens": [{"arquivo": "base", "de": 0.0}], "pilulas": ["Mais estabilidade"]},
+    {"id": "objetivo", "voz": {"arquivo": "explicacao", "de": 46.55, "ate": 53.8},
+     "imagens": [{"arquivo": "colocando", "de": 2.0}, {"arquivo": "ajuste", "de": 3.0}, {"arquivo": "barras", "de": 10.0}],
+     "pilulas": ["Quadril nivelado"]},
+    {"id": "voces_vao_ver", "voz": {"arquivo": "explicacao", "de": 61.8, "ate": 62.4},
+     "imagens": [{"arquivo": "passos", "de": 8.4}]},
+    {"id": "passos", "ambiente": {"arquivo": "passos", "de": 9.0, "ate": 12.4}},
+    {"id": "muletas", "ambiente": {"arquivo": "muletas2", "de": 13.0, "ate": 16.4, "volume": 0.5}},
+    {"id": "menino", "ambiente": {"arquivo": "menino", "de": 0.0, "ate": 6.9}},
+    {"id": "muito_bem", "ambiente": {"arquivo": "muletas", "de": 41.3, "ate": 43.9}}
+  ],
+  "cta": {
+    "titulo": "Conhece alguém que precisa ver isso?",
+    "botao": "Envie para essa pessoa",
+    "rodape": "Dúvidas sobre órteses? Fale com a gente",
+    "duracao": 4.0
+  }
+}

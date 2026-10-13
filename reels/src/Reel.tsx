@@ -11,6 +11,7 @@ import {
 } from 'remotion';
 import {BarraProgresso, CartaoEtapa} from './Graficos';
 import {Legendas} from './Legendas';
+import {aplicarMarca} from './marca';
 import {PainelSuperior} from './Paineis';
 import {Cta, Gancho} from './Telas';
 import {divisao, duracaoFala, montarTrechos, type Trecho as TrechoTempo} from './tempo';
@@ -131,6 +132,7 @@ const Som: React.FC<{arquivo: string; em: number; volume?: number}> = ({arquivo,
 };
 
 export const Reel: React.FC<{edicao: Edicao}> = ({edicao}) => {
+  aplicarMarca('redeEscoliose');
   const {fps} = useVideoConfig();
   const trechos = montarTrechos(edicao.cortes, edicao.velocidade);
   const fimFala = Math.round(duracaoFala(edicao) * fps);

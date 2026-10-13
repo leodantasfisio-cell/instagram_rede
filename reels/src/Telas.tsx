@@ -1,5 +1,5 @@
 import {AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
-import {cores, fonte} from './marca';
+import {cores, fonte, marcaAtiva} from './marca';
 
 const Selo: React.FC = () => (
   <div
@@ -12,7 +12,7 @@ const Selo: React.FC = () => (
       opacity: 0.9,
     }}
   >
-    @rede_escoliose_rn
+    {marcaAtiva.handle}
   </div>
 );
 

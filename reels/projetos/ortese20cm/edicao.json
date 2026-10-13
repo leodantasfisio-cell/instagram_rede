@@ -1,0 +1,339 @@
+{
+ "fps": 30,
+ "marca": "centroAmputados",
+ "video": [
+  {
+   "arquivo": "media/ortese20cm/menino.mp4",
+   "de": 8.0,
+   "velocidade": 1.0,
+   "em": 0.0,
+   "duracao": 2.5,
+   "volume": 0
+  },
+  {
+   "arquivo": "media/ortese20cm/explicacao.mp4",
+   "de": 57.0,
+   "velocidade": 1.1,
+   "em": 2.5,
+   "duracao": 4.227272727272726,
+   "volume": 1
+  },
+  {
+   "arquivo": "media/ortese20cm/explicacao.mp4",
+   "de": 15.55,
+   "velocidade": 1.1,
+   "em": 6.727272727272726,
+   "duracao": 4.0272727272727264,
+   "volume": 1
+  },
+  {
+   "arquivo": "media/ortese20cm/explicacao.mp4",
+   "de": 21.55,
+   "velocidade": 1.1,
+   "em": 10.754545454545452,
+   "duracao": 3.0909090909090895,
+   "volume": 1
+  },
+  {
+   "arquivo": "media/ortese20cm/serra.mp4",
+   "de": 1.0,
+   "velocidade": 1.6,
+   "em": 13.845454545454542,
+   "duracao": 1.215909090909091,
+   "volume": 0
+  },
+  {
+   "arquivo": "media/ortese20cm/furadeira.mp4",
+   "de": 0.5,
+   "velocidade": 1.6,
+   "em": 15.061363636363634,
+   "duracao": 1.215909090909091,
+   "volume": 0
+  },
+  {
+   "arquivo": "media/ortese20cm/lixadeira.mp4",
+   "de": 6.0,
+   "velocidade": 1.6,
+   "em": 16.277272727272724,
+   "duracao": 1.215909090909091,
+   "volume": 0
+  },
+  {
+   "arquivo": "media/ortese20cm/soprador.mp4",
+   "de": 2.0,
+   "velocidade": 1.6,
+   "em": 17.493181818181817,
+   "duracao": 1.215909090909091,
+   "volume": 0
+  },
+  {
+   "arquivo": "media/ortese20cm/explicacao.mp4",
+   "de": 38.4,
+   "velocidade": 1.1,
+   "em": 18.709090909090907,
+   "duracao": 3.272727272727274,
+   "volume": 1
+  },
+  {
+   "arquivo": "media/ortese20cm/base.mp4",
+   "de": 0.0,
+   "velocidade": 1.0,
+   "em": 21.98181818181818,
+   "duracao": 2.1363636363636376,
+   "volume": 0
+  },
+  {
+   "arquivo": "media/ortese20cm/colocando.mp4",
+   "de": 2.0,
+   "velocidade": 1.0,
+   "em": 24.118181818181817,
+   "duracao": 2.196969696969697,
+   "volume": 0
+  },
+  {
+   "arquivo": "media/ortese20cm/ajuste.mp4",
+   "de": 3.0,
+   "velocidade": 1.0,
+   "em": 26.315151515151513,
+   "duracao": 2.196969696969697,
+   "volume": 0
+  },
+  {
+   "arquivo": "media/ortese20cm/barras.mp4",
+   "de": 10.0,
+   "velocidade": 1.0,
+   "em": 28.51212121212121,
+   "duracao": 2.196969696969697,
+   "volume": 0
+  },
+  {
+   "arquivo": "media/ortese20cm/passos.mp4",
+   "de": 8.4,
+   "velocidade": 1.0,
+   "em": 30.709090909090907,
+   "duracao": 0.5454545454545467,
+   "volume": 0
+  },
+  {
+   "arquivo": "media/ortese20cm/passos.mp4",
+   "de": 9.0,
+   "velocidade": 1.0,
+   "em": 31.254545454545454,
+   "duracao": 3.4000000000000004,
+   "volume": 1
+  },
+  {
+   "arquivo": "media/ortese20cm/muletas2.mp4",
+   "de": 13.0,
+   "velocidade": 1.0,
+   "em": 34.654545454545456,
+   "duracao": 3.3999999999999986,
+   "volume": 0.5
+  },
+  {
+   "arquivo": "media/ortese20cm/menino.mp4",
+   "de": 0.0,
+   "velocidade": 1.0,
+   "em": 38.054545454545455,
+   "duracao": 6.9,
+   "volume": 1
+  },
+  {
+   "arquivo": "media/ortese20cm/muletas.mp4",
+   "de": 41.3,
+   "velocidade": 1.0,
+   "em": 44.95454545454545,
+   "duracao": 2.6000000000000014,
+   "volume": 1
+  }
+ ],
+ "audio": [
+  {
+   "arquivo": "media/ortese20cm/explicacao.mp4",
+   "de": 12.2,
+   "velocidade": 1.1,
+   "em": 0.0,
+   "duracao": 2.5
+  },
+  {
+   "arquivo": "media/ortese20cm/explicacao.mp4",
+   "de": 30.6,
+   "velocidade": 1.1,
+   "em": 13.845454545454542,
+   "duracao": 4.863636363636364
+  },
+  {
+   "arquivo": "media/ortese20cm/explicacao.mp4",
+   "de": 44.0,
+   "velocidade": 1.1,
+   "em": 21.98181818181818,
+   "duracao": 2.1363636363636376
+  },
+  {
+   "arquivo": "media/ortese20cm/explicacao.mp4",
+   "de": 46.55,
+   "velocidade": 1.1,
+   "em": 24.118181818181817,
+   "duracao": 6.59090909090909
+  },
+  {
+   "arquivo": "media/ortese20cm/explicacao.mp4",
+   "de": 61.8,
+   "velocidade": 1.1,
+   "em": 30.709090909090907,
+   "duracao": 0.5454545454545467
+  }
+ ],
+ "textos": [
+  {
+   "tipo": "destaque",
+   "em": 0.0,
+   "duracao": 2.5,
+   "valor": "20 cm",
+   "sub": "de diferença entre as pernas"
+  },
+  {
+   "tipo": "pilula",
+   "em": 6.977272727272726,
+   "duracao": 3.7772727272727264,
+   "texto": "20 cm no calçado?",
+   "ordem": 0
+  },
+  {
+   "tipo": "pilula",
+   "em": 11.004545454545452,
+   "duracao": 2.8409090909090895,
+   "texto": "Peso",
+   "ordem": 0
+  },
+  {
+   "tipo": "pilula",
+   "em": 11.604545454545452,
+   "duracao": 2.2409090909090894,
+   "texto": "Instabilidade",
+   "ordem": 1
+  },
+  {
+   "tipo": "pilula",
+   "em": 14.095454545454542,
+   "duracao": 4.613636363636364,
+   "texto": "Encaixe tipo AFO",
+   "ordem": 0
+  },
+  {
+   "tipo": "pilula",
+   "em": 18.959090909090907,
+   "duracao": 3.022727272727274,
+   "texto": "Prolongamento",
+   "ordem": 0
+  },
+  {
+   "tipo": "pilula",
+   "em": 19.55909090909091,
+   "duracao": 2.4227272727272737,
+   "texto": "Base de apoio",
+   "ordem": 1
+  },
+  {
+   "tipo": "pilula",
+   "em": 22.23181818181818,
+   "duracao": 1.8863636363636376,
+   "texto": "Mais estabilidade",
+   "ordem": 0
+  },
+  {
+   "tipo": "pilula",
+   "em": 24.368181818181817,
+   "duracao": 6.34090909090909,
+   "texto": "Quadril nivelado",
+   "ordem": 0
+  }
+ ],
+ "blocos": [
+  {
+   "id": "gancho",
+   "em": 0.0,
+   "duracao": 2.5,
+   "painel": null
+  },
+  {
+   "id": "problema",
+   "em": 2.5,
+   "duracao": 4.227272727272726,
+   "painel": "pernas"
+  },
+  {
+   "id": "calcado",
+   "em": 6.727272727272726,
+   "duracao": 4.0272727272727264,
+   "painel": null
+  },
+  {
+   "id": "inviavel",
+   "em": 10.754545454545452,
+   "duracao": 3.0909090909090895,
+   "painel": null
+  },
+  {
+   "id": "fabricacao",
+   "em": 13.845454545454542,
+   "duracao": 4.863636363636364,
+   "painel": null
+  },
+  {
+   "id": "prolongamento",
+   "em": 18.709090909090907,
+   "duracao": 3.272727272727274,
+   "painel": null
+  },
+  {
+   "id": "estabilidade",
+   "em": 21.98181818181818,
+   "duracao": 2.1363636363636376,
+   "painel": null
+  },
+  {
+   "id": "objetivo",
+   "em": 24.118181818181817,
+   "duracao": 6.59090909090909,
+   "painel": null
+  },
+  {
+   "id": "voces_vao_ver",
+   "em": 30.709090909090907,
+   "duracao": 0.5454545454545467,
+   "painel": null
+  },
+  {
+   "id": "passos",
+   "em": 31.254545454545454,
+   "duracao": 3.4000000000000004,
+   "painel": null
+  },
+  {
+   "id": "muletas",
+   "em": 34.654545454545456,
+   "duracao": 3.3999999999999986,
+   "painel": null
+  },
+  {
+   "id": "menino",
+   "em": 38.054545454545455,
+   "duracao": 6.9,
+   "painel": null
+  },
+  {
+   "id": "muito_bem",
+   "em": 44.95454545454545,
+   "duracao": 2.6000000000000014,
+   "painel": null
+  }
+ ],
+ "cta": {
+  "titulo": "Conhece alguém que precisa ver isso?",
+  "botao": "Envie para essa pessoa",
+  "rodape": "Dúvidas sobre órteses? Fale com a gente",
+  "duracao": 4.0
+ },
+ "duracaoFala": 47.555
+}

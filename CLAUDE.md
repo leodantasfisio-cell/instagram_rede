@@ -1,6 +1,13 @@
 # instagram_rede
 
-Conteúdo de Instagram da Rede Escoliose RN (@rede_escoliose_rn).
+Conteúdo de Instagram de duas marcas:
+
+- **Rede Escoliose RN** (@rede_escoliose_rn): tom e regras em `instagram/voice.md`, azul e branco.
+- **Centro de Reabilitação e Treinamento para Amputados** (@centroamputadosrn), vinculado à
+  Ortorio Cidade Verde: briefing em `instagram/centroamputados_briefing.md`, verde e grafite.
+  Também publica conteúdo de órteses (chamar de "órtese", nunca de prótese, quando for o caso).
+
+Confirme sempre para qual conta é o conteúdo antes de começar.
 
 - `instagram/voice.md`: tom, público, posições e o que nunca dizer. Copiado
   para `~/.claude/instagram/voice.md` ao iniciar a sessão (skills `ig-*`).
