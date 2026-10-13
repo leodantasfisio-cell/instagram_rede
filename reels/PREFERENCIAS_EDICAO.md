@@ -109,8 +109,12 @@ Também publica órteses: chamar sempre de **órtese** quando for o caso.
   3D, cortes rápidos com zoom de entrada, fabricação acelerada, pílulas de texto
   curtas sincronizadas com a palavra dita, transições alternando clarão e zoom
   com desfoque, tela final verde com pergunta para compartilhamento.
-- Áudio: clipes de oficina/clínica são ruidosos; usar `scripts/limpar_audio.py`
-  (noisereduce + EQ de voz + gate + compressão) e masterizar o Reel em -14 LUFS.
+- Áudio: na v2 testei limpeza forte (`scripts/limpar_audio.py`: noisereduce + EQ
+  + gate + compressão) e **a equipe preferiu o áudio do jeito antigo** (só filtro
+  leve e nivelamento). Ou seja: soar natural vale mais que soar "limpo". O script
+  fica para casos de ruído realmente forte, e só se a equipe pedir.
+- Conversas paralelas de fundo que soem negativas ou confusas ("não mudou muito")
+  ficam sem som, mesmo com o áudio original.
 
 ## Notas técnicas
 
