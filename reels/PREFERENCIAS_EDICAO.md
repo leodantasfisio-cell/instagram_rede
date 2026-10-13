@@ -82,6 +82,13 @@ Tom, público e o que nunca dizer: `instagram/voice.md`.
 - Áudio da fala limpo e nivelado (-14 LUFS). Efeitos sonoros sintetizados e
   discretos (whoosh, pop). Sem música até a equipe mandar um arquivo de uso livre.
 
+## Referências
+
+Reels aprovados, com linha do tempo e estilo detalhados (cópia em Google Doc no
+Drive, pasta `MÍDIAS REDE ESCOLIOSE / REELS EDITADOS`):
+
+- `referencias/2026-10-09_avaliacao_v3.md`: "Como funciona a avaliação" (v3).
+
 ## Notas técnicas
 
 - `ffmpeg`/`ffprobe` em URLs precisam de `http_proxy=$HTTPS_PROXY`.
