@@ -111,40 +111,40 @@
    "de": 8.4,
    "velocidade": 1.0,
    "em": 31.654545454545456,
-   "duracao": 0.5454545454545467,
+   "duracao": 0.6363636363636389,
    "volume": 0
   },
   {
    "arquivo": "media/ortese20cm/passos.mp4",
    "de": 9.0,
    "velocidade": 1.0,
-   "em": 32.2,
+   "em": 32.290909090909096,
    "duracao": 3.4000000000000004,
-   "volume": 1
+   "volume": 0
   },
   {
    "arquivo": "media/ortese20cm/muletas2.mp4",
    "de": 13.0,
    "velocidade": 1.0,
-   "em": 35.6,
+   "em": 35.690909090909095,
    "duracao": 3.3999999999999986,
-   "volume": 0.5
+   "volume": 0
   },
   {
    "arquivo": "media/ortese20cm/menino.mp4",
    "de": 0.0,
    "velocidade": 1.0,
-   "em": 39.0,
-   "duracao": 7.3,
+   "em": 39.09090909090909,
+   "duracao": 7.7,
    "volume": 1
   },
   {
    "arquivo": "media/ortese20cm/muletas.mp4",
    "de": 41.3,
    "velocidade": 1.0,
-   "em": 46.3,
+   "em": 46.790909090909096,
    "duracao": 2.6000000000000014,
-   "volume": 1
+   "volume": 0
   }
  ],
  "audio": [
@@ -177,11 +177,11 @@
    "duracao": 6.772727272727275
   },
   {
-   "arquivo": "media/ortese20cm/explicacao.mp4",
+   "arquivo": "media/ortese20cm/explicacao_original.mp4",
    "de": 61.8,
    "velocidade": 1.1,
    "em": 31.654545454545456,
-   "duracao": 0.5454545454545467
+   "duracao": 0.6363636363636389
   }
  ],
  "textos": [
@@ -315,30 +315,30 @@
   {
    "id": "voces_vao_ver",
    "em": 31.654545454545456,
-   "duracao": 0.5454545454545467,
+   "duracao": 0.6363636363636389,
    "painel": null
   },
   {
    "id": "passos",
-   "em": 32.2,
+   "em": 32.290909090909096,
    "duracao": 3.4000000000000004,
    "painel": null
   },
   {
    "id": "muletas",
-   "em": 35.6,
+   "em": 35.690909090909095,
    "duracao": 3.3999999999999986,
    "painel": null
   },
   {
    "id": "menino",
-   "em": 39.0,
-   "duracao": 7.3,
+   "em": 39.09090909090909,
+   "duracao": 7.7,
    "painel": null
   },
   {
    "id": "muito_bem",
-   "em": 46.3,
+   "em": 46.790909090909096,
    "duracao": 2.6000000000000014,
    "painel": null
   }
@@ -349,7 +349,7 @@
   "rodape": "Dúvidas sobre órteses? Fale com a gente",
   "duracao": 4.0
  },
- "duracaoFala": 48.9,
+ "duracaoFala": 49.391,
  "legendas": [
   {
    "texto": "são",
@@ -898,73 +898,68 @@
   },
   {
    "texto": "quando",
-   "inicio": 39.0,
-   "fim": 39.46
+   "inicio": 39.091,
+   "fim": 39.551
   },
   {
    "texto": "eu",
-   "inicio": 39.46,
-   "fim": 39.62
+   "inicio": 39.551,
+   "fim": 39.711
   },
   {
    "texto": "era",
-   "inicio": 39.62,
-   "fim": 39.84
+   "inicio": 39.711,
+   "fim": 39.931
   },
   {
    "texto": "menino,",
-   "inicio": 39.84,
-   "fim": 40.18
+   "inicio": 39.931,
+   "fim": 40.271
   },
   {
    "texto": "está",
-   "inicio": 40.18,
-   "fim": 40.34
+   "inicio": 40.271,
+   "fim": 40.431
   },
   {
    "texto": "vendo?",
-   "inicio": 40.34,
-   "fim": 40.68
+   "inicio": 40.431,
+   "fim": 40.771
   },
   {
    "texto": "olha",
-   "inicio": 41.96,
-   "fim": 42.4
+   "inicio": 42.051,
+   "fim": 42.491
   },
   {
    "texto": "aqui",
-   "inicio": 42.76,
-   "fim": 43.2
+   "inicio": 42.851,
+   "fim": 43.291
   },
   {
    "texto": "está",
-   "inicio": 43.2,
-   "fim": 43.46
+   "inicio": 43.291,
+   "fim": 43.551
   },
   {
    "texto": "fundo",
-   "inicio": 43.46,
-   "fim": 44.24
+   "inicio": 43.551,
+   "fim": 44.331
   },
   {
    "texto": "aqui",
-   "inicio": 44.78,
-   "fim": 45.22
+   "inicio": 44.871,
+   "fim": 45.311
   },
   {
    "texto": "está",
-   "inicio": 45.22,
-   "fim": 45.58
+   "inicio": 45.311,
+   "fim": 45.671
   },
   {
-   "texto": "Muito",
-   "inicio": 47.89,
-   "fim": 48.17
-  },
-  {
-   "texto": "bem!",
-   "inicio": 48.17,
-   "fim": 48.41
+   "texto": "raso",
+   "inicio": 45.671,
+   "fim": 46.791
   }
  ],
  "palavrasChave": [

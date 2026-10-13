@@ -176,9 +176,9 @@
     {
       "id": "voces_vao_ver",
       "voz": {
-        "arquivo": "explicacao",
+        "arquivo": "explicacao_original",
         "de": 61.8,
-        "ate": 62.4
+        "ate": 62.5
       },
       "imagens": [
         {
@@ -192,7 +192,8 @@
       "ambiente": {
         "arquivo": "passos",
         "de": 9.0,
-        "ate": 12.4
+        "ate": 12.4,
+        "volume": 0
       },
       "legenda": false
     },
@@ -202,7 +203,7 @@
         "arquivo": "muletas2",
         "de": 13.0,
         "ate": 16.4,
-        "volume": 0.5
+        "volume": 0
       },
       "legenda": false
     },
@@ -211,7 +212,7 @@
       "ambiente": {
         "arquivo": "menino",
         "de": 0.0,
-        "ate": 7.3
+        "ate": 7.7
       }
     },
     {
@@ -219,8 +220,10 @@
       "ambiente": {
         "arquivo": "muletas",
         "de": 41.3,
-        "ate": 43.9
-      }
+        "ate": 43.9,
+        "volume": 0
+      },
+      "legenda": false
     }
   ],
   "cta": {
@@ -243,7 +246,8 @@
     "passos": "IMG_9863",
     "sorriso": "IMG_9872",
     "muletas": "IMG_9866",
-    "muletas2": "IMG_9868"
+    "muletas2": "IMG_9868",
+    "explicacao_original": "IMG_9857"
   },
   "legendas": true,
   "correcoes": {
