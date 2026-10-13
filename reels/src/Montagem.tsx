@@ -2,6 +2,7 @@ import {
   AbsoluteFill,
   Audio,
   Easing,
+  Freeze,
   interpolate,
   OffthreadVideo,
   Sequence,
@@ -15,11 +16,20 @@ import {aplicarMarca, cores, fonte, marcaAtiva, marcas} from './marca';
 import type {Palavra} from './tipos';
 
 // Reel montado a partir de vários clipes (ver scripts/montar_montagem.py).
-export type TrechoVideo = {arquivo: string; de: number; velocidade: number; em: number; duracao: number; volume: number};
+export type TrechoVideo = {
+  arquivo: string;
+  de: number;
+  velocidade: number;
+  em: number;
+  duracao: number;
+  volume: number;
+  congelar?: boolean;
+};
 export type TrechoAudio = {arquivo: string; de: number; velocidade: number; em: number; duracao: number};
 export type Texto =
   | {tipo: 'destaque'; em: number; duracao: number; valor: string; sub?: string}
-  | {tipo: 'pilula'; em: number; duracao: number; texto: string; ordem: number};
+  | {tipo: 'pilula'; em: number; duracao: number; texto: string; ordem: number}
+  | {tipo: 'seta'; em: number; duracao: number; texto: string; x: number; y: number; rotulo: [number, number]; ordem: number};
 export type Bloco = {id: string; em: number; duracao: number; painel?: string | null};
 export type EdicaoMontagem = {
   fps: number;
@@ -32,6 +42,7 @@ export type EdicaoMontagem = {
   duracaoFala: number;
   legendas?: Palavra[];
   palavrasChave?: string[];
+  impactos?: number[];
 };
 
 const DESCIDA = 470;
@@ -69,6 +80,21 @@ const Segmento: React.FC<{seg: TrechoVideo; indice: number; viradaTipo: number |
   const desfoque = viradaTipo === 1 ? interpolate(frame, [0, 6], [14, 0], {extrapolateRight: 'clamp'}) : 0;
   const dividida = divisaoPainel(blocos, t);
   const volume = (f: number) => seg.volume * Math.min(1, (f + 1) / 2, (total - f) / 2);
+  if (seg.congelar) {
+    return (
+      <AbsoluteFill>
+        <Freeze frame={0}>
+          <OffthreadVideo
+            src={staticFile(seg.arquivo)}
+            trimBefore={Math.round(seg.de * fps)}
+            muted
+            style={{width: '100%', height: '100%', objectFit: 'cover'}}
+          />
+        </Freeze>
+        <AbsoluteFill style={{backgroundColor: 'rgba(0,0,0,0.25)'}} />
+      </AbsoluteFill>
+    );
+  }
   return (
     <AbsoluteFill>
       <OffthreadVideo
@@ -164,6 +190,65 @@ const Pilula: React.FC<{texto: string; ordem: number; duracao: number}> = ({text
         }}
       >
         <div style={{width: 14, height: 54, borderRadius: 7, background: cores.azul}} />
+        {texto}
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+const Seta: React.FC<{texto: string; x: number; y: number; rotulo: [number, number]; duracao: number}> = ({
+  texto,
+  x,
+  y,
+  rotulo,
+  duracao,
+}) => {
+  const frame = useCurrentFrame();
+  const {fps} = useVideoConfig();
+  const linha = interpolate(frame, [0, 8], [0, 1], {extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic)});
+  const rot = spring({frame: frame - 4, fps, config: {damping: 14, stiffness: 150}});
+  const sai = interpolate(frame, [duracao * fps - 5, duracao * fps], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  const pulso = 1 + 0.25 * Math.abs(Math.sin((frame / fps) * Math.PI * 2));
+  const [lx, ly] = rotulo;
+  const largura = 40 + texto.length * 27;
+  const ax = lx + largura;
+  const ay = ly + 40;
+  return (
+    <AbsoluteFill style={{opacity: sai}}>
+      <svg width={1080} height={1920} viewBox="0 0 1080 1920" style={{position: 'absolute'}}>
+        <line
+          x1={ax}
+          y1={ay}
+          x2={ax + (x - ax) * linha}
+          y2={ay + (y - ay) * linha}
+          stroke={cores.branco}
+          strokeWidth={6}
+          strokeLinecap="round"
+        />
+        <circle cx={x} cy={y} r={16 * pulso * linha} fill={cores.azulClaro} stroke={cores.branco} strokeWidth={5} />
+      </svg>
+      <div
+        style={{
+          position: 'absolute',
+          left: lx,
+          top: ly,
+          width: largura,
+          height: 80,
+          borderRadius: 20,
+          background: cores.branco,
+          color: '#202020',
+          fontFamily: fonte,
+          fontWeight: 800,
+          fontSize: 44,
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          boxShadow: '0 10px 30px rgba(0,0,0,0.35)',
+          borderLeft: `12px solid ${cores.azul}`,
+          opacity: rot,
+          transform: `scale(${interpolate(rot, [0, 1], [0.7, 1])})`,
+        }}
+      >
         {texto}
       </div>
     </AbsoluteFill>
@@ -345,6 +430,8 @@ export const Montagem: React.FC<{edicao: EdicaoMontagem}> = ({edicao}) => {
         <Sequence key={i} from={f(tx.em)} durationInFrames={f(tx.duracao)}>
           {tx.tipo === 'destaque' ? (
             <Destaque valor={tx.valor} sub={tx.sub} duracao={tx.duracao} />
+          ) : tx.tipo === 'seta' ? (
+            <Seta texto={tx.texto} x={tx.x} y={tx.y} rotulo={tx.rotulo} duracao={tx.duracao} />
           ) : (
             <Pilula texto={tx.texto} ordem={tx.ordem} duracao={tx.duracao} />
           )}
@@ -370,6 +457,9 @@ export const Montagem: React.FC<{edicao: EdicaoMontagem}> = ({edicao}) => {
       ))}
       {edicao.textos.map((tx, i) => (
         <Som key={`p${i}`} arquivo={tx.tipo === 'destaque' ? 'sfx/brilho.wav' : 'sfx/pop.wav'} em={tx.em} volume={0.5} />
+      ))}
+      {(edicao.impactos ?? []).map((em, i) => (
+        <Som key={`i${i}`} arquivo="sfx/impacto.wav" em={em} volume={0.8} />
       ))}
       <Som arquivo="sfx/whoosh.wav" em={edicao.duracaoFala - 0.18} volume={0.4} />
       <Som arquivo="sfx/brilho.wav" em={edicao.duracaoFala + 0.4} volume={0.5} />

@@ -15,14 +15,21 @@
       },
       "imagens": [
         {
+          "arquivo": "explicacao",
+          "de": 33.4,
+          "duracao": 0.5
+        },
+        {
           "arquivo": "menino",
           "de": 8.0
         }
       ],
       "destaque": {
         "valor": "20 cm",
-        "sub": "de diferença entre as pernas"
-      }
+        "sub": "de diferença entre as pernas",
+        "atraso": 0.5
+      },
+      "impacto": 0.5
     },
     {
       "id": "problema",
@@ -78,7 +85,7 @@
       "id": "fabricacao",
       "voz": {
         "arquivo": "explicacao",
-        "de": 30.6,
+        "de": 32.38,
         "ate": 35.95
       },
       "imagens": [
@@ -109,21 +116,57 @@
     },
     {
       "id": "prolongamento",
-      "fala": {
+      "voz": {
         "arquivo": "explicacao",
         "de": 38.4,
         "ate": 42.0
       },
-      "pilulas": [
+      "imagens": [
+        {
+          "arquivo": "explicacao",
+          "de": 38.4,
+          "duracao": 1.27,
+          "velocidade": 1.1
+        },
+        {
+          "arquivo": "explicacao",
+          "de": 39.8,
+          "congelar": true
+        }
+      ],
+      "setas": [
+        {
+          "texto": "Encaixe",
+          "x": 820,
+          "y": 330,
+          "rotulo": [
+            70,
+            250
+          ],
+          "em": 39.8
+        },
         {
           "texto": "Prolongamento",
-          "em": 39.7
+          "x": 713,
+          "y": 820,
+          "rotulo": [
+            70,
+            700
+          ],
+          "em": 39.8
         },
         {
           "texto": "Base de apoio",
+          "x": 750,
+          "y": 1262,
+          "rotulo": [
+            70,
+            1110
+          ],
           "em": 40.9
         }
-      ]
+      ],
+      "legenda": false
     },
     {
       "id": "estabilidade",
@@ -149,17 +192,13 @@
       "id": "objetivo",
       "voz": {
         "arquivo": "explicacao",
-        "de": 46.55,
+        "de": 51.0,
         "ate": 54.0
       },
       "imagens": [
         {
           "arquivo": "colocando",
           "de": 2.0
-        },
-        {
-          "arquivo": "ajuste",
-          "de": 3.0
         },
         {
           "arquivo": "barras",
@@ -190,21 +229,41 @@
     {
       "id": "passos",
       "ambiente": {
-        "arquivo": "passos",
-        "de": 9.0,
-        "ate": 12.4,
+        "trechos": [
+          {
+            "arquivo": "passos",
+            "de": 9.0,
+            "ate": 9.8,
+            "velocidade": 0.5
+          },
+          {
+            "arquivo": "passos",
+            "de": 9.8,
+            "ate": 12.0,
+            "velocidade": 1.5
+          },
+          {
+            "arquivo": "muletas2",
+            "de": 13.0,
+            "ate": 15.4,
+            "velocidade": 1.5
+          },
+          {
+            "arquivo": "muletas",
+            "de": 27.0,
+            "ate": 30.0,
+            "velocidade": 1.5
+          }
+        ],
         "volume": 0
       },
-      "legenda": false
-    },
-    {
-      "id": "muletas",
-      "ambiente": {
-        "arquivo": "muletas2",
-        "de": 13.0,
-        "ate": 16.4,
-        "volume": 0
-      },
+      "pilulas": [
+        {
+          "texto": "Primeiros passos 👣",
+          "emBloco": 0.3
+        }
+      ],
+      "impacto": 0.05,
       "legenda": false
     },
     {
@@ -214,16 +273,6 @@
         "de": 0.0,
         "ate": 7.7
       }
-    },
-    {
-      "id": "muito_bem",
-      "ambiente": {
-        "arquivo": "muletas",
-        "de": 41.3,
-        "ate": 43.9,
-        "volume": 0
-      },
-      "legenda": false
     }
   ],
   "cta": {

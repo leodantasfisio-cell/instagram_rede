@@ -113,6 +113,12 @@ Também publica órteses: chamar sempre de **órtese** quando for o caso.
   + gate + compressão) e **a equipe preferiu o áudio do jeito antigo** (só filtro
   leve e nivelamento). Ou seja: soar natural vale mais que soar "limpo". O script
   fica para casos de ruído realmente forte, e só se a equipe pedir.
+- v3 (pedidas a partir das minhas sugestões): câmera lenta no primeiro passo
+  e depois aceleração, cortes alternando ângulos, pílula "Primeiros passos 👣";
+  gancho "antes e depois instantâneo" (meio segundo da órtese, corte seco para o
+  paciente andando, impacto no "20 cm"); imagem congelada com setas apontando
+  encaixe, prolongamento e base (sem legenda nesse trecho); Reel encurtado para
+  ~41 s de conteúdo. Ficaram de fora por ora: música e final em loop.
 - Conversas paralelas de fundo que soem negativas ou confusas ("não mudou muito")
   ficam sem som, mesmo com o áudio original.
 

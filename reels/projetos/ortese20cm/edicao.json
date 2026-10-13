@@ -3,12 +3,22 @@
  "marca": "centroAmputados",
  "video": [
   {
+   "arquivo": "media/ortese20cm/explicacao.mp4",
+   "de": 33.4,
+   "velocidade": 1.0,
+   "em": 0.0,
+   "duracao": 0.5,
+   "volume": 0,
+   "congelar": false
+  },
+  {
    "arquivo": "media/ortese20cm/menino.mp4",
    "de": 8.0,
    "velocidade": 1.0,
-   "em": 0.0,
-   "duracao": 2.772727272727273,
-   "volume": 0
+   "em": 0.5,
+   "duracao": 2.272727272727273,
+   "volume": 0,
+   "congelar": false
   },
   {
    "arquivo": "media/ortese20cm/explicacao.mp4",
@@ -39,112 +49,130 @@
    "de": 1.0,
    "velocidade": 1.6,
    "em": 14.60909090909091,
-   "duracao": 1.215909090909091,
-   "volume": 0
+   "duracao": 0.8113636363636364,
+   "volume": 0,
+   "congelar": false
   },
   {
    "arquivo": "media/ortese20cm/furadeira.mp4",
    "de": 0.5,
    "velocidade": 1.6,
-   "em": 15.825000000000001,
-   "duracao": 1.215909090909091,
-   "volume": 0
+   "em": 15.420454545454545,
+   "duracao": 0.8113636363636364,
+   "volume": 0,
+   "congelar": false
   },
   {
    "arquivo": "media/ortese20cm/lixadeira.mp4",
    "de": 6.0,
    "velocidade": 1.6,
-   "em": 17.040909090909093,
-   "duracao": 1.215909090909091,
-   "volume": 0
+   "em": 16.23181818181818,
+   "duracao": 0.8113636363636364,
+   "volume": 0,
+   "congelar": false
   },
   {
    "arquivo": "media/ortese20cm/soprador.mp4",
    "de": 2.0,
    "velocidade": 1.6,
-   "em": 18.256818181818183,
-   "duracao": 1.215909090909091,
-   "volume": 0
+   "em": 17.043181818181818,
+   "duracao": 0.8113636363636364,
+   "volume": 0,
+   "congelar": false
   },
   {
    "arquivo": "media/ortese20cm/explicacao.mp4",
    "de": 38.4,
    "velocidade": 1.1,
-   "em": 19.472727272727273,
-   "duracao": 3.272727272727274,
-   "volume": 1
+   "em": 17.854545454545455,
+   "duracao": 1.27,
+   "volume": 0,
+   "congelar": false
+  },
+  {
+   "arquivo": "media/ortese20cm/explicacao.mp4",
+   "de": 39.8,
+   "velocidade": 1.0,
+   "em": 19.124545454545455,
+   "duracao": 2.002727272727274,
+   "volume": 0,
+   "congelar": true
   },
   {
    "arquivo": "media/ortese20cm/base.mp4",
    "de": 0.0,
    "velocidade": 1.0,
-   "em": 22.745454545454546,
+   "em": 21.12727272727273,
    "duracao": 2.1363636363636376,
-   "volume": 0
+   "volume": 0,
+   "congelar": false
   },
   {
    "arquivo": "media/ortese20cm/colocando.mp4",
    "de": 2.0,
    "velocidade": 1.0,
-   "em": 24.881818181818183,
-   "duracao": 2.2575757575757582,
-   "volume": 0
-  },
-  {
-   "arquivo": "media/ortese20cm/ajuste.mp4",
-   "de": 3.0,
-   "velocidade": 1.0,
-   "em": 27.13939393939394,
-   "duracao": 2.2575757575757582,
-   "volume": 0
+   "em": 23.263636363636365,
+   "duracao": 1.3636363636363635,
+   "volume": 0,
+   "congelar": false
   },
   {
    "arquivo": "media/ortese20cm/barras.mp4",
    "de": 10.0,
    "velocidade": 1.0,
-   "em": 29.3969696969697,
-   "duracao": 2.2575757575757582,
-   "volume": 0
+   "em": 24.62727272727273,
+   "duracao": 1.3636363636363635,
+   "volume": 0,
+   "congelar": false
   },
   {
    "arquivo": "media/ortese20cm/passos.mp4",
    "de": 8.4,
    "velocidade": 1.0,
-   "em": 31.654545454545456,
+   "em": 25.990909090909092,
    "duracao": 0.6363636363636389,
-   "volume": 0
+   "volume": 0,
+   "congelar": false
   },
   {
    "arquivo": "media/ortese20cm/passos.mp4",
    "de": 9.0,
-   "velocidade": 1.0,
-   "em": 32.290909090909096,
-   "duracao": 3.4000000000000004,
+   "velocidade": 0.5,
+   "em": 26.627272727272732,
+   "duracao": 1.6000000000000014,
+   "volume": 0
+  },
+  {
+   "arquivo": "media/ortese20cm/passos.mp4",
+   "de": 9.8,
+   "velocidade": 1.5,
+   "em": 28.227272727272734,
+   "duracao": 1.4666666666666661,
    "volume": 0
   },
   {
    "arquivo": "media/ortese20cm/muletas2.mp4",
    "de": 13.0,
-   "velocidade": 1.0,
-   "em": 35.690909090909095,
-   "duracao": 3.3999999999999986,
+   "velocidade": 1.5,
+   "em": 29.6939393939394,
+   "duracao": 1.6000000000000003,
+   "volume": 0
+  },
+  {
+   "arquivo": "media/ortese20cm/muletas.mp4",
+   "de": 27.0,
+   "velocidade": 1.5,
+   "em": 31.2939393939394,
+   "duracao": 2.0,
    "volume": 0
   },
   {
    "arquivo": "media/ortese20cm/menino.mp4",
    "de": 0.0,
    "velocidade": 1.0,
-   "em": 39.09090909090909,
+   "em": 33.2939393939394,
    "duracao": 7.7,
    "volume": 1
-  },
-  {
-   "arquivo": "media/ortese20cm/muletas.mp4",
-   "de": 41.3,
-   "velocidade": 1.0,
-   "em": 46.790909090909096,
-   "duracao": 2.6000000000000014,
-   "volume": 0
   }
  ],
  "audio": [
@@ -157,40 +185,48 @@
   },
   {
    "arquivo": "media/ortese20cm/explicacao.mp4",
-   "de": 30.6,
+   "de": 32.38,
    "velocidade": 1.1,
    "em": 14.60909090909091,
-   "duracao": 4.863636363636364
+   "duracao": 3.2454545454545456
+  },
+  {
+   "arquivo": "media/ortese20cm/explicacao.mp4",
+   "de": 38.4,
+   "velocidade": 1.1,
+   "em": 17.854545454545455,
+   "duracao": 3.272727272727274
   },
   {
    "arquivo": "media/ortese20cm/explicacao.mp4",
    "de": 44.0,
    "velocidade": 1.1,
-   "em": 22.745454545454546,
+   "em": 21.12727272727273,
    "duracao": 2.1363636363636376
   },
   {
    "arquivo": "media/ortese20cm/explicacao.mp4",
-   "de": 46.55,
+   "de": 51.0,
    "velocidade": 1.1,
-   "em": 24.881818181818183,
-   "duracao": 6.772727272727275
+   "em": 23.263636363636365,
+   "duracao": 2.727272727272727
   },
   {
    "arquivo": "media/ortese20cm/explicacao.mp4",
    "de": 61.8,
    "velocidade": 1.1,
-   "em": 31.654545454545456,
+   "em": 25.990909090909092,
    "duracao": 0.6363636363636389
   }
  ],
  "textos": [
   {
    "tipo": "destaque",
-   "em": 0.0,
-   "duracao": 2.772727272727273,
+   "em": 0.5,
+   "duracao": 2.272727272727273,
    "valor": "20 cm",
-   "sub": "de diferença entre as pernas"
+   "sub": "de diferença entre as pernas",
+   "atraso": 0.5
   },
   {
    "tipo": "pilula",
@@ -229,37 +265,69 @@
   },
   {
    "tipo": "pilula",
-   "em": 18.064,
+   "em": 16.445,
    "duracao": 1.409,
    "texto": "Encaixe tipo AFO",
    "ordem": 0
   },
   {
-   "tipo": "pilula",
-   "em": 20.655,
-   "duracao": 2.091,
-   "texto": "Prolongamento",
+   "tipo": "seta",
+   "em": 19.127,
+   "duracao": 2.0,
+   "texto": "Encaixe",
+   "x": 820,
+   "y": 330,
+   "rotulo": [
+    70,
+    250
+   ],
    "ordem": 0
   },
   {
-   "tipo": "pilula",
-   "em": 21.745,
-   "duracao": 1.0,
-   "texto": "Base de apoio",
+   "tipo": "seta",
+   "em": 19.127,
+   "duracao": 2.0,
+   "texto": "Prolongamento",
+   "x": 713,
+   "y": 820,
+   "rotulo": [
+    70,
+    700
+   ],
    "ordem": 1
   },
   {
+   "tipo": "seta",
+   "em": 20.127,
+   "duracao": 1.0,
+   "texto": "Base de apoio",
+   "x": 750,
+   "y": 1262,
+   "rotulo": [
+    70,
+    1110
+   ],
+   "ordem": 2
+  },
+  {
    "tipo": "pilula",
-   "em": 24.109,
+   "em": 22.491,
    "duracao": 0.773,
    "texto": "Mais estabilidade",
    "ordem": 0
   },
   {
    "tipo": "pilula",
-   "em": 29.927,
+   "em": 24.264,
    "duracao": 1.727,
    "texto": "Quadril nivelado",
+   "ordem": 0
+  },
+  {
+   "tipo": "pilula",
+   "em": 26.927,
+   "duracao": 6.367,
+   "texto": "Primeiros passos 👣",
    "ordem": 0
   }
  ],
@@ -291,55 +359,43 @@
   {
    "id": "fabricacao",
    "em": 14.60909090909091,
-   "duracao": 4.863636363636364,
+   "duracao": 3.2454545454545456,
    "painel": null
   },
   {
    "id": "prolongamento",
-   "em": 19.472727272727273,
+   "em": 17.854545454545455,
    "duracao": 3.272727272727274,
    "painel": null
   },
   {
    "id": "estabilidade",
-   "em": 22.745454545454546,
+   "em": 21.12727272727273,
    "duracao": 2.1363636363636376,
    "painel": null
   },
   {
    "id": "objetivo",
-   "em": 24.881818181818183,
-   "duracao": 6.772727272727275,
+   "em": 23.263636363636365,
+   "duracao": 2.727272727272727,
    "painel": null
   },
   {
    "id": "voces_vao_ver",
-   "em": 31.654545454545456,
+   "em": 25.990909090909092,
    "duracao": 0.6363636363636389,
    "painel": null
   },
   {
    "id": "passos",
-   "em": 32.290909090909096,
-   "duracao": 3.4000000000000004,
-   "painel": null
-  },
-  {
-   "id": "muletas",
-   "em": 35.690909090909095,
-   "duracao": 3.3999999999999986,
+   "em": 26.627272727272732,
+   "duracao": 6.666666666666664,
    "painel": null
   },
   {
    "id": "menino",
-   "em": 39.09090909090909,
+   "em": 33.2939393939394,
    "duracao": 7.7,
-   "painel": null
-  },
-  {
-   "id": "muito_bem",
-   "em": 46.790909090909096,
-   "duracao": 2.6000000000000014,
    "painel": null
   }
  ],
@@ -349,7 +405,7 @@
   "rodape": "Dúvidas sobre órteses? Fale com a gente",
   "duracao": 4.0
  },
- "duracaoFala": 49.391,
+ "duracaoFala": 40.994,
  "legendas": [
   {
    "texto": "são",
@@ -602,364 +658,219 @@
    "fim": 14.564
   },
   {
-   "texto": "Então",
-   "inicio": 14.664,
-   "fim": 14.664
-  },
-  {
-   "texto": "vocês",
-   "inicio": 14.664,
-   "fim": 15.1
-  },
-  {
-   "texto": "observaram",
-   "inicio": 15.1,
-   "fim": 15.609
-  },
-  {
-   "texto": "a",
-   "inicio": 15.609,
-   "fim": 15.682
-  },
-  {
-   "texto": "gente",
-   "inicio": 15.682,
-   "fim": 15.918
-  },
-  {
-   "texto": "construir",
-   "inicio": 15.918,
-   "fim": 16.282
-  },
-  {
    "texto": "um",
-   "inicio": 16.282,
-   "fim": 16.555
+   "inicio": 14.664,
+   "fim": 14.936
   },
   {
    "texto": "encaixe",
-   "inicio": 16.555,
-   "fim": 17.191
+   "inicio": 14.936,
+   "fim": 15.573
   },
   {
    "texto": "no",
-   "inicio": 17.191,
-   "fim": 17.427
+   "inicio": 15.573,
+   "fim": 15.809
   },
   {
    "texto": "formato",
-   "inicio": 17.427,
-   "fim": 17.882
+   "inicio": 15.809,
+   "fim": 16.264
   },
   {
    "texto": "de",
-   "inicio": 17.882,
-   "fim": 18.155
+   "inicio": 16.264,
+   "fim": 16.536
   },
   {
    "texto": "AFO,",
-   "inicio": 18.155,
-   "fim": 18.5
+   "inicio": 16.536,
+   "fim": 16.882
   },
   {
    "texto": "uma",
-   "inicio": 18.645,
-   "fim": 18.791
+   "inicio": 17.027,
+   "fim": 17.173
   },
   {
    "texto": "órtese,",
-   "inicio": 18.791,
-   "fim": 19.373
-  },
-  {
-   "texto": "E",
-   "inicio": 19.545,
-   "fim": 19.745
-  },
-  {
-   "texto": "aí",
-   "inicio": 19.745,
-   "fim": 19.909
-  },
-  {
-   "texto": "a",
-   "inicio": 19.909,
-   "fim": 19.945
-  },
-  {
-   "texto": "gente",
-   "inicio": 19.945,
-   "fim": 20.182
-  },
-  {
-   "texto": "colocou",
-   "inicio": 20.182,
-   "fim": 20.545
-  },
-  {
-   "texto": "um",
-   "inicio": 20.545,
-   "fim": 20.709
-  },
-  {
-   "texto": "prolongamento",
-   "inicio": 20.709,
-   "fim": 21.127
-  },
-  {
-   "texto": "e",
-   "inicio": 21.127,
-   "fim": 21.291
-  },
-  {
-   "texto": "colocamos",
-   "inicio": 21.291,
-   "fim": 21.527
-  },
-  {
-   "texto": "um",
-   "inicio": 21.527,
-   "fim": 21.782
-  },
-  {
-   "texto": "apoio",
-   "inicio": 21.782,
-   "fim": 22.018
-  },
-  {
-   "texto": "embaixo,",
-   "inicio": 22.018,
-   "fim": 22.527
+   "inicio": 17.173,
+   "fim": 17.755
   },
   {
    "texto": "uma",
-   "inicio": 22.782,
-   "fim": 22.836
+   "inicio": 21.164,
+   "fim": 21.218
   },
   {
    "texto": "área",
-   "inicio": 22.836,
-   "fim": 23.145
+   "inicio": 21.218,
+   "fim": 21.527
   },
   {
    "texto": "grande",
-   "inicio": 23.145,
-   "fim": 23.545
+   "inicio": 21.527,
+   "fim": 21.927
   },
   {
    "texto": "para",
-   "inicio": 23.545,
-   "fim": 23.818
+   "inicio": 21.927,
+   "fim": 22.2
   },
   {
    "texto": "que",
-   "inicio": 23.818,
-   "fim": 23.927
+   "inicio": 22.2,
+   "fim": 22.309
   },
   {
    "texto": "ele",
-   "inicio": 23.927,
-   "fim": 24.036
+   "inicio": 22.309,
+   "fim": 22.418
   },
   {
    "texto": "tenha",
-   "inicio": 24.036,
-   "fim": 24.2
+   "inicio": 22.418,
+   "fim": 22.582
   },
   {
    "texto": "estabilidade.",
-   "inicio": 24.2,
-   "fim": 24.818
-  },
-  {
-   "texto": "Então",
-   "inicio": 24.927,
-   "fim": 25.0
+   "inicio": 22.582,
+   "fim": 23.2
   },
   {
    "texto": "a",
-   "inicio": 25.0,
-   "fim": 25.018
-  },
-  {
-   "texto": "ideia",
-   "inicio": 25.018,
-   "fim": 25.291
-  },
-  {
-   "texto": "é",
-   "inicio": 25.291,
-   "fim": 25.491
-  },
-  {
-   "texto": "que",
-   "inicio": 25.491,
-   "fim": 25.618
-  },
-  {
-   "texto": "ele",
-   "inicio": 25.618,
-   "fim": 26.218
-  },
-  {
-   "texto": "use",
-   "inicio": 26.218,
-   "fim": 26.582
-  },
-  {
-   "texto": "esse",
-   "inicio": 26.582,
-   "fim": 27.545
-  },
-  {
-   "texto": "dispositivo",
-   "inicio": 27.545,
-   "fim": 28.436
-  },
-  {
-   "texto": "para",
-   "inicio": 28.436,
-   "fim": 28.782
-  },
-  {
-   "texto": "que",
-   "inicio": 28.782,
-   "fim": 28.945
-  },
-  {
-   "texto": "a",
-   "inicio": 28.945,
-   "fim": 29.182
+   "inicio": 23.282,
+   "fim": 23.518
   },
   {
    "texto": "gente",
-   "inicio": 29.182,
-   "fim": 29.345
+   "inicio": 23.518,
+   "fim": 23.682
   },
   {
    "texto": "equaliza",
-   "inicio": 29.345,
-   "fim": 29.873
+   "inicio": 23.682,
+   "fim": 24.209
   },
   {
    "texto": "o",
-   "inicio": 29.873,
-   "fim": 30.036
+   "inicio": 24.209,
+   "fim": 24.373
   },
   {
    "texto": "quadril",
-   "inicio": 30.036,
-   "fim": 30.327
+   "inicio": 24.373,
+   "fim": 24.664
   },
   {
    "texto": "e",
-   "inicio": 30.327,
-   "fim": 30.491
+   "inicio": 24.664,
+   "fim": 24.827
   },
   {
    "texto": "ele",
-   "inicio": 30.491,
-   "fim": 30.691
+   "inicio": 24.827,
+   "fim": 25.027
   },
   {
    "texto": "consiga",
-   "inicio": 30.691,
-   "fim": 30.855
+   "inicio": 25.027,
+   "fim": 25.191
   },
   {
    "texto": "fazer",
-   "inicio": 30.855,
-   "fim": 31.055
+   "inicio": 25.191,
+   "fim": 25.391
   },
   {
    "texto": "uma",
-   "inicio": 31.055,
-   "fim": 31.218
+   "inicio": 25.391,
+   "fim": 25.555
   },
   {
    "texto": "caminhada,",
-   "inicio": 31.218,
-   "fim": 31.564
+   "inicio": 25.555,
+   "fim": 25.9
   },
   {
    "texto": "Vocês",
-   "inicio": 31.709,
-   "fim": 31.818
+   "inicio": 26.045,
+   "fim": 26.155
   },
   {
    "texto": "vão",
-   "inicio": 31.818,
-   "fim": 31.927
+   "inicio": 26.155,
+   "fim": 26.264
   },
   {
    "texto": "ver.",
-   "inicio": 31.927,
-   "fim": 32.036
+   "inicio": 26.264,
+   "fim": 26.373
   },
   {
    "texto": "quando",
-   "inicio": 39.091,
-   "fim": 39.551
+   "inicio": 33.294,
+   "fim": 33.754
   },
   {
    "texto": "eu",
-   "inicio": 39.551,
-   "fim": 39.711
+   "inicio": 33.754,
+   "fim": 33.914
   },
   {
    "texto": "era",
-   "inicio": 39.711,
-   "fim": 39.931
+   "inicio": 33.914,
+   "fim": 34.134
   },
   {
    "texto": "menino,",
-   "inicio": 39.931,
-   "fim": 40.271
+   "inicio": 34.134,
+   "fim": 34.474
   },
   {
    "texto": "está",
-   "inicio": 40.271,
-   "fim": 40.431
+   "inicio": 34.474,
+   "fim": 34.634
   },
   {
    "texto": "vendo?",
-   "inicio": 40.431,
-   "fim": 40.771
+   "inicio": 34.634,
+   "fim": 34.974
   },
   {
    "texto": "olha",
-   "inicio": 42.051,
-   "fim": 42.491
+   "inicio": 36.254,
+   "fim": 36.694
   },
   {
    "texto": "aqui",
-   "inicio": 42.851,
-   "fim": 43.291
+   "inicio": 37.054,
+   "fim": 37.494
   },
   {
    "texto": "está",
-   "inicio": 43.291,
-   "fim": 43.551
+   "inicio": 37.494,
+   "fim": 37.754
   },
   {
    "texto": "fundo",
-   "inicio": 43.551,
-   "fim": 44.331
+   "inicio": 37.754,
+   "fim": 38.534
   },
   {
    "texto": "aqui",
-   "inicio": 44.871,
-   "fim": 45.311
+   "inicio": 39.074,
+   "fim": 39.514
   },
   {
    "texto": "está",
-   "inicio": 45.311,
-   "fim": 45.671
+   "inicio": 39.514,
+   "fim": 39.874
   },
   {
    "texto": "raso",
-   "inicio": 45.671,
-   "fim": 46.791
+   "inicio": 39.874,
+   "fim": 40.994
   }
  ],
  "palavrasChave": [
@@ -977,5 +888,9 @@
   "caminhada,",
   "menino,",
   "bem!"
+ ],
+ "impactos": [
+  0.5,
+  26.677
  ]
 }

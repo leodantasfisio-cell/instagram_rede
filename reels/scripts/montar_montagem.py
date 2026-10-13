@@ -36,7 +36,7 @@ def no_reel(src, de, vel, em):
     return em + (src - de) / vel
 
 
-video, audio, textos, blocos, legendas = [], [], [], [], []
+video, audio, textos, blocos, legendas, impactos = [], [], [], [], [], []
 t = 0.0
 for b in r["blocos"]:
     inicio = t
@@ -51,11 +51,29 @@ for b in r["blocos"]:
         dur = (v["ate"] - v["de"]) / vf
         origem = (v["arquivo"], v["de"], v["ate"], vf)
         audio.append({"arquivo": arq(v["arquivo"]), "de": v["de"], "velocidade": vf, "em": t, "duracao": dur})
+        # Imagens com "duracao" fixa; o resto do tempo é dividido igualmente entre as outras.
         imgs = b["imagens"]
-        parte = dur / len(imgs)
-        for k, im in enumerate(imgs):
-            video.append({"arquivo": arq(im["arquivo"]), "de": im["de"], "velocidade": b.get("velocidadeImagens", 1.0),
-                          "em": t + k * parte, "duracao": parte, "volume": 0})
+        fixo = sum(im.get("duracao", 0) for im in imgs)
+        livres = [im for im in imgs if "duracao" not in im]
+        parte = (dur - fixo) / len(livres) if livres else 0
+        cursor = t
+        for im in imgs:
+            d = im.get("duracao", parte)
+            video.append({"arquivo": arq(im["arquivo"]), "de": im["de"],
+                          "velocidade": im.get("velocidade", b.get("velocidadeImagens", 1.0)),
+                          "em": cursor, "duracao": d, "volume": 0, "congelar": im.get("congelar", False)})
+            cursor += d
+    elif "trechos" in b["ambiente"]:
+        # Vários cortes com velocidades diferentes (câmera lenta, aceleração).
+        a = b["ambiente"]
+        cursor = t
+        for tr in a["trechos"]:
+            vel = tr.get("velocidade", 1.0)
+            d = (tr["ate"] - tr["de"]) / vel
+            video.append({"arquivo": arq(tr["arquivo"]), "de": tr["de"], "velocidade": vel, "em": cursor,
+                          "duracao": d, "volume": a.get("volume", 1)})
+            cursor += d
+        dur = cursor - t
     else:
         a = b["ambiente"]
         vel = a.get("velocidade", 1.0)
@@ -64,10 +82,19 @@ for b in r["blocos"]:
         video.append({"arquivo": arq(a["arquivo"]), "de": a["de"], "velocidade": vel, "em": t, "duracao": dur,
                       "volume": a.get("volume", 1)})
     if "destaque" in b:
-        textos.append({"tipo": "destaque", "em": inicio, "duracao": dur, **b["destaque"]})
+        atraso = b["destaque"].get("atraso", 0)
+        textos.append({"tipo": "destaque", "em": inicio + atraso, "duracao": dur - atraso, **b["destaque"]})
+    if "impacto" in b:
+        impactos.append(round(inicio + b["impacto"], 3))
+    for k, sx in enumerate(b.get("setas", [])):
+        em_s = no_reel(sx["em"], origem[1], origem[3], inicio)
+        textos.append({"tipo": "seta", "em": round(em_s, 3), "duracao": round(inicio + dur - em_s, 3), "texto": sx["texto"],
+                       "x": sx["x"], "y": sx["y"], "rotulo": sx["rotulo"], "ordem": k})
     for k, p in enumerate(b.get("pilulas", [])):
         # Pílula com "em" (segundos do clipe) entra junto com a palavra; sem, entra escalonada.
-        if isinstance(p, dict):
+        if isinstance(p, dict) and "emBloco" in p:
+            em_p, texto = inicio + p["emBloco"], p["texto"]
+        elif isinstance(p, dict):
             em_p = no_reel(p["em"], origem[1], origem[3], inicio)
             texto = p["texto"]
         else:
@@ -80,7 +107,7 @@ for b in r["blocos"]:
 
 edicao = {"fps": 30, "marca": r["marca"], "video": video, "audio": audio, "textos": textos,
           "blocos": blocos, "cta": r["cta"], "duracaoFala": round(t, 3),
-          "legendas": legendas, "palavrasChave": r.get("palavrasChave", [])}
+          "legendas": legendas, "palavrasChave": r.get("palavrasChave", []), "impactos": impactos}
 (projeto / "edicao.json").write_text(json.dumps(edicao, ensure_ascii=False, indent=1))
 print(f"{len(blocos)} blocos, {len(video)} trechos de vídeo, {t:.1f} s + tela final {r['cta']['duracao']} s")
 for b in blocos:
