@@ -122,6 +122,9 @@ Também publica órteses: chamar sempre de **órtese** quando for o caso.
 - v4: **tiraram a legenda** (tinham pedido na v2). Ficaram só as pílulas curtas
   e as setas. Nas duas marcas, a última escolha tem sido sem legenda contínua:
   vale perguntar a cada vídeo em vez de assumir.
+- **Aprovado na v4** (14/10/2026): 45 s, sem legenda, áudio original, capa com
+  o paciente nas barras e "20 cm" em destaque, legenda do post com pedido de
+  compartilhamento. Entrega: arquivo direto no chat (não no Drive).
 - Conversas paralelas de fundo que soem negativas ou confusas ("não mudou muito")
   ficam sem som, mesmo com o áudio original.
 
