@@ -1,0 +1,83 @@
+{
+  "titulo": "Amputou. E agora?",
+  "marca": "centroAmputados",
+  "conta": "@centroamputadosrn",
+  "pasta": "media/amputei",
+  "velocidadeFala": 1.05,
+  "legendas": false,
+  "_obs": "Cortado: 'Sim, com certeza você vai voltar a andar, mas depende de você...' (12.88-25.6, soa como promessa) e 'Entender quais os pontos... e sim melhorar' (34.76-39.68).",
+  "trilha": {
+    "passos": ["Cicatrização", "Preparação do coto", "Condicionamento", "Avaliação", "Protetização", "Treino", "Autonomia"]
+  },
+  "blocos": [
+    {
+      "id": "pergunta1",
+      "fala": {"arquivo": "fala", "de": 0.0, "ate": 2.9},
+      "gancho": {"linha1": "AMPUTOU.", "linha2": "E agora?", "em": 0.05, "em2": 1.3, "ate": 5.0},
+      "impacto": 0.05
+    },
+    {
+      "id": "pergunta2",
+      "fala": {"arquivo": "fala", "de": 3.45, "ate": 5.2}
+    },
+    {
+      "id": "empatia",
+      "fala": {"arquivo": "fala", "de": 5.65, "ate": 11.65},
+      "pilulas": [{"texto": "Fase pós-cirurgia", "em": 10.1}]
+    },
+    {
+      "id": "oque",
+      "fala": {"arquivo": "fala", "de": 11.7, "ate": 12.7}
+    },
+    {
+      "id": "processo",
+      "fala": {"arquivo": "fala", "de": 25.9, "ate": 34.2},
+      "mapa": {"de": 26.75, "antes": 28.4, "foco": 33.16, "ate": 34.2},
+      "marcos": [{"passo": 1, "em": 28.4}, {"passo": 2, "em": 28.4}, {"passo": 3, "em": 28.4}, {"passo": 4, "em": 33.16}]
+    },
+    {
+      "id": "componentes",
+      "fala": {"arquivo": "fala", "de": 39.85, "ate": 47.85},
+      "pilulas": [{"texto": "Componentes sob medida", "em": 42.52}, {"texto": "Nível de mobilidade", "em": 46.24}]
+    },
+    {
+      "id": "producao",
+      "fala": {"arquivo": "fala", "de": 48.0, "ate": 52.05},
+      "marcos": [{"passo": 5, "em": 51.22}]
+    },
+    {
+      "id": "treinamento",
+      "fala": {"arquivo": "fala", "de": 52.05, "ate": 56.5},
+      "marcos": [{"passo": 6, "em": 56.04}]
+    },
+    {
+      "id": "treino",
+      "fala": {"arquivo": "fala", "de": 56.5, "ate": 66.45},
+      "pilulas": [{"texto": "Na rotina", "em": 60.66}],
+      "icones": [
+        {"tipo": "distancia", "texto": "Médias e longas distâncias", "em": 62.2},
+        {"tipo": "rampaSobe", "texto": "Subir rampa", "em": 64.2},
+        {"tipo": "rampaDesce", "texto": "Descer rampa", "em": 64.84},
+        {"tipo": "escadaSobe", "texto": "Subir escada", "em": 65.34},
+        {"tipo": "escadaDesce", "texto": "Descer escada", "em": 65.9}
+      ]
+    },
+    {
+      "id": "autonomia",
+      "fala": {"arquivo": "fala", "de": 66.5, "ate": 72.3},
+      "marcos": [{"passo": 7, "em": 66.82}]
+    },
+    {
+      "id": "cta",
+      "fala": {"arquivo": "fala", "de": 72.5, "ate": 81.7},
+      "pilulas": [{"texto": "Avaliação gratuita 💚", "em": 78.38}, {"texto": "Link na bio", "em": 79.96}]
+    }
+  ],
+  "cta": {
+    "titulo": "Agende sua avaliação gratuita",
+    "botao": "Link na bio",
+    "rodape": "Você e sua prótese, em movimento.",
+    "duracao": 3.5
+  },
+  "clipes": {"fala": "amputeieagora"}
+}

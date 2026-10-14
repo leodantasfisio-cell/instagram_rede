@@ -127,10 +127,31 @@ Também publica órteses: chamar sempre de **órtese** quando for o caso.
   compartilhamento. Entrega: arquivo direto no chat (não no Drive).
 - Conversas paralelas de fundo que soem negativas ou confusas ("não mudou muito")
   ficam sem som, mesmo com o áudio original.
+- **Reel "Amputou. E agora?"** (out/2026, `amputeieagora.mp4` de `MÍDIAS CLUBE DO
+  AMPUTADO / Videos Insta / para editar`, projeto `projetos/amputei`): fisioterapeuta
+  falando para quem acabou de amputar. A ideia veio da equipe (sequência
+  cicatrização → coto → condicionamento → avaliação → protetização → treino →
+  autonomia), com liberdade para criar. Escolhas:
+  - **Cortaram a promessa** "com certeza você vai voltar a andar, mas depende de
+    você" (soa como "basta querer"); também saiu frase confusa sem conteúdo.
+  - **Sem legenda** de novo (terceira vez seguida nas duas marcas).
+  - Pediram para usar imagens reais das pastas dos pacientes do Clube do Amputado
+    (Joseane, Joseana, Ozenilda, Berg: todos autorizados; **Miguel não** autorizou).
+    Passos sem imagem real (cicatrização, coto, condicionamento) ficam **só na
+    animação**, sem gerar imagem.
+  - Proposta de animação: gancho "AMPUTOU. / E agora?" batendo na tela, mapa do
+    caminho em tela cheia com as 7 etapas, trilha de 7 pontos com pegada 👣 no topo
+    no lugar da barra de progresso, selo grande a cada etapa, cartões com ícones
+    para rampa/escada no tempo da fala.
+  - A avaliação gratuita existe e pode ser citada no CTA.
 
 ## Notas técnicas
 
 - `ffmpeg`/`ffprobe` em URLs precisam de `http_proxy=$HTTPS_PROXY`.
+- Miniaturas sem baixar: `ffmpeg -ss` direto na URL (range request) tira 3 quadros
+  por vídeo. Mas isso também conta para a cota: depois de ~45 vídeos assim, todos
+  os downloads inteiros desses arquivos deram "Quota exceeded". Na próxima, fazer
+  miniatura só de 1 quadro e só das pastas mais prováveis.
 - O Drive bloqueia downloads anônimos repetidos ("Quota exceeded") por até 24 h;
   baixar só os vídeos escolhidos, uma vez, e evitar varreduras completas.
   Copiar o arquivo no Drive não contorna o bloqueio.

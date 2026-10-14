@@ -13,6 +13,7 @@ import {
 } from 'remotion';
 import {Legendas} from './Legendas';
 import {aplicarMarca, cores, fonte, marcaAtiva, marcas} from './marca';
+import {CartaoIcone, Gancho, Mapa, SeloEtapa, TrilhaTopo, type Trilha} from './Trilha';
 import type {Palavra} from './tipos';
 
 // Reel montado a partir de vários clipes (ver scripts/montar_montagem.py).
@@ -29,6 +30,7 @@ export type TrechoAudio = {arquivo: string; de: number; velocidade: number; em: 
 export type Texto =
   | {tipo: 'destaque'; em: number; duracao: number; valor: string; sub?: string}
   | {tipo: 'pilula'; em: number; duracao: number; texto: string; ordem: number}
+  | {tipo: 'icone'; em: number; duracao: number; texto: string; icone: string; ordem: number}
   | {tipo: 'seta'; em: number; duracao: number; texto: string; x: number; y: number; rotulo: [number, number]; ordem: number};
 export type Bloco = {id: string; em: number; duracao: number; painel?: string | null};
 export type EdicaoMontagem = {
@@ -43,6 +45,7 @@ export type EdicaoMontagem = {
   legendas?: Palavra[];
   palavrasChave?: string[];
   impactos?: number[];
+  trilha?: Trilha | null;
 };
 
 const DESCIDA = 470;
@@ -165,13 +168,13 @@ const Destaque: React.FC<{valor: string; sub?: string; duracao: number}> = ({val
   );
 };
 
-const Pilula: React.FC<{texto: string; ordem: number; duracao: number}> = ({texto, ordem, duracao}) => {
+const Pilula: React.FC<{texto: string; ordem: number; duracao: number; topo?: number}> = ({texto, ordem, duracao, topo = 250}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const entra = spring({frame, fps, config: {damping: 14, stiffness: 150}});
   const sai = interpolate(frame, [duracao * fps - 6, duracao * fps], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
   return (
-    <AbsoluteFill style={{paddingTop: 250 + ordem * 118, paddingLeft: 60, fontFamily: fonte}}>
+    <AbsoluteFill style={{paddingTop: topo + ordem * 118, paddingLeft: 60, fontFamily: fonte}}>
       <div
         style={{
           alignSelf: 'flex-start',
@@ -400,6 +403,10 @@ export const Montagem: React.FC<{edicao: EdicaoMontagem}> = ({edicao}) => {
   const f = (s: number) => Math.round(s * fps);
   const fimFala = f(edicao.duracaoFala);
   const inicioBloco = new Set(edicao.blocos.map((b) => f(b.em)));
+  const trilha = edicao.trilha ?? null;
+  // A trilha do topo entra quando o mapa fecha; os selos valem para as etapas que acendem depois dele.
+  const fimMapa = trilha?.mapa ? trilha.mapa.em + trilha.mapa.duracao : 0;
+  const selos = (trilha?.marcos ?? []).filter((m) => m.em >= fimMapa);
   return (
     <AbsoluteFill style={{backgroundColor: '#000'}}>
       {edicao.video.map((seg, i) => {
@@ -432,8 +439,10 @@ export const Montagem: React.FC<{edicao: EdicaoMontagem}> = ({edicao}) => {
             <Destaque valor={tx.valor} sub={tx.sub} duracao={tx.duracao} />
           ) : tx.tipo === 'seta' ? (
             <Seta texto={tx.texto} x={tx.x} y={tx.y} rotulo={tx.rotulo} duracao={tx.duracao} />
+          ) : tx.tipo === 'icone' ? (
+            <CartaoIcone icone={tx.icone} texto={tx.texto} ordem={tx.ordem} duracao={tx.duracao} />
           ) : (
-            <Pilula texto={tx.texto} ordem={tx.ordem} duracao={tx.duracao} />
+            <Pilula texto={tx.texto} ordem={tx.ordem} duracao={tx.duracao} topo={trilha ? 330 : 250} />
           )}
         </Sequence>
       ))}
@@ -444,9 +453,32 @@ export const Montagem: React.FC<{edicao: EdicaoMontagem}> = ({edicao}) => {
         </Sequence>
       ) : null}
 
-      <Sequence durationInFrames={fimFala}>
-        <Progresso total={fimFala} />
-      </Sequence>
+      {trilha ? (
+        <>
+          <Sequence from={f(fimMapa)} durationInFrames={fimFala - f(fimMapa)}>
+            <TrilhaTopo trilha={trilha} inicio={fimMapa} />
+          </Sequence>
+          {selos.map((m) => (
+            <Sequence key={m.passo} from={f(m.em)} durationInFrames={f(1.6)}>
+              <SeloEtapa numero={m.passo} nome={trilha.passos[m.passo - 1]} duracao={1.6} />
+            </Sequence>
+          ))}
+          {trilha.mapa ? (
+            <Sequence from={f(trilha.mapa.em)} durationInFrames={f(trilha.mapa.duracao)}>
+              <Mapa trilha={trilha} />
+            </Sequence>
+          ) : null}
+          {trilha.gancho ? (
+            <Sequence from={f(trilha.gancho.em)} durationInFrames={f(trilha.gancho.duracao)}>
+              <Gancho g={trilha.gancho} />
+            </Sequence>
+          ) : null}
+        </>
+      ) : (
+        <Sequence durationInFrames={fimFala}>
+          <Progresso total={fimFala} />
+        </Sequence>
+      )}
 
       <Sequence from={fimFala}>
         <Final cta={edicao.cta} />
@@ -461,6 +493,21 @@ export const Montagem: React.FC<{edicao: EdicaoMontagem}> = ({edicao}) => {
       {(edicao.impactos ?? []).map((em, i) => (
         <Som key={`i${i}`} arquivo="sfx/impacto.wav" em={em} volume={0.8} />
       ))}
+      {selos.map((m) => (
+        <Som key={`s${m.passo}`} arquivo="sfx/brilho.wav" em={m.em} volume={0.55} />
+      ))}
+      {trilha?.mapa ? (
+        <>
+          <Som arquivo="sfx/whoosh.wav" em={trilha.mapa.em - 0.1} volume={0.45} />
+          {trilha.passos.map((_, i) => (
+            <Som key={`m${i}`} arquivo="sfx/pop.wav" em={trilha.mapa!.em + 0.25 + i * 0.17} volume={0.3} />
+          ))}
+          <Som arquivo="sfx/brilho.wav" em={trilha.mapa.em + trilha.mapa.antes} volume={0.5} />
+          <Som arquivo="sfx/pop.wav" em={trilha.mapa.em + trilha.mapa.foco} volume={0.6} />
+          <Som arquivo="sfx/whoosh.wav" em={fimMapa - 0.4} volume={0.4} />
+        </>
+      ) : null}
+      {trilha?.gancho ? <Som arquivo="sfx/pop.wav" em={trilha.gancho.em + trilha.gancho.em2} volume={0.6} /> : null}
       <Som arquivo="sfx/whoosh.wav" em={edicao.duracaoFala - 0.18} volume={0.4} />
       <Som arquivo="sfx/brilho.wav" em={edicao.duracaoFala + 0.4} volume={0.5} />
     </AbsoluteFill>

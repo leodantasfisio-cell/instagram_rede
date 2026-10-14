@@ -1,0 +1,313 @@
+{
+ "fps": 30,
+ "marca": "centroAmputados",
+ "video": [
+  {
+   "arquivo": "media/amputei/fala.mp4",
+   "de": 0.0,
+   "velocidade": 1.05,
+   "em": 0.0,
+   "duracao": 2.761904761904762,
+   "volume": 1
+  },
+  {
+   "arquivo": "media/amputei/fala.mp4",
+   "de": 3.45,
+   "velocidade": 1.05,
+   "em": 2.761904761904762,
+   "duracao": 1.6666666666666665,
+   "volume": 1
+  },
+  {
+   "arquivo": "media/amputei/fala.mp4",
+   "de": 5.65,
+   "velocidade": 1.05,
+   "em": 4.428571428571429,
+   "duracao": 5.714285714285714,
+   "volume": 1
+  },
+  {
+   "arquivo": "media/amputei/fala.mp4",
+   "de": 11.7,
+   "velocidade": 1.05,
+   "em": 10.142857142857142,
+   "duracao": 0.9523809523809523,
+   "volume": 1
+  },
+  {
+   "arquivo": "media/amputei/fala.mp4",
+   "de": 25.9,
+   "velocidade": 1.05,
+   "em": 11.095238095238095,
+   "duracao": 7.904761904761909,
+   "volume": 1
+  },
+  {
+   "arquivo": "media/amputei/fala.mp4",
+   "de": 39.85,
+   "velocidade": 1.05,
+   "em": 19.000000000000004,
+   "duracao": 7.619047619047619,
+   "volume": 1
+  },
+  {
+   "arquivo": "media/amputei/fala.mp4",
+   "de": 48.0,
+   "velocidade": 1.05,
+   "em": 26.61904761904762,
+   "duracao": 3.857142857142854,
+   "volume": 1
+  },
+  {
+   "arquivo": "media/amputei/fala.mp4",
+   "de": 52.05,
+   "velocidade": 1.05,
+   "em": 30.476190476190474,
+   "duracao": 4.238095238095241,
+   "volume": 1
+  },
+  {
+   "arquivo": "media/amputei/fala.mp4",
+   "de": 56.5,
+   "velocidade": 1.05,
+   "em": 34.714285714285715,
+   "duracao": 9.476190476190478,
+   "volume": 1
+  },
+  {
+   "arquivo": "media/amputei/fala.mp4",
+   "de": 66.5,
+   "velocidade": 1.05,
+   "em": 44.19047619047619,
+   "duracao": 5.523809523809521,
+   "volume": 1
+  },
+  {
+   "arquivo": "media/amputei/fala.mp4",
+   "de": 72.5,
+   "velocidade": 1.05,
+   "em": 49.71428571428571,
+   "duracao": 8.761904761904765,
+   "volume": 1
+  }
+ ],
+ "audio": [],
+ "textos": [
+  {
+   "tipo": "pilula",
+   "em": 8.667,
+   "duracao": 1.476,
+   "texto": "Fase pós-cirurgia",
+   "ordem": 0
+  },
+  {
+   "tipo": "pilula",
+   "em": 21.543,
+   "duracao": 5.076,
+   "texto": "Componentes sob medida",
+   "ordem": 0
+  },
+  {
+   "tipo": "pilula",
+   "em": 25.086,
+   "duracao": 1.533,
+   "texto": "Nível de mobilidade",
+   "ordem": 1
+  },
+  {
+   "tipo": "icone",
+   "em": 40.143,
+   "duracao": 4.047,
+   "texto": "Médias e longas distâncias",
+   "icone": "distancia",
+   "ordem": 0
+  },
+  {
+   "tipo": "icone",
+   "em": 42.048,
+   "duracao": 2.142,
+   "texto": "Subir rampa",
+   "icone": "rampaSobe",
+   "ordem": 1
+  },
+  {
+   "tipo": "icone",
+   "em": 42.657,
+   "duracao": 1.533,
+   "texto": "Descer rampa",
+   "icone": "rampaDesce",
+   "ordem": 2
+  },
+  {
+   "tipo": "icone",
+   "em": 43.133,
+   "duracao": 1.057,
+   "texto": "Subir escada",
+   "icone": "escadaSobe",
+   "ordem": 3
+  },
+  {
+   "tipo": "icone",
+   "em": 43.667,
+   "duracao": 0.523,
+   "texto": "Descer escada",
+   "icone": "escadaDesce",
+   "ordem": 4
+  },
+  {
+   "tipo": "pilula",
+   "em": 38.676,
+   "duracao": 5.514,
+   "texto": "Na rotina",
+   "ordem": 0
+  },
+  {
+   "tipo": "pilula",
+   "em": 55.314,
+   "duracao": 3.162,
+   "texto": "Avaliação gratuita 💚",
+   "ordem": 0
+  },
+  {
+   "tipo": "pilula",
+   "em": 56.819,
+   "duracao": 1.657,
+   "texto": "Link na bio",
+   "ordem": 1
+  }
+ ],
+ "blocos": [
+  {
+   "id": "pergunta1",
+   "em": 0.0,
+   "duracao": 2.761904761904762,
+   "painel": null
+  },
+  {
+   "id": "pergunta2",
+   "em": 2.761904761904762,
+   "duracao": 1.6666666666666665,
+   "painel": null
+  },
+  {
+   "id": "empatia",
+   "em": 4.428571428571429,
+   "duracao": 5.714285714285714,
+   "painel": null
+  },
+  {
+   "id": "oque",
+   "em": 10.142857142857142,
+   "duracao": 0.9523809523809523,
+   "painel": null
+  },
+  {
+   "id": "processo",
+   "em": 11.095238095238095,
+   "duracao": 7.904761904761909,
+   "painel": null
+  },
+  {
+   "id": "componentes",
+   "em": 19.000000000000004,
+   "duracao": 7.619047619047619,
+   "painel": null
+  },
+  {
+   "id": "producao",
+   "em": 26.61904761904762,
+   "duracao": 3.857142857142854,
+   "painel": null
+  },
+  {
+   "id": "treinamento",
+   "em": 30.476190476190474,
+   "duracao": 4.238095238095241,
+   "painel": null
+  },
+  {
+   "id": "treino",
+   "em": 34.714285714285715,
+   "duracao": 9.476190476190478,
+   "painel": null
+  },
+  {
+   "id": "autonomia",
+   "em": 44.19047619047619,
+   "duracao": 5.523809523809521,
+   "painel": null
+  },
+  {
+   "id": "cta",
+   "em": 49.71428571428571,
+   "duracao": 8.761904761904765,
+   "painel": null
+  }
+ ],
+ "cta": {
+  "titulo": "Agende sua avaliação gratuita",
+  "botao": "Link na bio",
+  "rodape": "Você e sua prótese, em movimento.",
+  "duracao": 3.5
+ },
+ "duracaoFala": 58.476,
+ "legendas": [],
+ "palavrasChave": [],
+ "impactos": [
+  0.05
+ ],
+ "trilha": {
+  "passos": [
+   "Cicatrização",
+   "Preparação do coto",
+   "Condicionamento",
+   "Avaliação",
+   "Protetização",
+   "Treino",
+   "Autonomia"
+  ],
+  "marcos": [
+   {
+    "passo": 1,
+    "em": 13.476
+   },
+   {
+    "passo": 2,
+    "em": 13.476
+   },
+   {
+    "passo": 3,
+    "em": 13.476
+   },
+   {
+    "passo": 4,
+    "em": 18.01
+   },
+   {
+    "passo": 5,
+    "em": 29.686
+   },
+   {
+    "passo": 6,
+    "em": 34.276
+   },
+   {
+    "passo": 7,
+    "em": 44.495
+   }
+  ],
+  "mapa": {
+   "em": 11.905,
+   "duracao": 7.095,
+   "antes": 1.571,
+   "foco": 6.105
+  },
+  "gancho": {
+   "linha1": "AMPUTOU.",
+   "linha2": "E agora?",
+   "em": 0.048,
+   "em2": 1.19,
+   "duracao": 4.714
+  }
+ }
+}

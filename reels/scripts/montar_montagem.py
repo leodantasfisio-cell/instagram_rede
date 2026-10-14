@@ -37,6 +37,8 @@ def no_reel(src, de, vel, em):
 
 
 video, audio, textos, blocos, legendas, impactos = [], [], [], [], [], []
+# Trilha de etapas (opcional): marcos = quando cada passo acende; mapa = tela com o caminho todo.
+trilha = {"passos": r["trilha"]["passos"], "marcos": [], "mapa": None, "gancho": None} if "trilha" in r else None
 t = 0.0
 for b in r["blocos"]:
     inicio = t
@@ -81,6 +83,22 @@ for b in r["blocos"]:
         origem = (a["arquivo"], a["de"], a["ate"], vel)
         video.append({"arquivo": arq(a["arquivo"]), "de": a["de"], "velocidade": vel, "em": t, "duracao": dur,
                       "volume": a.get("volume", 1)})
+    if trilha is not None and origem:
+        no = lambda src: round(no_reel(src, origem[1], origem[3], inicio), 3)
+        for m in b.get("marcos", []):
+            trilha["marcos"].append({"passo": m["passo"], "em": no(m["em"])})
+        if "mapa" in b:
+            mp = b["mapa"]
+            trilha["mapa"] = {"em": no(mp["de"]), "duracao": round(no(mp["ate"]) - no(mp["de"]), 3),
+                              "antes": round(no(mp["antes"]) - no(mp["de"]), 3), "foco": round(no(mp["foco"]) - no(mp["de"]), 3)}
+        if "gancho" in b:
+            g = b["gancho"]
+            trilha["gancho"] = {"linha1": g["linha1"], "linha2": g["linha2"], "em": no(g["em"]),
+                                "em2": round(no(g["em2"]) - no(g["em"]), 3), "duracao": round(no(g["ate"]) - no(g["em"]), 3)}
+        for k, ic in enumerate(b.get("icones", [])):
+            em_i = no(ic["em"])
+            textos.append({"tipo": "icone", "em": em_i, "duracao": round(inicio + dur - em_i, 3), "texto": ic["texto"],
+                           "icone": ic["tipo"], "ordem": k})
     if "destaque" in b:
         atraso = b["destaque"].get("atraso", 0)
         textos.append({"tipo": "destaque", "em": inicio + atraso, "duracao": dur - atraso, **b["destaque"]})
@@ -107,7 +125,7 @@ for b in r["blocos"]:
 
 edicao = {"fps": 30, "marca": r["marca"], "video": video, "audio": audio, "textos": textos,
           "blocos": blocos, "cta": r["cta"], "duracaoFala": round(t, 3),
-          "legendas": legendas, "palavrasChave": r.get("palavrasChave", []), "impactos": impactos}
+          "legendas": legendas, "palavrasChave": r.get("palavrasChave", []), "impactos": impactos, "trilha": trilha}
 (projeto / "edicao.json").write_text(json.dumps(edicao, ensure_ascii=False, indent=1))
 print(f"{len(blocos)} blocos, {len(video)} trechos de vídeo, {t:.1f} s + tela final {r['cta']['duracao']} s")
 for b in blocos:
