@@ -1,7 +1,7 @@
 import {AbsoluteFill, Composition, OffthreadVideo, Still, staticFile} from 'remotion';
 import edicaoJson from '../data/edicao.json';
 import ortese20cmJson from '../projetos/ortese20cm/edicao.json';
-import {Montagem, type EdicaoMontagem} from './Montagem';
+import {CapaMontagem, Montagem, type EdicaoMontagem} from './Montagem';
 import './marca';
 import {Reel} from './Reel';
 import {CapaTexto} from './Telas';
@@ -49,6 +49,20 @@ export const Root: React.FC = () => (
       fps={30}
       durationInFrames={Math.round(((ortese20cmJson as EdicaoMontagem).duracaoFala + (ortese20cmJson as EdicaoMontagem).cta.duracao) * 30)}
       defaultProps={{edicao: ortese20cmJson as EdicaoMontagem}}
+    />
+    <Still
+      id="CapaOrtese20cm"
+      component={CapaMontagem}
+      width={1080}
+      height={1920}
+      defaultProps={{
+        marca: 'centroAmputados' as const,
+        arquivo: 'media/ortese20cm/menino.mp4',
+        segundo: 9.5,
+        valor: '20 cm',
+        sub: 'de diferença entre as pernas',
+        etiqueta: 'Órtese sob medida',
+      }}
     />
     <Still id="Capa" component={Capa} width={1080} height={1920} defaultProps={{edicao}} />
   </>

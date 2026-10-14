@@ -466,3 +466,71 @@ export const Montagem: React.FC<{edicao: EdicaoMontagem}> = ({edicao}) => {
     </AbsoluteFill>
   );
 };
+
+// Capa do Reel: um quadro real com o número da história em destaque.
+export const CapaMontagem: React.FC<{
+  marca: keyof typeof marcas;
+  arquivo: string;
+  segundo: number;
+  valor: string;
+  sub: string;
+  etiqueta: string;
+}> = ({marca, arquivo, segundo, valor, sub, etiqueta}) => {
+  aplicarMarca(marca);
+  const {fps} = useVideoConfig();
+  const profundidade = Array.from({length: 12}, (_, k) => `0 ${k + 1}px 0 ${cores.azulEscuro}`).join(', ');
+  return (
+    <AbsoluteFill style={{backgroundColor: '#000'}}>
+      <Freeze frame={0}>
+        <OffthreadVideo
+          src={staticFile(arquivo)}
+          trimBefore={Math.round(segundo * fps)}
+          muted
+          style={{width: '100%', height: '100%', objectFit: 'cover'}}
+        />
+      </Freeze>
+      {/* Texto abaixo do rosto e dentro da área que a grade 3:4 do perfil mostra. */}
+      <AbsoluteFill
+        style={{
+          justifyContent: 'flex-end',
+          alignItems: 'center',
+          paddingBottom: 330,
+          background: 'linear-gradient(180deg, rgba(0,0,0,0) 35%, rgba(0,40,20,0.75) 80%)',
+          fontFamily: fonte,
+          color: cores.branco,
+          textAlign: 'center',
+        }}
+      >
+        <div
+          style={{
+            padding: '12px 30px',
+            borderRadius: 999,
+            background: cores.branco,
+            color: cores.azulEscuro,
+            fontWeight: 800,
+            fontSize: 40,
+            marginBottom: 10,
+          }}
+        >
+          {etiqueta}
+        </div>
+        <div style={{fontWeight: 800, fontSize: 230, letterSpacing: -6, lineHeight: 1, textShadow: `${profundidade}, 0 24px 40px rgba(0,0,0,0.5)`}}>
+          {valor}
+        </div>
+        <div
+          style={{
+            marginTop: 14,
+            padding: '14px 30px',
+            borderRadius: 999,
+            background: cores.azul,
+            fontWeight: 800,
+            fontSize: 46,
+          }}
+        >
+          {sub}
+        </div>
+        <div style={{marginTop: 26, fontWeight: 700, fontSize: 34, opacity: 0.9}}>{marcaAtiva.handle}</div>
+      </AbsoluteFill>
+    </AbsoluteFill>
+  );
+};
