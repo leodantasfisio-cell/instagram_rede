@@ -1,0 +1,13 @@
+# nome id_drive inicio(s) duracao(s): cenas A-L escolhidas para o Reel
+colocacao 1tqcEF74Ay0ivX1P6_4fCGmXw2gshiGEq 22 10
+avaliacao1 1gx48EMWTGn7ZwX54tIoQ_Hb5ZjfXvWGw 15 10
+avaliacao2 1B9y-B5Z_63Ocqi1QupeQskO29jdHF3by 6 10
+protese1 1FzPtT6WA36MXeNtfFBAuSb8QvP9Q976X 10 10
+protese2 1ziywBupOIxZ0VCa1NWI1yJin1cZTkSer 6 8.8
+barras 1Emejj-2gwwgXMKUv_wlPhpcpXaPVv7Zl 0 10.7
+esteira 1AISgx1ZfdsM8JhEEgJvJZPh0LSnaU-2k 0 12
+equilibrio 1e3_Hm1uLjx1yDJ_uvpB9tkuYQfr7guBv 6 10
+fisio 1FD34g4JcP43dxVJgDrLq0FOxmVNK537k 0 9.7
+rua1 1uevznDzH6bY90_2osLCbAlo1vrEw0s5v 0 12
+rua2 1bizsnqbPCG3RCa2dvMEdSXv6CMzsAwlk 15 12
+andando 1RrUSrwjHgv_fBpWbbsfRhiKogNh_Ez9e 16 11
