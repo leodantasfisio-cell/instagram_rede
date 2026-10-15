@@ -11,12 +11,13 @@
    "volume": 1
   },
   {
-   "arquivo": "media/amputei/fala.mp4",
-   "de": 3.45,
-   "velocidade": 1.05,
+   "arquivo": "media/amputei/colocacao.mp4",
+   "de": 2.0,
+   "velocidade": 1.0,
    "em": 2.761904761904762,
    "duracao": 1.6666666666666665,
-   "volume": 1
+   "volume": 0,
+   "congelar": false
   },
   {
    "arquivo": "media/amputei/fala.mp4",
@@ -43,20 +44,49 @@
    "volume": 1
   },
   {
-   "arquivo": "media/amputei/fala.mp4",
-   "de": 39.85,
-   "velocidade": 1.05,
+   "arquivo": "media/amputei/avaliacao1.mp4",
+   "de": 1.0,
+   "velocidade": 1.0,
    "em": 19.000000000000004,
-   "duracao": 7.619047619047619,
-   "volume": 1
+   "duracao": 2.619047619047619,
+   "volume": 0,
+   "congelar": false
   },
   {
-   "arquivo": "media/amputei/fala.mp4",
-   "de": 48.0,
-   "velocidade": 1.05,
+   "arquivo": "media/amputei/avaliacao2.mp4",
+   "de": 2.0,
+   "velocidade": 1.0,
+   "em": 21.619047619047624,
+   "duracao": 2.619047619047619,
+   "volume": 0,
+   "congelar": false
+  },
+  {
+   "arquivo": "media/amputei/avaliacao1.mp4",
+   "de": 6.0,
+   "velocidade": 1.0,
+   "em": 24.23809523809524,
+   "duracao": 2.380952380952381,
+   "volume": 0,
+   "congelar": false
+  },
+  {
+   "arquivo": "media/amputei/protese2.mp4",
+   "de": 0.5,
+   "velocidade": 1.0,
    "em": 26.61904761904762,
-   "duracao": 3.857142857142854,
-   "volume": 1
+   "duracao": 1.928571428571427,
+   "volume": 0,
+   "congelar": false
+  },
+  {
+   "arquivo": "media/amputei/protese1.mp4",
+   "de": 0.0,
+   "velocidade": 1.0,
+   "em": 28.547619047619047,
+   "duracao": 1.928571428571427,
+   "volume": 0,
+   "congelar": false
   },
   {
    "arquivo": "media/amputei/fala.mp4",
@@ -67,31 +97,121 @@
    "volume": 1
   },
   {
-   "arquivo": "media/amputei/fala.mp4",
-   "de": 56.5,
-   "velocidade": 1.05,
+   "arquivo": "media/amputei/barras.mp4",
+   "de": 0.5,
+   "velocidade": 1.0,
    "em": 34.714285714285715,
-   "duracao": 9.476190476190478,
-   "volume": 1
+   "duracao": 2.3690476190476195,
+   "volume": 0,
+   "congelar": false
   },
   {
-   "arquivo": "media/amputei/fala.mp4",
-   "de": 66.5,
-   "velocidade": 1.05,
+   "arquivo": "media/amputei/esteira.mp4",
+   "de": 2.0,
+   "velocidade": 1.0,
+   "em": 37.083333333333336,
+   "duracao": 2.3690476190476195,
+   "volume": 0,
+   "congelar": false
+  },
+  {
+   "arquivo": "media/amputei/equilibrio.mp4",
+   "de": 1.0,
+   "velocidade": 1.0,
+   "em": 39.452380952380956,
+   "duracao": 2.3690476190476195,
+   "volume": 0,
+   "congelar": false
+  },
+  {
+   "arquivo": "media/amputei/fisio.mp4",
+   "de": 2.0,
+   "velocidade": 1.0,
+   "em": 41.82142857142858,
+   "duracao": 2.3690476190476195,
+   "volume": 0,
+   "congelar": false
+  },
+  {
+   "arquivo": "media/amputei/rua1.mp4",
+   "de": 1.0,
+   "velocidade": 1.0,
    "em": 44.19047619047619,
-   "duracao": 5.523809523809521,
-   "volume": 1
+   "duracao": 1.8412698412698403,
+   "volume": 0,
+   "congelar": false
+  },
+  {
+   "arquivo": "media/amputei/rua2.mp4",
+   "de": 3.0,
+   "velocidade": 1.0,
+   "em": 46.03174603174603,
+   "duracao": 1.8412698412698403,
+   "volume": 0,
+   "congelar": false
+  },
+  {
+   "arquivo": "media/amputei/andando.mp4",
+   "de": 4.0,
+   "velocidade": 1.0,
+   "em": 47.87301587301587,
+   "duracao": 1.8412698412698403,
+   "volume": 0,
+   "congelar": false
   },
   {
    "arquivo": "media/amputei/fala.mp4",
    "de": 72.5,
    "velocidade": 1.05,
    "em": 49.71428571428571,
-   "duracao": 8.761904761904765,
+   "duracao": 8.857142857142854,
    "volume": 1
   }
  ],
- "audio": [],
+ "audio": [
+  {
+   "arquivo": "media/amputei/fala.mp4",
+   "de": 3.45,
+   "velocidade": 1.05,
+   "em": 2.761904761904762,
+   "duracao": 1.6666666666666665
+  },
+  {
+   "arquivo": "media/amputei/fala.mp4",
+   "de": 39.85,
+   "velocidade": 1.05,
+   "em": 19.000000000000004,
+   "duracao": 5.238095238095238
+  },
+  {
+   "arquivo": "media/amputei/fala.mp4",
+   "de": 45.35,
+   "velocidade": 1.05,
+   "em": 24.23809523809524,
+   "duracao": 2.380952380952381
+  },
+  {
+   "arquivo": "media/amputei/fala.mp4",
+   "de": 48.0,
+   "velocidade": 1.05,
+   "em": 26.61904761904762,
+   "duracao": 3.857142857142854
+  },
+  {
+   "arquivo": "media/amputei/fala.mp4",
+   "de": 56.5,
+   "velocidade": 1.05,
+   "em": 34.714285714285715,
+   "duracao": 9.476190476190478
+  },
+  {
+   "arquivo": "media/amputei/fala.mp4",
+   "de": 66.5,
+   "velocidade": 1.05,
+   "em": 44.19047619047619,
+   "duracao": 5.523809523809521
+  }
+ ],
  "textos": [
   {
    "tipo": "pilula",
@@ -103,7 +223,7 @@
   {
    "tipo": "pilula",
    "em": 21.543,
-   "duracao": 5.076,
+   "duracao": 2.695,
    "texto": "Componentes sob medida",
    "ordem": 0
   },
@@ -112,7 +232,7 @@
    "em": 25.086,
    "duracao": 1.533,
    "texto": "Nível de mobilidade",
-   "ordem": 1
+   "ordem": 0
   },
   {
    "tipo": "icone",
@@ -164,14 +284,14 @@
   {
    "tipo": "pilula",
    "em": 55.314,
-   "duracao": 3.162,
+   "duracao": 3.257,
    "texto": "Avaliação gratuita 💚",
    "ordem": 0
   },
   {
    "tipo": "pilula",
    "em": 56.819,
-   "duracao": 1.657,
+   "duracao": 1.752,
    "texto": "Link na bio",
    "ordem": 1
   }
@@ -210,7 +330,13 @@
   {
    "id": "componentes",
    "em": 19.000000000000004,
-   "duracao": 7.619047619047619,
+   "duracao": 5.238095238095238,
+   "painel": null
+  },
+  {
+   "id": "mobilidade",
+   "em": 24.23809523809524,
+   "duracao": 2.380952380952381,
    "painel": null
   },
   {
@@ -240,7 +366,7 @@
   {
    "id": "cta",
    "em": 49.71428571428571,
-   "duracao": 8.761904761904765,
+   "duracao": 8.857142857142854,
    "painel": null
   }
  ],
@@ -250,7 +376,7 @@
   "rodape": "Você e sua prótese, em movimento.",
   "duracao": 3.5
  },
- "duracaoFala": 58.476,
+ "duracaoFala": 58.571,
  "legendas": [],
  "palavrasChave": [],
  "impactos": [

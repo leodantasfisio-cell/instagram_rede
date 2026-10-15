@@ -144,6 +144,12 @@ Também publica órteses: chamar sempre de **órtese** quando for o caso.
     no lugar da barra de progresso, selo grande a cada etapa, cartões com ícones
     para rampa/escada no tempo da fala.
   - A avaliação gratuita existe e pode ser citada no CTA.
+  - Prévia 1 só com fala + animações (Drive bloqueado); a equipe preferiu esperar
+    o Drive a cortar os clipes no celular. Prévia 2 (15/10) com as cenas reais:
+    colocação da prótese na pergunta, análise de marcha na avaliação, closes da
+    prótese na protetização, barras/esteira/cama elástica/fisio no treino, rua no
+    fim; o rosto do fisioterapeuta fica no gancho, na empatia, em "a fase que eu
+    mais gosto" e no CTA.
 
 ## Notas técnicas
 
@@ -151,7 +157,8 @@ Também publica órteses: chamar sempre de **órtese** quando for o caso.
 - Miniaturas sem baixar: `ffmpeg -ss` direto na URL (range request) tira 3 quadros
   por vídeo. Mas isso também conta para a cota: depois de ~45 vídeos assim, todos
   os downloads inteiros desses arquivos deram "Quota exceeded". Na próxima, fazer
-  miniatura só de 1 quadro e só das pastas mais prováveis.
+  miniatura só de 1 quadro e só das pastas mais prováveis. O bloqueio saiu
+  ~24 h depois (14/10 ~14h UTC → 15/10 14h UTC).
 - O Drive bloqueia downloads anônimos repetidos ("Quota exceeded") por até 24 h;
   baixar só os vídeos escolhidos, uma vez, e evitar varreduras completas.
   Copiar o arquivo no Drive não contorna o bloqueio.
