@@ -74,6 +74,21 @@ export const Root: React.FC = () => (
         etiqueta: 'Órtese sob medida',
       }}
     />
+    <Still
+      id="CapaAmputei"
+      component={CapaMontagem}
+      width={1080}
+      height={1920}
+      defaultProps={{
+        marca: 'centroAmputados' as const,
+        arquivo: 'media/amputei/rua1.mp4',
+        segundo: 3,
+        valor: 'Amputou.',
+        sub: 'E agora? O caminho em 7 etapas',
+        etiqueta: 'Para quem acabou de amputar',
+        tamanho: 190,
+      }}
+    />
     <Still id="Capa" component={Capa} width={1080} height={1920} defaultProps={{edicao}} />
   </>
 );

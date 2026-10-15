@@ -161,6 +161,9 @@ Também publica órteses: chamar sempre de **órtese** quando for o caso.
     laminação. Leitura: no Reel para quem acabou de amputar, preferem o caminho do
     paciente (coto → avaliação → prótese → treino → rua) ao processo de
     fabricação; fabricação fica melhor num Reel próprio.
+  - **Aprovado na prévia 4** (15/10/2026): 62 s, sem legenda, áudio original,
+    trilha de 7 etapas, capa com a paciente atravessando a rua e "Amputou." em
+    destaque. Entrega direto no chat.
 
 ## Notas técnicas
 

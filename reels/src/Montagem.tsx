@@ -522,7 +522,8 @@ export const CapaMontagem: React.FC<{
   valor: string;
   sub: string;
   etiqueta: string;
-}> = ({marca, arquivo, segundo, valor, sub, etiqueta}) => {
+  tamanho?: number;
+}> = ({marca, arquivo, segundo, valor, sub, etiqueta, tamanho = 230}) => {
   aplicarMarca(marca);
   const {fps} = useVideoConfig();
   const profundidade = Array.from({length: 12}, (_, k) => `0 ${k + 1}px 0 ${cores.azulEscuro}`).join(', ');
@@ -561,7 +562,7 @@ export const CapaMontagem: React.FC<{
         >
           {etiqueta}
         </div>
-        <div style={{fontWeight: 800, fontSize: 230, letterSpacing: -6, lineHeight: 1, textShadow: `${profundidade}, 0 24px 40px rgba(0,0,0,0.5)`}}>
+        <div style={{fontWeight: 800, fontSize: tamanho, letterSpacing: -6, lineHeight: 1, textShadow: `${profundidade}, 0 24px 40px rgba(0,0,0,0.5)`}}>
           {valor}
         </div>
         <div
