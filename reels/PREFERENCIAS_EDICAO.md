@@ -150,6 +150,12 @@ Também publica órteses: chamar sempre de **órtese** quando for o caso.
     prótese na protetização, barras/esteira/cama elástica/fisio no treino, rua no
     fim; o rosto do fisioterapeuta fica no gancho, na empatia, em "a fase que eu
     mais gosto" e no CTA.
+  - Prévia 3: a equipe mandou material próprio para **avaliação e protetização**:
+    fotos do coto (cicatriz visível, vista lateral), escaneamento do coto com
+    scanner 3D e tablet, encaixe saindo da impressora 3D e encaixe laminado. Ou
+    seja: gostam de mostrar o **processo técnico real** (escaneamento, impressão,
+    laminação), não só o paciente andando. Vídeos vieram deitados (4K 16:9) e
+    foram recortados no centro para 9:16.
 
 ## Notas técnicas
 
