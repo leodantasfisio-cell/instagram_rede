@@ -156,6 +156,11 @@ Também publica órteses: chamar sempre de **órtese** quando for o caso.
     seja: gostam de mostrar o **processo técnico real** (escaneamento, impressão,
     laminação), não só o paciente andando. Vídeos vieram deitados (4K 16:9) e
     foram recortados no centro para 9:16.
+  - **Não gostaram da prévia 3**: voltar ao jeito da prévia 2, mantendo só as
+    **duas fotos dos cotos** na avaliação. Saíram scanner, tablet, impressão 3D e
+    laminação. Leitura: no Reel para quem acabou de amputar, preferem o caminho do
+    paciente (coto → avaliação → prótese → treino → rua) ao processo de
+    fabricação; fabricação fica melhor num Reel próprio.
 
 ## Notas técnicas
 

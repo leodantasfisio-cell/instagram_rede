@@ -48,7 +48,7 @@
    "de": 0.0,
    "velocidade": 1.0,
    "em": 19.000000000000004,
-   "duracao": 1.0,
+   "duracao": 1.1,
    "volume": 0,
    "congelar": false
   },
@@ -56,26 +56,26 @@
    "arquivo": "media/amputei/foto_coto2.mp4",
    "de": 0.0,
    "velocidade": 1.0,
-   "em": 20.000000000000004,
-   "duracao": 1.0,
-   "volume": 0,
-   "congelar": false
-  },
-  {
-   "arquivo": "media/amputei/foto_scanner.mp4",
-   "de": 0.0,
-   "velocidade": 1.0,
-   "em": 21.000000000000004,
+   "em": 20.100000000000005,
    "duracao": 1.1,
    "volume": 0,
    "congelar": false
   },
   {
-   "arquivo": "media/amputei/scan_tablet.mp4",
-   "de": 1.6,
+   "arquivo": "media/amputei/avaliacao1.mp4",
+   "de": 1.0,
    "velocidade": 1.0,
-   "em": 22.100000000000005,
-   "duracao": 2.138095238095238,
+   "em": 21.200000000000006,
+   "duracao": 1.519047619047619,
+   "volume": 0,
+   "congelar": false
+  },
+  {
+   "arquivo": "media/amputei/avaliacao2.mp4",
+   "de": 2.0,
+   "velocidade": 1.0,
+   "em": 22.719047619047625,
+   "duracao": 1.519047619047619,
    "volume": 0,
    "congelar": false
   },
@@ -89,20 +89,11 @@
    "congelar": false
   },
   {
-   "arquivo": "media/amputei/impressao3d.mp4",
-   "de": 1.0,
-   "velocidade": 2.0,
-   "em": 26.61904761904762,
-   "duracao": 1.3,
-   "volume": 0,
-   "congelar": false
-  },
-  {
-   "arquivo": "media/amputei/laminado.mp4",
-   "de": 1.0,
+   "arquivo": "media/amputei/protese2.mp4",
+   "de": 0.5,
    "velocidade": 1.0,
-   "em": 27.91904761904762,
-   "duracao": 1.2,
+   "em": 26.61904761904762,
+   "duracao": 1.928571428571427,
    "volume": 0,
    "congelar": false
   },
@@ -110,8 +101,8 @@
    "arquivo": "media/amputei/protese1.mp4",
    "de": 0.0,
    "velocidade": 1.0,
-   "em": 29.11904761904762,
-   "duracao": 1.357142857142854,
+   "em": 28.547619047619047,
+   "duracao": 1.928571428571427,
    "volume": 0,
    "congelar": false
   },

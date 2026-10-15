@@ -113,21 +113,20 @@
         {
           "arquivo": "foto_coto1",
           "de": 0.0,
-          "duracao": 1.0
+          "duracao": 1.1
         },
         {
           "arquivo": "foto_coto2",
           "de": 0.0,
-          "duracao": 1.0
-        },
-        {
-          "arquivo": "foto_scanner",
-          "de": 0.0,
           "duracao": 1.1
         },
         {
-          "arquivo": "scan_tablet",
-          "de": 1.6
+          "arquivo": "avaliacao1",
+          "de": 1.0
+        },
+        {
+          "arquivo": "avaliacao2",
+          "de": 2.0
         }
       ],
       "pilulas": [
@@ -166,15 +165,8 @@
       },
       "imagens": [
         {
-          "arquivo": "impressao3d",
-          "de": 1.0,
-          "duracao": 1.3,
-          "velocidade": 2.0
-        },
-        {
-          "arquivo": "laminado",
-          "de": 1.0,
-          "duracao": 1.2
+          "arquivo": "protese2",
+          "de": 0.5
         },
         {
           "arquivo": "protese1",
@@ -329,10 +321,6 @@
     "rua2": "rua2",
     "andando": "andando",
     "foto_coto1": "foto_coto1",
-    "foto_coto2": "foto_coto2",
-    "foto_scanner": "foto_scanner",
-    "scan_tablet": "scan_tablet",
-    "impressao3d": "impressao3d",
-    "laminado": "laminado"
+    "foto_coto2": "foto_coto2"
   }
 }
