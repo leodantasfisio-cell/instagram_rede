@@ -177,6 +177,8 @@ Também publica órteses: chamar sempre de **órtese** quando for o caso.
     equipe reclamou. Regra prática: cada clipe uma vez só, no máximo 2–3 cenas por
     paciente, e variar as pessoas ao longo do Reel. Usar também vídeos novos que a
     equipe mandar (Paula andando na rua, paciente nas barras com o fisio).
+  - **Versão final aprovada na prévia 6** (16/10/2026), capa com a Paula de costas
+    na calçada.
 
 ## Notas técnicas
 
