@@ -121,12 +121,12 @@
           "duracao": 1.1
         },
         {
-          "arquivo": "avaliacao1",
-          "de": 1.0
+          "arquivo": "marcha2",
+          "de": 2.0
         },
         {
-          "arquivo": "avaliacao2",
-          "de": 2.0
+          "arquivo": "marcha1",
+          "de": 9.0
         }
       ],
       "pilulas": [
@@ -145,8 +145,8 @@
       },
       "imagens": [
         {
-          "arquivo": "avaliacao1",
-          "de": 6.0
+          "arquivo": "marcha1",
+          "de": 15.0
         }
       ],
       "pilulas": [
@@ -207,7 +207,7 @@
           "de": 0.5
         },
         {
-          "arquivo": "esteira",
+          "arquivo": "berg_anda",
           "de": 2.0
         },
         {
@@ -262,12 +262,12 @@
       },
       "imagens": [
         {
-          "arquivo": "rua1",
-          "de": 1.0
+          "arquivo": "paula1",
+          "de": 3.0
         },
         {
-          "arquivo": "rua2",
-          "de": 3.0
+          "arquivo": "clinica",
+          "de": 1.5
         },
         {
           "arquivo": "andando",
@@ -321,6 +321,11 @@
     "rua2": "rua2",
     "andando": "andando",
     "foto_coto1": "foto_coto1",
-    "foto_coto2": "foto_coto2"
+    "foto_coto2": "foto_coto2",
+    "marcha1": "marcha1",
+    "marcha2": "marcha2",
+    "clinica": "clinica",
+    "berg_anda": "berg_anda",
+    "paula1": "paula1"
   }
 }

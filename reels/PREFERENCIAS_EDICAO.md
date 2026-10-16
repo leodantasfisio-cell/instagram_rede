@@ -136,7 +136,8 @@ Também publica órteses: chamar sempre de **órtese** quando for o caso.
     você" (soa como "basta querer"); também saiu frase confusa sem conteúdo.
   - **Sem legenda** de novo (terceira vez seguida nas duas marcas).
   - Pediram para usar imagens reais das pastas dos pacientes do Clube do Amputado
-    (Joseane, Joseana, Ozenilda, Berg: todos autorizados; **Miguel não** autorizou).
+    (Ozenilda, Berg, Paula, Joseane: autorizados; **Miguel não**; **Joseana, a de
+    blusa azul, não** — retirada em 16/10).
     Passos sem imagem real (cicatrização, coto, condicionamento) ficam **só na
     animação**, sem gerar imagem.
   - Proposta de animação: gancho "AMPUTOU. / E agora?" batendo na tela, mapa do
@@ -164,6 +165,12 @@ Também publica órteses: chamar sempre de **órtese** quando for o caso.
   - **Aprovado na prévia 4** (15/10/2026): 62 s, sem legenda, áudio original,
     trilha de 7 etapas, capa com a paciente atravessando a rua e "Amputou." em
     destaque. Entrega direto no chat.
+  - **Depois da aprovação (16/10):** a paciente de short jeans e blusa azul (pasta
+    "Paciente Joseana"; a equipe chamou de Joseane) **não pode aparecer**. Trocadas
+    5 cenas e a capa: análise de marcha → Ozenilda na esteira com o fisio; esteira
+    → Berg andando; rua → Paula andando (pasta "Paciente Paula") e Ozenilda na
+    clínica. Antes de usar, conferir com a equipe a lista de quem autorizou: a
+    autorização pode mudar depois da aprovação.
 
 ## Notas técnicas
 

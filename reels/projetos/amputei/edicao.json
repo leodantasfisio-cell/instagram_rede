@@ -62,8 +62,8 @@
    "congelar": false
   },
   {
-   "arquivo": "media/amputei/avaliacao1.mp4",
-   "de": 1.0,
+   "arquivo": "media/amputei/marcha2.mp4",
+   "de": 2.0,
    "velocidade": 1.0,
    "em": 21.200000000000006,
    "duracao": 1.519047619047619,
@@ -71,8 +71,8 @@
    "congelar": false
   },
   {
-   "arquivo": "media/amputei/avaliacao2.mp4",
-   "de": 2.0,
+   "arquivo": "media/amputei/marcha1.mp4",
+   "de": 9.0,
    "velocidade": 1.0,
    "em": 22.719047619047625,
    "duracao": 1.519047619047619,
@@ -80,8 +80,8 @@
    "congelar": false
   },
   {
-   "arquivo": "media/amputei/avaliacao1.mp4",
-   "de": 6.0,
+   "arquivo": "media/amputei/marcha1.mp4",
+   "de": 15.0,
    "velocidade": 1.0,
    "em": 24.23809523809524,
    "duracao": 2.380952380952381,
@@ -124,7 +124,7 @@
    "congelar": false
   },
   {
-   "arquivo": "media/amputei/esteira.mp4",
+   "arquivo": "media/amputei/berg_anda.mp4",
    "de": 2.0,
    "velocidade": 1.0,
    "em": 37.083333333333336,
@@ -151,8 +151,8 @@
    "congelar": false
   },
   {
-   "arquivo": "media/amputei/rua1.mp4",
-   "de": 1.0,
+   "arquivo": "media/amputei/paula1.mp4",
+   "de": 3.0,
    "velocidade": 1.0,
    "em": 44.19047619047619,
    "duracao": 1.8412698412698403,
@@ -160,8 +160,8 @@
    "congelar": false
   },
   {
-   "arquivo": "media/amputei/rua2.mp4",
-   "de": 3.0,
+   "arquivo": "media/amputei/clinica.mp4",
+   "de": 1.5,
    "velocidade": 1.0,
    "em": 46.03174603174603,
    "duracao": 1.8412698412698403,
