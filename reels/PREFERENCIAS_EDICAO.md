@@ -171,6 +171,12 @@ Também publica órteses: chamar sempre de **órtese** quando for o caso.
     → Berg andando; rua → Paula andando (pasta "Paciente Paula") e Ozenilda na
     clínica. Antes de usar, conferir com a equipe a lista de quem autorizou: a
     autorização pode mudar depois da aprovação.
+  - Joseane e Joseana são **a mesma pessoa**: cenas dela **sem rosto** (colocação
+    da prótese, close do pé) podem ficar; as outras não.
+  - **Não repetir cenas**: na prévia 5 a mesma paciente aparecia 7 vezes e a
+    equipe reclamou. Regra prática: cada clipe uma vez só, no máximo 2–3 cenas por
+    paciente, e variar as pessoas ao longo do Reel. Usar também vídeos novos que a
+    equipe mandar (Paula andando na rua, paciente nas barras com o fisio).
 
 ## Notas técnicas
 

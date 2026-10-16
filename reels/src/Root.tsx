@@ -81,8 +81,8 @@ export const Root: React.FC = () => (
       height={1920}
       defaultProps={{
         marca: 'centroAmputados' as const,
-        arquivo: 'media/amputei/paula1.mp4',
-        segundo: 6.8,
+        arquivo: 'media/amputei/paula_rua.mp4',
+        segundo: 16,
         valor: 'Amputou.',
         sub: 'E agora? O caminho em 7 etapas',
         etiqueta: 'Para quem acabou de amputar',

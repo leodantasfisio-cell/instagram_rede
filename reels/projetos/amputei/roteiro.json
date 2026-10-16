@@ -123,10 +123,6 @@
         {
           "arquivo": "marcha2",
           "de": 2.0
-        },
-        {
-          "arquivo": "marcha1",
-          "de": 9.0
         }
       ],
       "pilulas": [
@@ -145,8 +141,8 @@
       },
       "imagens": [
         {
-          "arquivo": "marcha1",
-          "de": 15.0
+          "arquivo": "paula1",
+          "de": 3.0
         }
       ],
       "pilulas": [
@@ -203,19 +199,15 @@
       },
       "imagens": [
         {
-          "arquivo": "barras",
+          "arquivo": "barras2",
           "de": 0.5
-        },
-        {
-          "arquivo": "berg_anda",
-          "de": 2.0
         },
         {
           "arquivo": "equilibrio",
           "de": 1.0
         },
         {
-          "arquivo": "fisio",
+          "arquivo": "berg_anda",
           "de": 2.0
         }
       ],
@@ -262,16 +254,12 @@
       },
       "imagens": [
         {
-          "arquivo": "paula1",
-          "de": 3.0
+          "arquivo": "paula_rua",
+          "de": 1.0
         },
         {
-          "arquivo": "clinica",
-          "de": 1.5
-        },
-        {
-          "arquivo": "andando",
-          "de": 4.0
+          "arquivo": "paula_rua",
+          "de": 14.0
         }
       ],
       "marcos": [
@@ -326,6 +314,8 @@
     "marcha2": "marcha2",
     "clinica": "clinica",
     "berg_anda": "berg_anda",
-    "paula1": "paula1"
+    "paula1": "paula1",
+    "barras2": "barras2",
+    "paula_rua": "paula_rua"
   }
 }
