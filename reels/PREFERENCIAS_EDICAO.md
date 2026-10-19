@@ -198,3 +198,13 @@ Também publica órteses: chamar sempre de **órtese** quando for o caso.
   sem animações → pediram animações; v2 com 3D, tela dividida e imagens de
   apoio; v3 sem título de gancho, sem Bambu Lab, sem resumo final e sem
   legendas; desfoque do fundo testado e descartado.
+
+### "Por trás de cada passo" (out/2026, projeto `projetos/bastidores`)
+- Storytelling sem depoimento: nenhum vídeo tinha paciente contando a história, então
+  o narrador é a **voz real do fisioterapeuta nas sessões** (comandos e explicações),
+  sobre imagens de vários pacientes. Música: a equipe escolheu **pôr a música no
+  próprio Instagram** na hora de postar (o vídeo sai só com voz e som ambiente).
+- Pediram **pacientes novos** em vez dos já usados: imagens da pasta `Destaques
+  treinamentos` (Clube do Amputado), um paciente por cena. Todos autorizados; Miguel
+  não aparece. Para escolher, 1 quadro por vídeo (sem estourar a cota do Drive).
+- Equipe pediu prévia "que não gaste muito": prévia direta, sem rodada extra de folhas.

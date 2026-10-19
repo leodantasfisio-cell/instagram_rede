@@ -188,6 +188,8 @@ const Pilula: React.FC<{texto: string; ordem: number; duracao: number; topo?: nu
           color: '#202020',
           fontWeight: 800,
           fontSize: 50,
+          maxWidth: 940,
+          lineHeight: 1.15,
           opacity: Math.min(entra, sai),
           transform: `translateX(${interpolate(entra, [0, 1], [-200, 0])}px) scale(${interpolate(entra, [0, 1], [0.85, 1])})`,
         }}

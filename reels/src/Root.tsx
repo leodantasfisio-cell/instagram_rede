@@ -2,6 +2,7 @@ import {AbsoluteFill, Composition, OffthreadVideo, Still, staticFile} from 'remo
 import edicaoJson from '../data/edicao.json';
 import ortese20cmJson from '../projetos/ortese20cm/edicao.json';
 import amputeiJson from '../projetos/amputei/edicao.json';
+import bastidoresJson from '../projetos/bastidores/edicao.json';
 import {CapaMontagem, Montagem, type EdicaoMontagem} from './Montagem';
 import './marca';
 import {Reel} from './Reel';
@@ -73,6 +74,15 @@ export const Root: React.FC = () => (
         sub: 'de diferença entre as pernas',
         etiqueta: 'Órtese sob medida',
       }}
+    />
+    <Composition
+      id="Bastidores"
+      component={Montagem}
+      width={1080}
+      height={1920}
+      fps={30}
+      durationInFrames={Math.round(((bastidoresJson as EdicaoMontagem).duracaoFala + (bastidoresJson as EdicaoMontagem).cta.duracao) * 30)}
+      defaultProps={{edicao: bastidoresJson as unknown as EdicaoMontagem}}
     />
     <Still
       id="CapaAmputei"

@@ -1,0 +1,292 @@
+{
+ "fps": 30,
+ "marca": "centroAmputados",
+ "video": [
+  {
+   "arquivo": "media/bastidores/preto.mp4",
+   "de": 0,
+   "velocidade": 1.0,
+   "em": 0.0,
+   "duracao": 1.0,
+   "volume": 0,
+   "congelar": false
+  },
+  {
+   "arquivo": "media/bastidores/p14.mp4",
+   "de": 1.0,
+   "velocidade": 1.0,
+   "em": 1.0,
+   "duracao": 2.3,
+   "volume": 0,
+   "congelar": false
+  },
+  {
+   "arquivo": "media/bastidores/p34.mp4",
+   "de": 1.0,
+   "velocidade": 1.0,
+   "em": 3.3,
+   "duracao": 7.35,
+   "volume": 0,
+   "congelar": false
+  },
+  {
+   "arquivo": "media/bastidores/p26.mp4",
+   "de": 1.0,
+   "velocidade": 1.0,
+   "em": 10.649999999999999,
+   "duracao": 5.399999999999999,
+   "volume": 0,
+   "congelar": false
+  },
+  {
+   "arquivo": "media/bastidores/p28.mp4",
+   "de": 2.0,
+   "velocidade": 1.0,
+   "em": 16.049999999999997,
+   "duracao": 1.8249999999999997,
+   "volume": 0,
+   "congelar": false
+  },
+  {
+   "arquivo": "media/bastidores/p31.mp4",
+   "de": 1.0,
+   "velocidade": 1.0,
+   "em": 17.874999999999996,
+   "duracao": 1.8249999999999997,
+   "volume": 0,
+   "congelar": false
+  },
+  {
+   "arquivo": "media/bastidores/p06.mp4",
+   "de": 2.0,
+   "velocidade": 1.0,
+   "em": 19.699999999999996,
+   "duracao": 2.925,
+   "volume": 0,
+   "congelar": false
+  },
+  {
+   "arquivo": "media/bastidores/p27.mp4",
+   "de": 1.0,
+   "velocidade": 1.0,
+   "em": 22.624999999999996,
+   "duracao": 2.925,
+   "volume": 0,
+   "congelar": false
+  },
+  {
+   "arquivo": "media/bastidores/p42.mp4",
+   "de": 1.0,
+   "velocidade": 1.0,
+   "em": 25.549999999999997,
+   "duracao": 2.55,
+   "volume": 0,
+   "congelar": false
+  },
+  {
+   "arquivo": "media/bastidores/paula.mp4",
+   "de": 1.4,
+   "velocidade": 1.0,
+   "em": 28.099999999999998,
+   "duracao": 2.9,
+   "volume": 0,
+   "congelar": false
+  },
+  {
+   "arquivo": "media/bastidores/paula.mp4",
+   "de": 12.0,
+   "velocidade": 0.6,
+   "em": 30.999999999999996,
+   "duracao": 2.3999999999999986,
+   "volume": 0,
+   "congelar": false
+  },
+  {
+   "arquivo": "media/bastidores/p22.mp4",
+   "de": 0.5,
+   "velocidade": 1.0,
+   "em": 33.39999999999999,
+   "duracao": 4.0,
+   "volume": 0.3
+  }
+ ],
+ "audio": [
+  {
+   "arquivo": "media/bastidores/a_colocacao.mp4",
+   "de": 2.7,
+   "velocidade": 1.0,
+   "em": 0.0,
+   "duracao": 3.3
+  },
+  {
+   "arquivo": "media/bastidores/a_marcha2.mp4",
+   "de": 0.0,
+   "velocidade": 1.0,
+   "em": 3.3,
+   "duracao": 7.35
+  },
+  {
+   "arquivo": "media/bastidores/a_novo2.mp4",
+   "de": 9.8,
+   "velocidade": 1.0,
+   "em": 10.649999999999999,
+   "duracao": 5.399999999999999
+  },
+  {
+   "arquivo": "media/bastidores/a_equilibrio.mp4",
+   "de": 3.7,
+   "velocidade": 1.0,
+   "em": 16.049999999999997,
+   "duracao": 3.6499999999999995
+  },
+  {
+   "arquivo": "media/bastidores/a_equilibrio.mp4",
+   "de": 10.35,
+   "velocidade": 1.0,
+   "em": 19.699999999999996,
+   "duracao": 5.85
+  },
+  {
+   "arquivo": "media/bastidores/a_clinica.mp4",
+   "de": 1.7,
+   "velocidade": 1.0,
+   "em": 25.549999999999997,
+   "duracao": 2.55
+  },
+  {
+   "arquivo": "media/bastidores/a_paula_rua.mp4",
+   "de": 1.4,
+   "velocidade": 1.0,
+   "em": 28.099999999999998,
+   "duracao": 2.9
+  },
+  {
+   "arquivo": "media/bastidores/a_paula_rua.mp4",
+   "de": 9.3,
+   "velocidade": 1.0,
+   "em": 30.999999999999996,
+   "duracao": 2.3999999999999986
+  }
+ ],
+ "textos": [
+  {
+   "tipo": "pilula",
+   "em": 1.1,
+   "duracao": 2.2,
+   "texto": "Todo primeiro passo começa com uma pergunta.",
+   "ordem": 0
+  },
+  {
+   "tipo": "pilula",
+   "em": 6.9,
+   "duracao": 3.75,
+   "texto": "Um novo cenário para o corpo",
+   "ordem": 0
+  },
+  {
+   "tipo": "pilula",
+   "em": 14.45,
+   "duracao": 1.6,
+   "texto": "Cada detalhe importa",
+   "ordem": 0
+  },
+  {
+   "tipo": "pilula",
+   "em": 22.75,
+   "duracao": 2.8,
+   "texto": "Cadência",
+   "ordem": 0
+  },
+  {
+   "tipo": "pilula",
+   "em": 24.1,
+   "duracao": 1.45,
+   "texto": "Tamanho do passo",
+   "ordem": 1
+  },
+  {
+   "tipo": "pilula",
+   "em": 33.7,
+   "duracao": 3.7,
+   "texto": "Cada passo tem uma história.",
+   "ordem": 0
+  },
+  {
+   "tipo": "pilula",
+   "em": 35.0,
+   "duracao": 2.4,
+   "texto": "A gente caminha junto. 💚",
+   "ordem": 1
+  }
+ ],
+ "blocos": [
+  {
+   "id": "gancho",
+   "em": 0.0,
+   "duracao": 3.3,
+   "painel": null
+  },
+  {
+   "id": "quadril",
+   "em": 3.3,
+   "duracao": 7.35,
+   "painel": null
+  },
+  {
+   "id": "alinhamento",
+   "em": 10.649999999999999,
+   "duracao": 5.399999999999999,
+   "painel": null
+  },
+  {
+   "id": "ritmo1",
+   "em": 16.049999999999997,
+   "duracao": 3.6499999999999995,
+   "painel": null
+  },
+  {
+   "id": "ritmo2",
+   "em": 19.699999999999996,
+   "duracao": 5.85,
+   "painel": null
+  },
+  {
+   "id": "natural",
+   "em": 25.549999999999997,
+   "duracao": 2.55,
+   "painel": null
+  },
+  {
+   "id": "passarela",
+   "em": 28.099999999999998,
+   "duracao": 2.9,
+   "painel": null
+  },
+  {
+   "id": "passinho",
+   "em": 30.999999999999996,
+   "duracao": 2.3999999999999986,
+   "painel": null
+  },
+  {
+   "id": "fecho",
+   "em": 33.39999999999999,
+   "duracao": 4.0,
+   "painel": null
+  }
+ ],
+ "cta": {
+  "titulo": "Agende sua avaliação gratuita",
+  "botao": "Link na bio",
+  "rodape": "Você e sua prótese, em movimento.",
+  "duracao": 3.0
+ },
+ "duracaoFala": 37.4,
+ "legendas": [],
+ "palavrasChave": [],
+ "impactos": [
+  1.0,
+  28.2
+ ],
+ "trilha": null
+}
