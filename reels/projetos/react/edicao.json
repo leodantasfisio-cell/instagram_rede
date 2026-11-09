@@ -2,26 +2,26 @@
  "duracao": 56.6,
  "cenas": [
   {
-   "arquivo": "media/react/c2.mp4",
-   "de": 8,
+   "arquivo": "media/react/r0248.mp4",
+   "de": 0.3,
    "em": 0,
    "ate": 4.3
   },
   {
-   "arquivo": "media/react/c3.mp4",
-   "de": 4,
+   "arquivo": "media/react/r0211.mp4",
+   "de": 0.5,
    "em": 4.3,
    "ate": 8.0
   },
   {
-   "arquivo": "media/react/c3.mp4",
-   "de": 14,
+   "arquivo": "media/react/r9964.mp4",
+   "de": 2,
    "em": 8.0,
    "ate": 11.8
   },
   {
-   "arquivo": "media/react/c4.mp4",
-   "de": 2,
+   "arquivo": "media/react/r0231.mp4",
+   "de": 1,
    "em": 11.8,
    "ate": 16.4
   },
@@ -33,38 +33,44 @@
    "congelarEm": 18.9
   },
   {
-   "arquivo": "media/react/c3.mp4",
-   "de": 20,
+   "arquivo": "media/react/r9966.mp4",
+   "de": 1,
    "em": 21.6,
    "ate": 26.5
   },
   {
-   "arquivo": "media/react/c4.mp4",
-   "de": 9,
+   "arquivo": "media/react/r0239.mp4",
+   "de": 1,
    "em": 26.5,
+   "ate": 29.8
+  },
+  {
+   "arquivo": "media/react/r9968.mp4",
+   "de": 2,
+   "em": 29.8,
    "ate": 33.0
   },
   {
-   "arquivo": "media/react/c2.mp4",
-   "de": 24,
+   "arquivo": "media/react/r0243.mp4",
+   "de": 1,
    "em": 33.0,
    "ate": 40.0
   },
   {
-   "arquivo": "media/react/c1.mp4",
-   "de": 12,
+   "arquivo": "media/react/r9965.mp4",
+   "de": 0.5,
    "em": 40.0,
    "ate": 44.4
   },
   {
-   "arquivo": "media/react/c3.mp4",
-   "de": 30,
+   "arquivo": "media/react/r0225.mp4",
+   "de": 1,
    "em": 44.4,
    "ate": 50.5
   },
   {
-   "arquivo": "media/react/c4.mp4",
-   "de": 14,
+   "arquivo": "media/react/r0249.mp4",
+   "de": 1,
    "em": 50.5,
    "ate": 56.6
   }
