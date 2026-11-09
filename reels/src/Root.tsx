@@ -6,6 +6,8 @@ import bastidoresJson from '../projetos/bastidores/edicao.json';
 import {CapaMontagem, Montagem, type EdicaoMontagem} from './Montagem';
 import './marca';
 import {Reel} from './Reel';
+import {ReactReel, type EdicaoReact} from './React';
+import reactJson from '../projetos/react/edicao.json';
 import {CapaTexto} from './Telas';
 import {duracaoTotal, montarTrechos} from './tempo';
 import type {Edicao} from './tipos';
@@ -98,6 +100,15 @@ export const Root: React.FC = () => (
         etiqueta: 'Para quem acabou de amputar',
         tamanho: 190,
       }}
+    />
+    <Composition
+      id="ReactProtese"
+      component={ReactReel}
+      width={1080}
+      height={1920}
+      fps={30}
+      durationInFrames={Math.round((reactJson as EdicaoReact).duracao * 30)}
+      defaultProps={{edicao: reactJson as EdicaoReact}}
     />
     <Still id="Capa" component={Capa} width={1080} height={1920} defaultProps={{edicao}} />
   </>

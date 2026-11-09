@@ -208,3 +208,12 @@ Também publica órteses: chamar sempre de **órtese** quando for o caso.
   treinamentos` (Clube do Amputado), um paciente por cena. Todos autorizados; Miguel
   não aparece. Para escolher, 1 quadro por vídeo (sem estourar a cota do Drive).
 - Equipe pediu prévia "que não gaste muito": prévia direta, sem rodada extra de folhas.
+
+### React "Prótese nova, corpo antigo" (nov/2026, projeto `projetos/react`, `src/React.tsx`)
+- Formato pedido: **react com "cabeça flutuante"** (fisio recortado do fundo, sem tela
+  dividida), com **transições e ganchos**, **sem legenda**. Paciente adolescente:
+  autorizada pelos responsáveis, mas **não mostrar o rosto**.
+- Recorte: mediapipe `selfie_multiclass` (modelo baixado de storage.googleapis.com) →
+  webm VP9 com alfa (`transparent` no OffthreadVideo). Precisa de `libegl1`.
+- Cabeça no canto inferior direito (60%) e cenas subidas ~260 px para a perna com a
+  prótese não ficar escondida atrás dela.

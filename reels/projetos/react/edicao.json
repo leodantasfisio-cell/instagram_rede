@@ -1,0 +1,135 @@
+{
+ "duracao": 56.6,
+ "cenas": [
+  {
+   "arquivo": "media/react/c2.mp4",
+   "de": 8,
+   "em": 0,
+   "ate": 4.3
+  },
+  {
+   "arquivo": "media/react/c3.mp4",
+   "de": 4,
+   "em": 4.3,
+   "ate": 8.0
+  },
+  {
+   "arquivo": "media/react/c3.mp4",
+   "de": 14,
+   "em": 8.0,
+   "ate": 11.8
+  },
+  {
+   "arquivo": "media/react/c4.mp4",
+   "de": 2,
+   "em": 11.8,
+   "ate": 16.4
+  },
+  {
+   "arquivo": "media/react/c2.mp4",
+   "de": 16,
+   "em": 16.4,
+   "ate": 21.6,
+   "congelarEm": 18.9
+  },
+  {
+   "arquivo": "media/react/c3.mp4",
+   "de": 20,
+   "em": 21.6,
+   "ate": 26.5
+  },
+  {
+   "arquivo": "media/react/c4.mp4",
+   "de": 9,
+   "em": 26.5,
+   "ate": 33.0
+  },
+  {
+   "arquivo": "media/react/c2.mp4",
+   "de": 24,
+   "em": 33.0,
+   "ate": 40.0
+  },
+  {
+   "arquivo": "media/react/c1.mp4",
+   "de": 12,
+   "em": 40.0,
+   "ate": 44.4
+  },
+  {
+   "arquivo": "media/react/c3.mp4",
+   "de": 30,
+   "em": 44.4,
+   "ate": 50.5
+  },
+  {
+   "arquivo": "media/react/c4.mp4",
+   "de": 14,
+   "em": 50.5,
+   "ate": 56.6
+  }
+ ],
+ "ganchos": [
+  {
+   "em": 0.05,
+   "ate": 3.6,
+   "texto": "PRÓTESE NOVA,|CORPO ANTIGO",
+   "tipo": "titulo"
+  },
+  {
+   "em": 7.6,
+   "ate": 11.7,
+   "texto": "Tamanho e componentes inadequados",
+   "tipo": "pilula"
+  },
+  {
+   "em": 12.0,
+   "ate": 16.3,
+   "texto": "Repara no padrão motor 👀",
+   "tipo": "pilula"
+  },
+  {
+   "em": 26.5,
+   "ate": 32.9,
+   "texto": "Vícios de marcha",
+   "tipo": "pilula"
+  },
+  {
+   "em": 33.4,
+   "ate": 39.9,
+   "texto": "Novo aprendizado motor",
+   "tipo": "pilula"
+  },
+  {
+   "em": 40.05,
+   "ate": 42.2,
+   "texto": "VAMOS LÁ!",
+   "tipo": "titulo"
+  },
+  {
+   "em": 44.4,
+   "ate": 50.4,
+   "texto": "Série: acompanhe este caso",
+   "tipo": "selo"
+  },
+  {
+   "em": 50.7,
+   "ate": 56.6,
+   "texto": "",
+   "tipo": "siga"
+  }
+ ],
+ "circulos": [
+  {
+   "em": 18.9,
+   "ate": 21.5,
+   "x": 390,
+   "y": 1330,
+   "r": 140,
+   "rotulo": "Padrão motor"
+  }
+ ],
+ "impactos": [
+  40.08
+ ]
+}
