@@ -106,7 +106,8 @@ for b in r["blocos"]:
         impactos.append(round(inicio + b["impacto"], 3))
     for k, sx in enumerate(b.get("setas", [])):
         em_s = no_reel(sx["em"], origem[1], origem[3], inicio)
-        textos.append({"tipo": "seta", "em": round(em_s, 3), "duracao": round(inicio + dur - em_s, 3), "texto": sx["texto"],
+        fim_s = no_reel(sx["ate"], origem[1], origem[3], inicio) if "ate" in sx else inicio + dur
+        textos.append({"tipo": "seta", "em": round(em_s, 3), "duracao": round(fim_s - em_s, 3), "texto": sx["texto"],
                        "x": sx["x"], "y": sx["y"], "rotulo": sx["rotulo"], "ordem": k})
     for k, p in enumerate(b.get("pilulas", [])):
         # Pílula com "em" (segundos do clipe) entra junto com a palavra; sem, entra escalonada.

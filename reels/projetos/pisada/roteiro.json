@@ -6,18 +6,199 @@
   "legendas": false,
   "_obs": "Roteiro e textos da equipe, na íntegra. Narração gerada no ElevenLabs (voz Jhony Tygas). Música pelo Instagram.",
   "blocos": [
-    {"id": "gancho", "voz": {"arquivo": "narracao", "de": 0.0, "ate": 7.95},
-     "imagens": [{"arquivo": "m26", "de": 0.0, "duracao": 3.5}, {"arquivo": "m13", "de": 0.5}],
-     "destaque": {"valor": "⚠️", "sub": "DOR NO JOANETE OU JOELHO?", "atraso": 0.1}, "impacto": 0.1},
-    {"id": "causa", "voz": {"arquivo": "narracao", "de": 7.95, "ate": 16.1},
-     "imagens": [{"arquivo": "m31", "de": 0.0}, {"arquivo": "m29", "de": 1.0}, {"arquivo": "m07", "de": 1.0}],
-     "pilulas": [{"texto": "🦶 Pisada Pronada:", "em": 8.12}, {"texto": "• Sobrecarga no dedão", "em": 11.7}, {"texto": "• Desalinhamento articular", "em": 14.34}]},
-    {"id": "solucao", "voz": {"arquivo": "narracao", "de": 16.1, "ate": 26.1},
-     "imagens": [{"arquivo": "m14", "de": 2.3, "duracao": 2.2}, {"arquivo": "m15", "de": 0.5}, {"arquivo": "m16", "de": 1.0}, {"arquivo": "m28", "de": 1.0}, {"arquivo": "m35", "de": 1.0}],
-     "pilulas": [{"texto": "🖨️ Tecnologia 3D:", "em": 20.08}, {"texto": "✅ Reposiciona o calcanhar", "em": 20.88}, {"texto": "✅ Redistribui a pressão", "em": 22.34}], "impacto": 0.15},
-    {"id": "cta", "voz": {"arquivo": "narracao", "de": 26.1, "ate": 33.05},
-     "imagens": [{"arquivo": "m34", "de": 1.0}]}
+    {
+      "id": "gancho",
+      "voz": {
+        "arquivo": "narracao",
+        "de": 0.0,
+        "ate": 3.5
+      },
+      "imagens": [
+        {
+          "arquivo": "m26",
+          "de": 0.0
+        }
+      ],
+      "destaque": {
+        "valor": "⚠️",
+        "sub": "DOR NO JOANETE OU JOELHO?",
+        "atraso": 0.1
+      },
+      "impacto": 0.1
+    },
+    {
+      "id": "gancho2",
+      "voz": {
+        "arquivo": "narracao",
+        "de": 3.5,
+        "ate": 7.95
+      },
+      "imagens": [
+        {
+          "arquivo": "m13",
+          "de": 0.5
+        }
+      ],
+      "setas": [
+        {
+          "texto": "Joelho",
+          "x": 460,
+          "y": 1200,
+          "rotulo": [
+            600,
+            1000
+          ],
+          "em": 4.9
+        },
+        {
+          "texto": "Pé",
+          "x": 470,
+          "y": 1580,
+          "rotulo": [
+            640,
+            1400
+          ],
+          "em": 6.74
+        }
+      ]
+    },
+    {
+      "id": "causa",
+      "voz": {
+        "arquivo": "narracao",
+        "de": 7.95,
+        "ate": 16.1
+      },
+      "imagens": [
+        {
+          "arquivo": "m31",
+          "de": 0.0
+        },
+        {
+          "arquivo": "m29",
+          "de": 1.0
+        },
+        {
+          "arquivo": "m07",
+          "de": 1.0
+        }
+      ],
+      "pilulas": [
+        {
+          "texto": "🦶 Pisada Pronada:",
+          "em": 8.12
+        },
+        {
+          "texto": "• Sobrecarga no dedão",
+          "em": 11.7
+        },
+        {
+          "texto": "• Desalinhamento articular",
+          "em": 14.34
+        }
+      ],
+      "setas": [
+        {
+          "texto": "Desaba para dentro",
+          "x": 180,
+          "y": 1380,
+          "rotulo": [
+            400,
+            1150
+          ],
+          "em": 9.52,
+          "ate": 10.6
+        }
+      ],
+      "impacto": 0.2
+    },
+    {
+      "id": "pronta",
+      "voz": {
+        "arquivo": "narracao",
+        "de": 16.1,
+        "ate": 18.3
+      },
+      "imagens": [
+        {
+          "arquivo": "m14",
+          "de": 2.3
+        }
+      ],
+      "destaque": {
+        "valor": "❌",
+        "sub": "PALMILHA PRONTA NÃO RESOLVE",
+        "atraso": 0.15
+      },
+      "impacto": 0.15
+    },
+    {
+      "id": "solucao",
+      "voz": {
+        "arquivo": "narracao",
+        "de": 18.3,
+        "ate": 26.1
+      },
+      "imagens": [
+        {
+          "arquivo": "m15",
+          "de": 0.5
+        },
+        {
+          "arquivo": "m16",
+          "de": 1.0
+        },
+        {
+          "arquivo": "m28",
+          "de": 1.0
+        },
+        {
+          "arquivo": "m35",
+          "de": 1.0
+        }
+      ],
+      "pilulas": [
+        {
+          "texto": "🖨️ Tecnologia 3D:",
+          "em": 20.08
+        },
+        {
+          "texto": "✅ Reposiciona o calcanhar",
+          "em": 20.88
+        },
+        {
+          "texto": "✅ Redistribui a pressão",
+          "em": 22.34
+        }
+      ],
+      "impacto": 1.78
+    },
+    {
+      "id": "cta",
+      "voz": {
+        "arquivo": "narracao",
+        "de": 26.1,
+        "ate": 33.05
+      },
+      "imagens": [
+        {
+          "arquivo": "m34",
+          "de": 1.0
+        }
+      ],
+      "destaque": {
+        "valor": "💬",
+        "sub": "COMENTA PISADA",
+        "atraso": 2.9
+      },
+      "impacto": 2.9
+    }
   ],
-  "cta": {"titulo": "Quer descobrir o seu tipo de pisada?", "botao": "Comenta PISADA", "rodape": "Avaliação biomecânica dos pés", "duracao": 3.0},
+  "cta": {
+    "titulo": "Quer descobrir o seu tipo de pisada?",
+    "botao": "Comenta PISADA",
+    "rodape": "Avaliação biomecânica dos pés",
+    "duracao": 3.0
+  },
   "clipes": {}
 }

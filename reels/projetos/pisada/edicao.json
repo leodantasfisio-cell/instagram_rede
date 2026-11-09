@@ -52,7 +52,7 @@
    "de": 2.3,
    "velocidade": 1.0,
    "em": 16.1,
-   "duracao": 2.2,
+   "duracao": 2.1999999999999993,
    "volume": 0,
    "congelar": false
   },
@@ -61,7 +61,7 @@
    "de": 0.5,
    "velocidade": 1.0,
    "em": 18.3,
-   "duracao": 1.95,
+   "duracao": 1.9500000000000002,
    "volume": 0,
    "congelar": false
   },
@@ -70,7 +70,7 @@
    "de": 1.0,
    "velocidade": 1.0,
    "em": 20.25,
-   "duracao": 1.95,
+   "duracao": 1.9500000000000002,
    "volume": 0,
    "congelar": false
   },
@@ -79,7 +79,7 @@
    "de": 1.0,
    "velocidade": 1.0,
    "em": 22.2,
-   "duracao": 1.95,
+   "duracao": 1.9500000000000002,
    "volume": 0,
    "congelar": false
   },
@@ -88,7 +88,7 @@
    "de": 1.0,
    "velocidade": 1.0,
    "em": 24.15,
-   "duracao": 1.95,
+   "duracao": 1.9500000000000002,
    "volume": 0,
    "congelar": false
   },
@@ -108,7 +108,14 @@
    "de": 0.0,
    "velocidade": 1.0,
    "em": 0.0,
-   "duracao": 7.95
+   "duracao": 3.5
+  },
+  {
+   "arquivo": "media/amo/narracao.mp4",
+   "de": 3.5,
+   "velocidade": 1.0,
+   "em": 3.5,
+   "duracao": 4.45
   },
   {
    "arquivo": "media/amo/narracao.mp4",
@@ -122,7 +129,14 @@
    "de": 16.1,
    "velocidade": 1.0,
    "em": 16.1,
-   "duracao": 10.0
+   "duracao": 2.1999999999999993
+  },
+  {
+   "arquivo": "media/amo/narracao.mp4",
+   "de": 18.3,
+   "velocidade": 1.0,
+   "em": 18.3,
+   "duracao": 7.800000000000001
   },
   {
    "arquivo": "media/amo/narracao.mp4",
@@ -136,10 +150,49 @@
   {
    "tipo": "destaque",
    "em": 0.1,
-   "duracao": 7.8500000000000005,
+   "duracao": 3.4,
    "valor": "⚠️",
    "sub": "DOR NO JOANETE OU JOELHO?",
    "atraso": 0.1
+  },
+  {
+   "tipo": "seta",
+   "em": 4.9,
+   "duracao": 3.05,
+   "texto": "Joelho",
+   "x": 460,
+   "y": 1200,
+   "rotulo": [
+    600,
+    1000
+   ],
+   "ordem": 0
+  },
+  {
+   "tipo": "seta",
+   "em": 6.74,
+   "duracao": 1.21,
+   "texto": "Pé",
+   "x": 470,
+   "y": 1580,
+   "rotulo": [
+    640,
+    1400
+   ],
+   "ordem": 1
+  },
+  {
+   "tipo": "seta",
+   "em": 9.52,
+   "duracao": 1.08,
+   "texto": "Desaba para dentro",
+   "x": 180,
+   "y": 1380,
+   "rotulo": [
+    400,
+    1150
+   ],
+   "ordem": 0
   },
   {
    "tipo": "pilula",
@@ -163,6 +216,14 @@
    "ordem": 2
   },
   {
+   "tipo": "destaque",
+   "em": 16.25,
+   "duracao": 2.0499999999999994,
+   "valor": "❌",
+   "sub": "PALMILHA PRONTA NÃO RESOLVE",
+   "atraso": 0.15
+  },
+  {
    "tipo": "pilula",
    "em": 20.08,
    "duracao": 6.02,
@@ -182,13 +243,27 @@
    "duracao": 3.76,
    "texto": "✅ Redistribui a pressão",
    "ordem": 2
+  },
+  {
+   "tipo": "destaque",
+   "em": 29.0,
+   "duracao": 4.049999999999995,
+   "valor": "💬",
+   "sub": "COMENTA PISADA",
+   "atraso": 2.9
   }
  ],
  "blocos": [
   {
    "id": "gancho",
    "em": 0.0,
-   "duracao": 7.95,
+   "duracao": 3.5,
+   "painel": null
+  },
+  {
+   "id": "gancho2",
+   "em": 3.5,
+   "duracao": 4.45,
    "painel": null
   },
   {
@@ -198,9 +273,15 @@
    "painel": null
   },
   {
-   "id": "solucao",
+   "id": "pronta",
    "em": 16.1,
-   "duracao": 10.0,
+   "duracao": 2.1999999999999993,
+   "painel": null
+  },
+  {
+   "id": "solucao",
+   "em": 18.3,
+   "duracao": 7.800000000000001,
    "painel": null
   },
   {
@@ -221,7 +302,10 @@
  "palavrasChave": [],
  "impactos": [
   0.1,
-  16.25
+  8.15,
+  16.25,
+  20.08,
+  29.0
  ],
  "trilha": null
 }

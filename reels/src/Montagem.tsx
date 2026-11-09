@@ -216,7 +216,7 @@ const Seta: React.FC<{texto: string; x: number; y: number; rotulo: [number, numb
   const pulso = 1 + 0.25 * Math.abs(Math.sin((frame / fps) * Math.PI * 2));
   const [lx, ly] = rotulo;
   const largura = 40 + texto.length * 27;
-  const ax = lx + largura;
+  const ax = x < lx ? lx : lx + largura;
   const ay = ly + 40;
   return (
     <AbsoluteFill style={{opacity: sai}}>
