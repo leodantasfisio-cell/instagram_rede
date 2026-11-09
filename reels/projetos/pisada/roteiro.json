@@ -96,9 +96,9 @@
     {
       "id": "pronta",
       "ambiente": {
-        "arquivo": "m33",
-        "de": 1.0,
-        "ate": 4.0,
+        "arquivo": "m14",
+        "de": 2.3,
+        "ate": 5.3,
         "volume": 0
       },
       "pilulas": [
