@@ -15,20 +15,20 @@
   },
   {
    "arquivo": "media/react/r9964.mp4",
-   "de": 2,
+   "de": 0.3,
    "em": 8.0,
-   "ate": 11.8
+   "ate": 15.0
   },
   {
    "arquivo": "media/react/r0231.mp4",
    "de": 1,
-   "em": 11.8,
-   "ate": 16.4
+   "em": 15.0,
+   "ate": 17.9
   },
   {
    "arquivo": "media/react/c2.mp4",
-   "de": 16,
-   "em": 16.4,
+   "de": 17.5,
+   "em": 17.9,
    "ate": 21.6,
    "congelarEm": 18.9
   },
@@ -89,9 +89,9 @@
    "tipo": "pilula"
   },
   {
-   "em": 12.0,
-   "ate": 16.3,
-   "texto": "Repara no padrão motor 👀",
+   "em": 15.84,
+   "ate": 18.85,
+   "texto": "Atenção ao padrão motor 👀",
    "tipo": "pilula"
   },
   {
