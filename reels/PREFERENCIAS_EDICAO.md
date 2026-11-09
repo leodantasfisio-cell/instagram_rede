@@ -231,3 +231,10 @@ olhar 1 quadro por vídeo, só dos mais recentes).
   (laser no calcâneo, baropodômetro, escaneamento com tablet, palmilha). Música pelo
   Instagram. Trocado "Palmilha pronta não resolve" por "Palmilha pronta? Não foi feita
   para o seu pé" (evitar afirmação absoluta) — a equipe aprovou.
+- Prévia 3: a equipe pediu **o roteiro exatamente como mandou** (falas e textos na
+  tela na íntegra, incluindo "Palmilha pronta não resolve isso" e "eu te explico") e
+  **narrativo**. Sem vídeo gravado, escolheram **voz de IA (ElevenLabs)**: voz
+  "Jhony Tygas" (pt-BR, explicativa), modelo eleven_v4, ~620 créditos por take.
+  O plano gratuito às vezes recusa ("Free generations are busy"): tentar de novo depois.
+- Não gostaram da palmilha sobre o notebook para "palmilha pronta": usar palmilha
+  comum dentro do tênis.
