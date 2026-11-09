@@ -34,6 +34,16 @@ export const marcas: Record<string, Marca> = {
       sombra: 'rgba(20, 20, 20, 0.6)',
     },
   },
+  amoMeuPe: {
+    handle: '@amo_meupe',
+    cores: {
+      azul: '#1E64F0',
+      azulClaro: '#39B54A',
+      azulEscuro: '#0D1B3D',
+      branco: '#FFFFFF',
+      sombra: 'rgba(13, 27, 61, 0.6)',
+    },
+  },
 };
 
 export const cores: Paleta = {...marcas.redeEscoliose.cores};

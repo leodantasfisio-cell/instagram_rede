@@ -136,7 +136,7 @@ const Destaque: React.FC<{valor: string; sub?: string; duracao: number}> = ({val
         <div
           style={{
             fontWeight: 800,
-            fontSize: 210,
+            fontSize: valor.length > 5 ? 160 : 210,
             letterSpacing: -6,
             color: cores.branco,
             textShadow: `${profundidade}, 0 24px 40px rgba(0,0,0,0.45)`,
@@ -187,8 +187,8 @@ const Pilula: React.FC<{texto: string; ordem: number; duracao: number; topo?: nu
           boxShadow: '0 12px 36px rgba(0,0,0,0.3)',
           color: '#202020',
           fontWeight: 800,
-          fontSize: 50,
-          maxWidth: 940,
+          fontSize: texto.length > 26 ? 42 : 50,
+          maxWidth: 980,
           lineHeight: 1.15,
           opacity: Math.min(entra, sai),
           transform: `translateX(${interpolate(entra, [0, 1], [-200, 0])}px) scale(${interpolate(entra, [0, 1], [0.85, 1])})`,

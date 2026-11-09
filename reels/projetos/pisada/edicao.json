@@ -1,0 +1,292 @@
+{
+ "fps": 30,
+ "marca": "amoMeuPe",
+ "video": [
+  {
+   "arquivo": "media/amo/m26.mp4",
+   "de": 0.0,
+   "velocidade": 1.0,
+   "em": 0.0,
+   "duracao": 3.4,
+   "volume": 0
+  },
+  {
+   "arquivo": "media/amo/m13.mp4",
+   "de": 0.5,
+   "velocidade": 1.0,
+   "em": 3.4,
+   "duracao": 2.8,
+   "volume": 0
+  },
+  {
+   "arquivo": "media/amo/m31.mp4",
+   "de": 0.0,
+   "velocidade": 1.0,
+   "em": 6.199999999999999,
+   "duracao": 3.6,
+   "volume": 0
+  },
+  {
+   "arquivo": "media/amo/m29.mp4",
+   "de": 1.0,
+   "velocidade": 1.0,
+   "em": 9.799999999999999,
+   "duracao": 3.4000000000000004,
+   "volume": 0
+  },
+  {
+   "arquivo": "media/amo/m07.mp4",
+   "de": 1.0,
+   "velocidade": 1.0,
+   "em": 13.2,
+   "duracao": 2.6,
+   "volume": 0
+  },
+  {
+   "arquivo": "media/amo/m33.mp4",
+   "de": 1.0,
+   "velocidade": 1.0,
+   "em": 15.799999999999999,
+   "duracao": 3.0,
+   "volume": 0
+  },
+  {
+   "arquivo": "media/amo/m15.mp4",
+   "de": 0.5,
+   "velocidade": 1.0,
+   "em": 18.799999999999997,
+   "duracao": 3.3,
+   "volume": 0
+  },
+  {
+   "arquivo": "media/amo/m16.mp4",
+   "de": 1.0,
+   "velocidade": 1.0,
+   "em": 22.099999999999998,
+   "duracao": 2.6,
+   "volume": 0
+  },
+  {
+   "arquivo": "media/amo/m28.mp4",
+   "de": 1.0,
+   "velocidade": 1.0,
+   "em": 24.7,
+   "duracao": 3.4000000000000004,
+   "volume": 0
+  },
+  {
+   "arquivo": "media/amo/m34.mp4",
+   "de": 1.0,
+   "velocidade": 1.0,
+   "em": 28.1,
+   "duracao": 3.0,
+   "volume": 0
+  },
+  {
+   "arquivo": "media/amo/m35.mp4",
+   "de": 1.0,
+   "velocidade": 1.0,
+   "em": 31.1,
+   "duracao": 2.4,
+   "volume": 0
+  }
+ ],
+ "audio": [],
+ "textos": [
+  {
+   "tipo": "destaque",
+   "em": 0.1,
+   "duracao": 3.3,
+   "valor": "JOANETE?",
+   "sub": "Ou o joelho estala ao caminhar?",
+   "atraso": 0.1
+  },
+  {
+   "tipo": "pilula",
+   "em": 3.6,
+   "duracao": 2.6,
+   "texto": "Nem sempre a causa está onde dói",
+   "ordem": 0
+  },
+  {
+   "tipo": "pilula",
+   "em": 4.7,
+   "duracao": 1.5,
+   "texto": "…e sim em como o pé toca o chão 🦶",
+   "ordem": 1
+  },
+  {
+   "tipo": "pilula",
+   "em": 6.4,
+   "duracao": 3.4,
+   "texto": "Pisada pronada",
+   "ordem": 0
+  },
+  {
+   "tipo": "pilula",
+   "em": 7.4,
+   "duracao": 2.4,
+   "texto": "O pé desaba para dentro",
+   "ordem": 1
+  },
+  {
+   "tipo": "pilula",
+   "em": 10.0,
+   "duracao": 3.2,
+   "texto": "• Sobrecarga no dedão",
+   "ordem": 0
+  },
+  {
+   "tipo": "pilula",
+   "em": 11.2,
+   "duracao": 2.0,
+   "texto": "• Desalinhamento articular",
+   "ordem": 1
+  },
+  {
+   "tipo": "pilula",
+   "em": 13.4,
+   "duracao": 2.4,
+   "texto": "Joelhos e coluna sentem junto",
+   "ordem": 0
+  },
+  {
+   "tipo": "pilula",
+   "em": 16.0,
+   "duracao": 2.8,
+   "texto": "Palmilha pronta?",
+   "ordem": 0
+  },
+  {
+   "tipo": "pilula",
+   "em": 17.0,
+   "duracao": 1.8,
+   "texto": "Não foi feita para o seu pé",
+   "ordem": 1
+  },
+  {
+   "tipo": "pilula",
+   "em": 19.0,
+   "duracao": 3.1,
+   "texto": "🖨️ Tecnologia 3D",
+   "ordem": 0
+  },
+  {
+   "tipo": "pilula",
+   "em": 20.0,
+   "duracao": 2.1,
+   "texto": "Escaneamento do seu pé",
+   "ordem": 1
+  },
+  {
+   "tipo": "pilula",
+   "em": 24.9,
+   "duracao": 3.2,
+   "texto": "✅ Reposiciona o calcanhar",
+   "ordem": 0
+  },
+  {
+   "tipo": "pilula",
+   "em": 26.1,
+   "duracao": 2.0,
+   "texto": "✅ Redistribui a pressão",
+   "ordem": 1
+  },
+  {
+   "tipo": "pilula",
+   "em": 28.4,
+   "duracao": 2.7,
+   "texto": "✅ Mais estabilidade ao caminhar",
+   "ordem": 0
+  },
+  {
+   "tipo": "pilula",
+   "em": 31.3,
+   "duracao": 2.2,
+   "texto": "Sob medida para o seu pé",
+   "ordem": 0
+  }
+ ],
+ "blocos": [
+  {
+   "id": "gancho",
+   "em": 0.0,
+   "duracao": 3.4,
+   "painel": null
+  },
+  {
+   "id": "virada",
+   "em": 3.4,
+   "duracao": 2.8,
+   "painel": null
+  },
+  {
+   "id": "pronada",
+   "em": 6.199999999999999,
+   "duracao": 3.6,
+   "painel": null
+  },
+  {
+   "id": "sobrecarga",
+   "em": 9.799999999999999,
+   "duracao": 3.4000000000000004,
+   "painel": null
+  },
+  {
+   "id": "joelhos",
+   "em": 13.2,
+   "duracao": 2.6,
+   "painel": null
+  },
+  {
+   "id": "pronta",
+   "em": 15.799999999999999,
+   "duracao": 3.0,
+   "painel": null
+  },
+  {
+   "id": "scan",
+   "em": 18.799999999999997,
+   "duracao": 3.3,
+   "painel": null
+  },
+  {
+   "id": "scan2",
+   "em": 22.099999999999998,
+   "duracao": 2.6,
+   "painel": null
+  },
+  {
+   "id": "pressao",
+   "em": 24.7,
+   "duracao": 3.4000000000000004,
+   "painel": null
+  },
+  {
+   "id": "palmilha",
+   "em": 28.1,
+   "duracao": 3.0,
+   "painel": null
+  },
+  {
+   "id": "calcado",
+   "em": 31.1,
+   "duracao": 2.4,
+   "painel": null
+  }
+ ],
+ "cta": {
+  "titulo": "Quer descobrir o seu tipo de pisada?",
+  "botao": "Comenta PISADA",
+  "rodape": "Avaliação biomecânica dos pés",
+  "duracao": 3.5
+ },
+ "duracaoFala": 33.5,
+ "legendas": [],
+ "palavrasChave": [],
+ "impactos": [
+  0.1,
+  15.85
+ ],
+ "trilha": null
+}

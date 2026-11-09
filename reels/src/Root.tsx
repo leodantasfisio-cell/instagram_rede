@@ -3,6 +3,7 @@ import edicaoJson from '../data/edicao.json';
 import ortese20cmJson from '../projetos/ortese20cm/edicao.json';
 import amputeiJson from '../projetos/amputei/edicao.json';
 import bastidoresJson from '../projetos/bastidores/edicao.json';
+import pisadaJson from '../projetos/pisada/edicao.json';
 import {CapaMontagem, Montagem, type EdicaoMontagem} from './Montagem';
 import './marca';
 import {Reel} from './Reel';
@@ -100,6 +101,15 @@ export const Root: React.FC = () => (
         etiqueta: 'Para quem acabou de amputar',
         tamanho: 190,
       }}
+    />
+    <Composition
+      id="Pisada"
+      component={Montagem}
+      width={1080}
+      height={1920}
+      fps={30}
+      durationInFrames={Math.round(((pisadaJson as EdicaoMontagem).duracaoFala + (pisadaJson as EdicaoMontagem).cta.duracao) * 30)}
+      defaultProps={{edicao: pisadaJson as unknown as EdicaoMontagem}}
     />
     <Composition
       id="ReactProtese"

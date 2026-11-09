@@ -217,3 +217,17 @@ Também publica órteses: chamar sempre de **órtese** quando for o caso.
   webm VP9 com alfa (`transparent` no OffthreadVideo). Precisa de `libegl1`.
 - Cabeça no canto inferior direito (60%) e cenas subidas ~260 px para a perna com a
   prótese não ficar escondida atrás dela.
+
+## Amo Meu Pé (@amo_meupe)
+
+Identidade (manual enviado pela equipe): azul-marinho #0D1B3D, azul #1E64F0, verde
+#39B54A, verde-limão #A6CE39, laranja #FF8A00, fundo #F5F7FA; fontes Poppins (títulos)
+e Montserrat. Slogan "Soluções para os pés" · Avaliação · Tecnologia · Solução · Cuidado.
+Mídias: Drive `MÍDIAS PISANDO CERTO` e `MÍDIAS PÉ DIABÉTICO` (centenas de arquivos:
+olhar 1 quadro por vídeo, só dos mais recentes).
+
+- **Reel "Pisada, joanete e palmilha 3D"** (nov/2026, `projetos/pisada`): roteiro veio
+  pronto da equipe, sem vídeo falado → só textos na tela + cenas de avaliação
+  (laser no calcâneo, baropodômetro, escaneamento com tablet, palmilha). Música pelo
+  Instagram. Trocado "Palmilha pronta não resolve" por "Palmilha pronta? Não foi feita
+  para o seu pé" (evitar afirmação absoluta) — a equipe aprovou.
