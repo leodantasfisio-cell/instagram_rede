@@ -209,7 +209,7 @@ const Som: React.FC<{arquivo: string; em: number; volume: number}> = ({arquivo, 
   );
 };
 
-export const ReactReel: React.FC<{edicao: EdicaoReact}> = ({edicao}) => {
+export const ReactReel: React.FC<{edicao: EdicaoReact; semCabeca?: boolean}> = ({edicao, semCabeca}) => {
   aplicarMarca('centroAmputados');
   const {fps} = useVideoConfig();
   const f = (s: number) => Math.round(s * fps);
@@ -225,7 +225,7 @@ export const ReactReel: React.FC<{edicao: EdicaoReact}> = ({edicao}) => {
           <Marca c={c} />
         </Sequence>
       ))}
-      <Cabeca impactos={edicao.impactos} />
+      {semCabeca ? null : <Cabeca impactos={edicao.impactos} />}
       {edicao.ganchos.map((g, i) => (
         <Sequence key={i} from={f(g.em)} durationInFrames={f(g.ate - g.em)}>
           <Texto g={g} />
