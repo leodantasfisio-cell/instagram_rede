@@ -209,7 +209,7 @@ const Som: React.FC<{arquivo: string; em: number; volume: number}> = ({arquivo, 
   );
 };
 
-export const ReactReel: React.FC<{edicao: EdicaoReact; semCabeca?: boolean}> = ({edicao, semCabeca}) => {
+export const ReactReel: React.FC<{edicao: EdicaoReact; semCabeca?: boolean; semFala?: boolean}> = ({edicao, semCabeca, semFala}) => {
   aplicarMarca('centroAmputados');
   const {fps} = useVideoConfig();
   const f = (s: number) => Math.round(s * fps);
@@ -231,7 +231,7 @@ export const ReactReel: React.FC<{edicao: EdicaoReact; semCabeca?: boolean}> = (
           <Texto g={g} />
         </Sequence>
       ))}
-      <Audio src={staticFile('media/react/fala.m4a')} />
+      {semFala ? null : <Audio src={staticFile('media/react/fala.m4a')} />}
       {edicao.cenas.slice(1).map((c, i) => (
         <Som key={i} arquivo="sfx/whoosh.wav" em={c.em - 0.15} volume={0.35} />
       ))}
