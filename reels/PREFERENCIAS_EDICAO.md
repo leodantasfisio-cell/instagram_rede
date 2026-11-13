@@ -243,3 +243,8 @@ olhar 1 quadro por vídeo, só dos mais recentes).
 - Pediram versão do react sem a cabeça flutuante e sem a fala (props `semCabeca`/`semFala`) e sem o título "Prótese nova, corpo antigo".
 - Rejeitaram as primeiras sugestões de título; escolheram "A ANTIGA vs. A NOVA" e depois preferiram "REAPRENDENDO A ANDAR" (título de jornada, não de comparação).
 - Capa em diagonal: foto da prótese antiga (❌) x frame da nova em uso (✅), sem rosto. Fonte: `public/capa_react.html` (screenshot via Playwright).
+
+### Órtese 3D para bebê (fêmur curto congênito)
+- Vídeo principal: protesista explicando a peça (fala mantida mesmo dizendo "prótese"; nos textos usar sempre "órtese", a equipe corrigiu).
+- Imagens da prova, ajustes, oficina e primeiros passos da bebê. Rosto da bebê: NÃO desfocar automaticamente (o desfoque por detecção ficou ruim); a equipe ajusta depois se precisar.
+- Pílulas curtas no tempo da fala, selo 👶 no gancho, CTA de avaliação.
