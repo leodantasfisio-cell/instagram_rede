@@ -241,5 +241,5 @@ olhar 1 quadro por vídeo, só dos mais recentes).
 
 ### React: capa e versão só imagens
 - Pediram versão do react sem a cabeça flutuante e sem a fala (props `semCabeca`/`semFala`) e sem o título "Prótese nova, corpo antigo".
-- Rejeitaram as primeiras sugestões de título; escolheram "A ANTIGA vs. A NOVA" para a capa.
+- Rejeitaram as primeiras sugestões de título; escolheram "A ANTIGA vs. A NOVA" e depois preferiram "REAPRENDENDO A ANDAR" (título de jornada, não de comparação).
 - Capa em diagonal: foto da prótese antiga (❌) x frame da nova em uso (✅), sem rosto. Fonte: `public/capa_react.html` (screenshot via Playwright).
