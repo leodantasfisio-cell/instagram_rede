@@ -248,3 +248,4 @@ olhar 1 quadro por vídeo, só dos mais recentes).
 - Vídeo principal: protesista explicando a peça (fala mantida mesmo dizendo "prótese"; nos textos usar sempre "órtese", a equipe corrigiu).
 - Imagens da prova, ajustes, oficina e primeiros passos da bebê. Rosto da bebê: NÃO desfocar automaticamente (o desfoque por detecção ficou ruim); a equipe ajusta depois se precisar.
 - Pílulas curtas no tempo da fala, selo 👶 no gancho, CTA de avaliação.
+- Pediram tirar o som "whoosh" das trocas de cena (opção `semWhoosh` no roteiro); manter pop/brilho/impacto.

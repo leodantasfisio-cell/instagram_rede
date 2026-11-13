@@ -46,6 +46,7 @@ export type EdicaoMontagem = {
   palavrasChave?: string[];
   impactos?: number[];
   trilha?: Trilha | null;
+  semWhoosh?: boolean;
 };
 
 const DESCIDA = 470;
@@ -486,7 +487,7 @@ export const Montagem: React.FC<{edicao: EdicaoMontagem}> = ({edicao}) => {
         <Final cta={edicao.cta} />
       </Sequence>
 
-      {edicao.blocos.slice(1).map((b) => (
+      {(edicao.semWhoosh ? [] : edicao.blocos.slice(1)).map((b) => (
         <Som key={b.id} arquivo="sfx/whoosh.wav" em={b.em - 0.18} volume={0.35} />
       ))}
       {edicao.textos.map((tx, i) => (
@@ -510,7 +511,7 @@ export const Montagem: React.FC<{edicao: EdicaoMontagem}> = ({edicao}) => {
         </>
       ) : null}
       {trilha?.gancho ? <Som arquivo="sfx/pop.wav" em={trilha.gancho.em + trilha.gancho.em2} volume={0.6} /> : null}
-      <Som arquivo="sfx/whoosh.wav" em={edicao.duracaoFala - 0.18} volume={0.4} />
+      {edicao.semWhoosh ? null : <Som arquivo="sfx/whoosh.wav" em={edicao.duracaoFala - 0.18} volume={0.4} />}
       <Som arquivo="sfx/brilho.wav" em={edicao.duracaoFala + 0.4} volume={0.5} />
     </AbsoluteFill>
   );

@@ -127,6 +127,7 @@ for b in r["blocos"]:
 edicao = {"fps": 30, "marca": r["marca"], "video": video, "audio": audio, "textos": textos,
           "blocos": blocos, "cta": r["cta"], "duracaoFala": round(t, 3),
           "legendas": legendas, "palavrasChave": r.get("palavrasChave", []), "impactos": impactos, "trilha": trilha}
+edicao["semWhoosh"] = r.get("semWhoosh", False)
 (projeto / "edicao.json").write_text(json.dumps(edicao, ensure_ascii=False, indent=1))
 print(f"{len(blocos)} blocos, {len(video)} trechos de vídeo, {t:.1f} s + tela final {r['cta']['duracao']} s")
 for b in blocos:

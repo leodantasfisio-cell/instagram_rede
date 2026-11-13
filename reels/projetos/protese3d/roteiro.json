@@ -4,6 +4,7 @@
   "pasta": "media/protese3d",
   "velocidadeFala": 1.05,
   "legendas": false,
+  "semWhoosh": true,
   "_obs": "Fala do protesista (IMG_0393) explicando a prótese para fêmur curto congênito; imagens da prova e dos primeiros passos. Rosto da bebê desfocado.",
   "blocos": [
     {"id": "gancho", "ambiente": {"arquivo": "c414", "de": 0.5, "ate": 3.3, "volume": 0.3},
