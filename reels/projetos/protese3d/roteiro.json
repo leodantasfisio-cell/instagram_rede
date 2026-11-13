@@ -1,5 +1,5 @@
 {
-  "titulo": "Órtese 3D para bebê",
+  "titulo": "Prótese 3D para bebê",
   "marca": "centroAmputados",
   "pasta": "media/protese3d",
   "velocidadeFala": 1.05,
@@ -8,12 +8,12 @@
   "_obs": "Fala do protesista (IMG_0393) explicando a prótese para fêmur curto congênito; imagens da prova e dos primeiros passos. Rosto da bebê desfocado.",
   "blocos": [
     {"id": "gancho", "ambiente": {"arquivo": "c414", "de": 0.5, "ate": 3.3, "volume": 0.3},
-     "destaque": {"valor": "👶", "sub": "UMA ÓRTESE PARA UM BEBÊ?", "atraso": 0.1}, "impacto": 0.1},
+     "destaque": {"valor": "👶", "sub": "UMA PRÓTESE PARA UM BEBÊ?", "atraso": 0.1}, "impacto": 0.1},
     {"id": "abre", "fala": {"arquivo": "principal", "de": 2.55, "ate": 7.6},
      "pilulas": [{"texto": "Fêmur curto congênito", "em": 5.9}]},
     {"id": "encaixe", "voz": {"arquivo": "principal", "de": 8.5, "ate": 16.1},
      "imagens": [{"arquivo": "c392", "de": 1.0}, {"arquivo": "c403", "de": 2.0}],
-     "pilulas": [{"texto": "Encaixe tipo órtese tornozelo-pé", "em": 10.2}]},
+     "pilulas": [{"texto": "Encaixe parecido com uma órtese", "em": 10.2}]},
     {"id": "coto", "voz": {"arquivo": "principal", "de": 16.4, "ate": 24.4},
      "imagens": [{"arquivo": "c389", "de": 3.0}, {"arquivo": "c391", "de": 1.0}],
      "pilulas": [{"texto": "O coto é o próprio pé", "em": 17.6}]},
@@ -36,6 +36,6 @@
     {"id": "fecho", "ambiente": {"arquivo": "c434", "de": 2.0, "ate": 6.0, "volume": 0.3},
      "pilulas": [{"texto": "Cada passo, no tamanho dela. 💚", "emBloco": 0.4}]}
   ],
-  "cta": {"titulo": "Agende sua avaliação gratuita", "botao": "Link na bio", "rodape": "Órtese sob medida, do bebê ao adulto.", "duracao": 3.0},
+  "cta": {"titulo": "Agende sua avaliação gratuita", "botao": "Link na bio", "rodape": "Prótese sob medida, do bebê ao adulto.", "duracao": 3.0},
   "clipes": {}
 }
