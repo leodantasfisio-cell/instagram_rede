@@ -201,7 +201,7 @@
    "em": 0.1,
    "duracao": 2.6999999999999997,
    "valor": "👶",
-   "sub": "UMA PRÓTESE PARA UM BEBÊ?",
+   "sub": "UMA ÓRTESE PARA UM BEBÊ?",
    "atraso": 0.1
   },
   {
@@ -215,7 +215,7 @@
    "tipo": "pilula",
    "em": 9.229,
    "duracao": 5.619,
-   "texto": "Encaixe parecido com uma órtese",
+   "texto": "Encaixe tipo órtese tornozelo-pé",
    "ordem": 0
   },
   {
@@ -353,7 +353,7 @@
  "cta": {
   "titulo": "Agende sua avaliação gratuita",
   "botao": "Link na bio",
-  "rodape": "Prótese sob medida, do bebê ao adulto.",
+  "rodape": "Órtese sob medida, do bebê ao adulto.",
   "duracao": 3.0
  },
  "duracaoFala": 56.943,
