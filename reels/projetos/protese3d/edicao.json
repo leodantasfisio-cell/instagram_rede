@@ -1,0 +1,368 @@
+{
+ "fps": 30,
+ "marca": "centroAmputados",
+ "video": [
+  {
+   "arquivo": "media/protese3d/c414.mp4",
+   "de": 0.5,
+   "velocidade": 1.0,
+   "em": 0.0,
+   "duracao": 2.8,
+   "volume": 0.3
+  },
+  {
+   "arquivo": "media/protese3d/principal.mp4",
+   "de": 2.55,
+   "velocidade": 1.05,
+   "em": 2.8,
+   "duracao": 4.809523809523809,
+   "volume": 1
+  },
+  {
+   "arquivo": "media/protese3d/c392.mp4",
+   "de": 1.0,
+   "velocidade": 1.0,
+   "em": 7.609523809523809,
+   "duracao": 3.6190476190476195,
+   "volume": 0,
+   "congelar": false
+  },
+  {
+   "arquivo": "media/protese3d/c403.mp4",
+   "de": 2.0,
+   "velocidade": 1.0,
+   "em": 11.228571428571428,
+   "duracao": 3.6190476190476195,
+   "volume": 0,
+   "congelar": false
+  },
+  {
+   "arquivo": "media/protese3d/c389.mp4",
+   "de": 3.0,
+   "velocidade": 1.0,
+   "em": 14.847619047619048,
+   "duracao": 3.8095238095238093,
+   "volume": 0,
+   "congelar": false
+  },
+  {
+   "arquivo": "media/protese3d/c391.mp4",
+   "de": 1.0,
+   "velocidade": 1.0,
+   "em": 18.65714285714286,
+   "duracao": 3.8095238095238093,
+   "volume": 0,
+   "congelar": false
+  },
+  {
+   "arquivo": "media/protese3d/c394.mp4",
+   "de": 0.0,
+   "velocidade": 1.0,
+   "em": 22.46666666666667,
+   "duracao": 3.1428571428571432,
+   "volume": 0,
+   "congelar": false
+  },
+  {
+   "arquivo": "media/protese3d/f418.mp4",
+   "de": 0.0,
+   "velocidade": 1.0,
+   "em": 25.60952380952381,
+   "duracao": 3.1428571428571432,
+   "volume": 0,
+   "congelar": false
+  },
+  {
+   "arquivo": "media/protese3d/c385.mp4",
+   "de": 5.0,
+   "velocidade": 1.0,
+   "em": 28.752380952380953,
+   "duracao": 3.6190476190476164,
+   "volume": 0,
+   "congelar": false
+  },
+  {
+   "arquivo": "media/protese3d/c402.mp4",
+   "de": 2.0,
+   "velocidade": 1.0,
+   "em": 32.37142857142857,
+   "duracao": 2.6666666666666674,
+   "volume": 0,
+   "congelar": false
+  },
+  {
+   "arquivo": "media/protese3d/c421.mp4",
+   "de": 1.0,
+   "velocidade": 1.0,
+   "em": 35.03809523809523,
+   "duracao": 2.6666666666666674,
+   "volume": 0,
+   "congelar": false
+  },
+  {
+   "arquivo": "media/protese3d/principal.mp4",
+   "de": 51.8,
+   "velocidade": 1.05,
+   "em": 37.7047619047619,
+   "duracao": 3.4285714285714297,
+   "volume": 1
+  },
+  {
+   "arquivo": "media/protese3d/c410.mp4",
+   "de": 0.0,
+   "velocidade": 1.0,
+   "em": 41.13333333333333,
+   "duracao": 2.857142857142857,
+   "volume": 0,
+   "congelar": false
+  },
+  {
+   "arquivo": "media/protese3d/c422.mp4",
+   "de": 2.0,
+   "velocidade": 1.0,
+   "em": 43.99047619047619,
+   "duracao": 2.857142857142857,
+   "volume": 0,
+   "congelar": false
+  },
+  {
+   "arquivo": "media/protese3d/c425.mp4",
+   "de": 2.0,
+   "velocidade": 1.0,
+   "em": 46.84761904761904,
+   "duracao": 2.857142857142857,
+   "volume": 0,
+   "congelar": false
+  },
+  {
+   "arquivo": "media/protese3d/principal.mp4",
+   "de": 66.0,
+   "velocidade": 1.05,
+   "em": 49.7047619047619,
+   "duracao": 3.2380952380952435,
+   "volume": 1
+  },
+  {
+   "arquivo": "media/protese3d/c434.mp4",
+   "de": 2.0,
+   "velocidade": 1.0,
+   "em": 52.94285714285714,
+   "duracao": 4.0,
+   "volume": 0.3
+  }
+ ],
+ "audio": [
+  {
+   "arquivo": "media/protese3d/principal.mp4",
+   "de": 8.5,
+   "velocidade": 1.05,
+   "em": 7.609523809523809,
+   "duracao": 7.238095238095239
+  },
+  {
+   "arquivo": "media/protese3d/principal.mp4",
+   "de": 16.4,
+   "velocidade": 1.05,
+   "em": 14.847619047619048,
+   "duracao": 7.619047619047619
+  },
+  {
+   "arquivo": "media/protese3d/principal.mp4",
+   "de": 24.5,
+   "velocidade": 1.05,
+   "em": 22.46666666666667,
+   "duracao": 6.2857142857142865
+  },
+  {
+   "arquivo": "media/protese3d/principal.mp4",
+   "de": 34.0,
+   "velocidade": 1.05,
+   "em": 28.752380952380953,
+   "duracao": 3.6190476190476164
+  },
+  {
+   "arquivo": "media/protese3d/principal.mp4",
+   "de": 45.4,
+   "velocidade": 1.05,
+   "em": 32.37142857142857,
+   "duracao": 5.333333333333335
+  },
+  {
+   "arquivo": "media/protese3d/principal.mp4",
+   "de": 56.5,
+   "velocidade": 1.05,
+   "em": 41.13333333333333,
+   "duracao": 8.571428571428571
+  }
+ ],
+ "textos": [
+  {
+   "tipo": "destaque",
+   "em": 0.1,
+   "duracao": 2.6999999999999997,
+   "valor": "👶",
+   "sub": "UMA PRÓTESE PARA UM BEBÊ?",
+   "atraso": 0.1
+  },
+  {
+   "tipo": "pilula",
+   "em": 5.99,
+   "duracao": 1.619,
+   "texto": "Fêmur curto congênito",
+   "ordem": 0
+  },
+  {
+   "tipo": "pilula",
+   "em": 9.229,
+   "duracao": 5.619,
+   "texto": "Encaixe parecido com uma órtese",
+   "ordem": 0
+  },
+  {
+   "tipo": "pilula",
+   "em": 15.99,
+   "duracao": 6.476,
+   "texto": "O coto é o próprio pé",
+   "ordem": 0
+  },
+  {
+   "tipo": "pilula",
+   "em": 26.371,
+   "duracao": 2.381,
+   "texto": "Tubo + pezinho do tamanho dela",
+   "ordem": 0
+  },
+  {
+   "tipo": "pilula",
+   "em": 29.61,
+   "duracao": 2.762,
+   "texto": "Altura regulada na prova",
+   "ordem": 0
+  },
+  {
+   "tipo": "pilula",
+   "em": 33.229,
+   "duracao": 4.476,
+   "texto": "Ajustes nas semanas seguintes",
+   "ordem": 0
+  },
+  {
+   "tipo": "pilula",
+   "em": 40.181,
+   "duracao": 0.952,
+   "texto": "🖨️ Impressão 3D",
+   "ordem": 0
+  },
+  {
+   "tipo": "pilula",
+   "em": 42.848,
+   "duracao": 6.857,
+   "texto": "O conhecimento vem antes da máquina",
+   "ordem": 0
+  },
+  {
+   "tipo": "pilula",
+   "em": 47.895,
+   "duracao": 1.81,
+   "texto": "A impressora é só uma etapa",
+   "ordem": 1
+  },
+  {
+   "tipo": "pilula",
+   "em": 51.324,
+   "duracao": 1.619,
+   "texto": "Laboratório de tecnologia 3D",
+   "ordem": 0
+  },
+  {
+   "tipo": "pilula",
+   "em": 53.343,
+   "duracao": 3.6,
+   "texto": "Cada passo, no tamanho dela. 💚",
+   "ordem": 0
+  }
+ ],
+ "blocos": [
+  {
+   "id": "gancho",
+   "em": 0.0,
+   "duracao": 2.8,
+   "painel": null
+  },
+  {
+   "id": "abre",
+   "em": 2.8,
+   "duracao": 4.809523809523809,
+   "painel": null
+  },
+  {
+   "id": "encaixe",
+   "em": 7.609523809523809,
+   "duracao": 7.238095238095239,
+   "painel": null
+  },
+  {
+   "id": "coto",
+   "em": 14.847619047619048,
+   "duracao": 7.619047619047619,
+   "painel": null
+  },
+  {
+   "id": "pezinho",
+   "em": 22.46666666666667,
+   "duracao": 6.2857142857142865,
+   "painel": null
+  },
+  {
+   "id": "altura",
+   "em": 28.752380952380953,
+   "duracao": 3.6190476190476164,
+   "painel": null
+  },
+  {
+   "id": "ajustes",
+   "em": 32.37142857142857,
+   "duracao": 5.333333333333335,
+   "painel": null
+  },
+  {
+   "id": "tres_d",
+   "em": 37.7047619047619,
+   "duracao": 3.4285714285714297,
+   "painel": null
+  },
+  {
+   "id": "conhecimento",
+   "em": 41.13333333333333,
+   "duracao": 8.571428571428571,
+   "painel": null
+  },
+  {
+   "id": "lab",
+   "em": 49.7047619047619,
+   "duracao": 3.2380952380952435,
+   "painel": null
+  },
+  {
+   "id": "fecho",
+   "em": 52.94285714285714,
+   "duracao": 4.0,
+   "painel": null
+  }
+ ],
+ "cta": {
+  "titulo": "Agende sua avaliação gratuita",
+  "botao": "Link na bio",
+  "rodape": "Prótese sob medida, do bebê ao adulto.",
+  "duracao": 3.0
+ },
+ "duracaoFala": 56.943,
+ "legendas": [],
+ "palavrasChave": [],
+ "impactos": [
+  0.1,
+  26.067,
+  40.205
+ ],
+ "trilha": null
+}
