@@ -249,3 +249,4 @@ olhar 1 quadro por vídeo, só dos mais recentes).
 - Imagens da prova, ajustes, oficina e primeiros passos da bebê. Rosto da bebê: NÃO desfocar automaticamente (o desfoque por detecção ficou ruim); a equipe ajusta depois se precisar.
 - Pílulas curtas no tempo da fala, selo 👶 no gancho, CTA de avaliação.
 - Pediram tirar o som "whoosh" das trocas de cena (opção `semWhoosh` no roteiro); manter pop/brilho/impacto.
+- Aprovado na prévia 2; final entregue (reel_protese3d_bebe.mp4 + legenda_protese3d.txt).
