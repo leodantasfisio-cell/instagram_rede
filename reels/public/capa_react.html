@@ -1,0 +1,24 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:M;src:url(fontes/montserrat-latin-800-normal.woff2);font-weight:800}
+@font-face{font-family:M;src:url(fontes/montserrat-latin-700-normal.woff2);font-weight:700}
+*{margin:0;box-sizing:border-box}body{width:1080px;height:1920px;position:relative;overflow:hidden;background:#111;font-family:M}
+.lado{position:absolute;inset:0;background-size:cover}
+.antiga{background:#e9e6e1 url(media/react/protese_antiga.jpg) no-repeat;background-size:auto 1500px;background-position:-60px 330px;clip-path:polygon(0 0,62% 0,38% 100%,0 100%);filter:saturate(.75) brightness(.92)}
+.nova{background:url(media/react/capa_nova.png) no-repeat;background-size:1500px auto;background-position:-20px -330px;clip-path:polygon(62% 0,100% 0,100% 100%,38% 100%)}
+.risco{position:absolute;inset:0}
+.som{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.55) 0%,rgba(0,0,0,0) 28%,rgba(0,0,0,0) 70%,rgba(0,0,0,.6) 100%)}
+.titulo{position:absolute;top:290px;width:100%;text-align:center;color:#fff;font-weight:800;font-size:112px;line-height:1;text-shadow:0 6px 0 #006B3C,0 18px 40px rgba(0,0,0,.6)}
+.titulo span{color:#32B64A;text-shadow:0 6px 0 #0b3d22,0 18px 40px rgba(0,0,0,.6)}
+.vs{position:absolute;left:540px;top:980px;transform:translate(-50%,-50%);width:190px;height:190px;border-radius:50%;background:#00843D;border:10px solid #fff;color:#fff;font-weight:800;font-size:84px;display:flex;align-items:center;justify-content:center;box-shadow:0 14px 40px rgba(0,0,0,.5)}
+.tag{position:absolute;top:1500px;padding:18px 34px;border-radius:26px;font-weight:800;font-size:54px;box-shadow:0 14px 40px rgba(0,0,0,.45)}
+.t1{left:50px;background:#fff;color:#202020}.t2{right:50px;background:#00843D;color:#fff}
+.handle{position:absolute;bottom:200px;width:100%;text-align:center;color:#fff;font-weight:700;font-size:40px;opacity:.9}
+</style></head><body>
+<div class="lado antiga"></div><div class="lado nova"></div>
+<svg class="risco" width="1080" height="1920"><line x1="669.6" y1="0" x2="410.4" y2="1920" stroke="#fff" stroke-width="14"/></svg>
+<div class="som"></div>
+<div class="titulo">A ANTIGA<br><span>vs. A NOVA</span></div>
+
+<div class="tag t1">❌ Antiga</div><div class="tag t2">✅ Nova</div>
+<div class="handle">@centroamputadosrn</div>
+</body></html>

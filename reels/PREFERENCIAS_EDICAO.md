@@ -238,3 +238,8 @@ olhar 1 quadro por vídeo, só dos mais recentes).
   O plano gratuito às vezes recusa ("Free generations are busy"): tentar de novo depois.
 - Não gostaram da palmilha sobre o notebook para "palmilha pronta": usar palmilha
   comum dentro do tênis.
+
+### React: capa e versão só imagens
+- Pediram versão do react sem a cabeça flutuante e sem a fala (props `semCabeca`/`semFala`) e sem o título "Prótese nova, corpo antigo".
+- Rejeitaram as primeiras sugestões de título; escolheram "A ANTIGA vs. A NOVA" para a capa.
+- Capa em diagonal: foto da prótese antiga (❌) x frame da nova em uso (✅), sem rosto. Fonte: `public/capa_react.html` (screenshot via Playwright).
