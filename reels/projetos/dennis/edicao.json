@@ -1,0 +1,141 @@
+{
+ "fps": 30,
+ "marca": "amoMeuPe",
+ "video": [
+  {
+   "arquivo": "media/amo/dennis.mp4",
+   "de": 0.0,
+   "velocidade": 1.0,
+   "em": 0.0,
+   "duracao": 4.0,
+   "volume": 0
+  },
+  {
+   "arquivo": "media/amo/dennis.mp4",
+   "de": 4.0,
+   "velocidade": 1.0,
+   "em": 4.0,
+   "duracao": 8.0,
+   "volume": 0
+  },
+  {
+   "arquivo": "media/amo/dennis.mp4",
+   "de": 12.0,
+   "velocidade": 1.0,
+   "em": 12.0,
+   "duracao": 12.0,
+   "volume": 0
+  },
+  {
+   "arquivo": "media/amo/dennis.mp4",
+   "de": 24.0,
+   "velocidade": 1.0,
+   "em": 24.0,
+   "duracao": 3.8000000000000007,
+   "volume": 0
+  }
+ ],
+ "audio": [],
+ "textos": [
+  {
+   "tipo": "destaque",
+   "em": 0.1,
+   "duracao": 3.9,
+   "valor": "❓",
+   "sub": "VOCÊ CONHECE A ÓRTESE DENNIS BROWN ELÁSTICA?",
+   "atraso": 0.1
+  },
+  {
+   "tipo": "pilula",
+   "em": 4.4,
+   "duracao": 7.6,
+   "texto": "🦶 Tratamento do pé torto congênito",
+   "ordem": 0
+  },
+  {
+   "tipo": "pilula",
+   "em": 7.6,
+   "duracao": 4.4,
+   "texto": "✅ Mantém o posicionamento dos pés",
+   "ordem": 1
+  },
+  {
+   "tipo": "pilula",
+   "em": 12.4,
+   "duracao": 11.6,
+   "texto": "Acompanha os movimentos das pernas",
+   "ordem": 0
+  },
+  {
+   "tipo": "pilula",
+   "em": 15.4,
+   "duracao": 8.6,
+   "texto": "✅ Flexibilidade",
+   "ordem": 1
+  },
+  {
+   "tipo": "pilula",
+   "em": 18.2,
+   "duracao": 5.8,
+   "texto": "✅ Ajuda a manter a correção",
+   "ordem": 2
+  },
+  {
+   "tipo": "pilula",
+   "em": 21.0,
+   "duracao": 3.0,
+   "texto": "Conforme indicação profissional",
+   "ordem": 3
+  },
+  {
+   "tipo": "destaque",
+   "em": 24.2,
+   "duracao": 3.6000000000000005,
+   "valor": "👣",
+   "sub": "QUAL A MELHOR OPÇÃO PARA O SEU CASO?",
+   "atraso": 0.2
+  }
+ ],
+ "blocos": [
+  {
+   "id": "gancho",
+   "em": 0.0,
+   "duracao": 4.0,
+   "painel": null
+  },
+  {
+   "id": "apresentacao",
+   "em": 4.0,
+   "duracao": 8.0,
+   "painel": null
+  },
+  {
+   "id": "diferenciais",
+   "em": 12.0,
+   "duracao": 12.0,
+   "painel": null
+  },
+  {
+   "id": "cta",
+   "em": 24.0,
+   "duracao": 3.8000000000000007,
+   "painel": null
+  }
+ ],
+ "cta": {
+  "titulo": "Agende sua avaliação conosco",
+  "botao": "Link na bio",
+  "rodape": "Marque seu horário",
+  "duracao": 3.0
+ },
+ "duracaoFala": 27.8,
+ "legendas": [],
+ "palavrasChave": [],
+ "impactos": [
+  0.1,
+  4.4,
+  24.2
+ ],
+ "trilha": null,
+ "semWhoosh": true
+}

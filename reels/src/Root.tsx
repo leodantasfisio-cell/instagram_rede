@@ -4,6 +4,7 @@ import ortese20cmJson from '../projetos/ortese20cm/edicao.json';
 import amputeiJson from '../projetos/amputei/edicao.json';
 import bastidoresJson from '../projetos/bastidores/edicao.json';
 import protese3dJson from '../projetos/protese3d/edicao.json';
+import dennisJson from '../projetos/dennis/edicao.json';
 import pisadaJson from '../projetos/pisada/edicao.json';
 import {CapaMontagem, Montagem, type EdicaoMontagem} from './Montagem';
 import './marca';
@@ -78,6 +79,15 @@ export const Root: React.FC = () => (
         sub: 'de diferença entre as pernas',
         etiqueta: 'Órtese sob medida',
       }}
+    />
+    <Composition
+      id="Dennis"
+      component={Montagem}
+      width={1080}
+      height={1920}
+      fps={30}
+      durationInFrames={Math.round(((dennisJson as EdicaoMontagem).duracaoFala + (dennisJson as EdicaoMontagem).cta.duracao) * 30)}
+      defaultProps={{edicao: dennisJson as unknown as EdicaoMontagem}}
     />
     <Composition
       id="Protese3d"

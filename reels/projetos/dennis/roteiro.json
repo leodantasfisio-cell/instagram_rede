@@ -1,0 +1,25 @@
+{
+  "titulo": "Órtese Dennis Brown elástica",
+  "marca": "amoMeuPe",
+  "pasta": "media/amo",
+  "velocidadeFala": 1.0,
+  "legendas": false,
+  "semWhoosh": true,
+  "_obs": "Sem narração (pedido da equipe): o roteiro vira texto na tela. Música entra pelo Instagram.",
+  "blocos": [
+    {"id": "gancho", "ambiente": {"arquivo": "dennis", "de": 0.0, "ate": 4.0, "volume": 0},
+     "destaque": {"valor": "❓", "sub": "VOCÊ CONHECE A ÓRTESE DENNIS BROWN ELÁSTICA?", "atraso": 0.1}, "impacto": 0.1},
+    {"id": "apresentacao", "ambiente": {"arquivo": "dennis", "de": 4.0, "ate": 12.0, "volume": 0},
+     "pilulas": [{"texto": "🦶 Tratamento do pé torto congênito", "emBloco": 0.4},
+                 {"texto": "✅ Mantém o posicionamento dos pés", "emBloco": 3.6}], "impacto": 0.4},
+    {"id": "diferenciais", "ambiente": {"arquivo": "dennis", "de": 12.0, "ate": 24.0, "volume": 0},
+     "pilulas": [{"texto": "Acompanha os movimentos das pernas", "emBloco": 0.4},
+                 {"texto": "✅ Flexibilidade", "emBloco": 3.4},
+                 {"texto": "✅ Ajuda a manter a correção", "emBloco": 6.2},
+                 {"texto": "Conforme indicação profissional", "emBloco": 9.0}]},
+    {"id": "cta", "ambiente": {"arquivo": "dennis", "de": 24.0, "ate": 27.8, "volume": 0},
+     "destaque": {"valor": "👣", "sub": "QUAL A MELHOR OPÇÃO PARA O SEU CASO?", "atraso": 0.2}, "impacto": 0.2}
+  ],
+  "cta": {"titulo": "Agende sua avaliação conosco", "botao": "Link na bio", "rodape": "Marque seu horário", "duracao": 3.0},
+  "clipes": {}
+}

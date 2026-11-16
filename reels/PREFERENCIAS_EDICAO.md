@@ -250,3 +250,7 @@ olhar 1 quadro por vídeo, só dos mais recentes).
 - Pílulas curtas no tempo da fala, selo 👶 no gancho, CTA de avaliação.
 - Pediram tirar o som "whoosh" das trocas de cena (opção `semWhoosh` no roteiro); manter pop/brilho/impacto.
 - Aprovado na prévia 2; final entregue (reel_protese3d_bebe.mp4 + legenda_protese3d.txt).
+
+### Amo Meu Pé: Órtese Dennis Brown elástica
+- Roteiro da equipe virou texto na tela, sem narração (ElevenLabs estava ocupado e pediram fazer sem voz). Sem whoosh. Música pelo Instagram.
+- Evitar emoji 📅 (renderiza como calendário com data).
