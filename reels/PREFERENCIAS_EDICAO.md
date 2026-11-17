@@ -254,3 +254,7 @@ olhar 1 quadro por vídeo, só dos mais recentes).
 ### Amo Meu Pé: Órtese Dennis Brown elástica
 - Roteiro da equipe virou texto na tela, sem narração (ElevenLabs estava ocupado e pediram fazer sem voz). Sem whoosh. Música pelo Instagram.
 - Evitar emoji 📅 (renderiza como calendário com data).
+
+### Autoridade + solução funcional (prótese, paciente idoso nas barras)
+- Vídeo sem fala e sem música (pedido): texto na tela problema -> avaliação -> ajuste da prótese -> treino -> resultado -> "mesma equipe". Sem whoosh.
+- Confirmar se é prótese ou órtese antes de escrever: aqui era prótese.

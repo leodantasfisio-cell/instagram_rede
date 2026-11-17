@@ -1,0 +1,219 @@
+{
+ "fps": 30,
+ "marca": "centroAmputados",
+ "video": [
+  {
+   "arquivo": "media/autoridade/v.mp4",
+   "de": 0.0,
+   "velocidade": 1.0,
+   "em": 0.0,
+   "duracao": 4.8,
+   "volume": 0
+  },
+  {
+   "arquivo": "media/autoridade/v.mp4",
+   "de": 5.0,
+   "velocidade": 1.0,
+   "em": 4.8,
+   "duracao": 4.800000000000001,
+   "volume": 0
+  },
+  {
+   "arquivo": "media/autoridade/v.mp4",
+   "de": 10.0,
+   "velocidade": 1.0,
+   "em": 9.600000000000001,
+   "duracao": 4.800000000000001,
+   "volume": 0
+  },
+  {
+   "arquivo": "media/autoridade/v.mp4",
+   "de": 15.0,
+   "velocidade": 1.0,
+   "em": 14.400000000000002,
+   "duracao": 4.800000000000001,
+   "volume": 0
+  },
+  {
+   "arquivo": "media/autoridade/v.mp4",
+   "de": 20.0,
+   "velocidade": 1.0,
+   "em": 19.200000000000003,
+   "duracao": 3.6999999999999993,
+   "volume": 0
+  },
+  {
+   "arquivo": "media/autoridade/v.mp4",
+   "de": 25.0,
+   "velocidade": 1.0,
+   "em": 22.900000000000002,
+   "duracao": 3.6999999999999993,
+   "volume": 0
+  },
+  {
+   "arquivo": "media/autoridade/v.mp4",
+   "de": 30.0,
+   "velocidade": 1.0,
+   "em": 26.6,
+   "duracao": 3.700000000000003,
+   "volume": 0
+  },
+  {
+   "arquivo": "media/autoridade/v.mp4",
+   "de": 35.0,
+   "velocidade": 1.0,
+   "em": 30.300000000000004,
+   "duracao": 4.200000000000003,
+   "volume": 0
+  }
+ ],
+ "audio": [],
+ "textos": [
+  {
+   "tipo": "destaque",
+   "em": 0.1,
+   "duracao": 4.7,
+   "valor": "⚠️",
+   "sub": "INSTABILIDADE AO CAMINHAR?",
+   "atraso": 0.1
+  },
+  {
+   "tipo": "pilula",
+   "em": 5.1,
+   "duracao": 4.5,
+   "texto": "Prótese que não dá segurança",
+   "ordem": 0
+  },
+  {
+   "tipo": "pilula",
+   "em": 7.1,
+   "duracao": 2.5,
+   "texto": "Medo de cair",
+   "ordem": 1
+  },
+  {
+   "tipo": "pilula",
+   "em": 9.9,
+   "duracao": 4.5,
+   "texto": "🔎 Avaliação funcional da marcha",
+   "ordem": 0
+  },
+  {
+   "tipo": "pilula",
+   "em": 12.0,
+   "duracao": 2.4,
+   "texto": "Cada apoio é analisado",
+   "ordem": 1
+  },
+  {
+   "tipo": "pilula",
+   "em": 14.7,
+   "duracao": 4.5,
+   "texto": "✅ Prótese ajustada para a função",
+   "ordem": 0
+  },
+  {
+   "tipo": "pilula",
+   "em": 16.8,
+   "duracao": 2.4,
+   "texto": "✅ Alinhamento e estabilidade",
+   "ordem": 1
+  },
+  {
+   "tipo": "pilula",
+   "em": 19.5,
+   "duracao": 7.1,
+   "texto": "Treino de marcha com a prótese",
+   "ordem": 0
+  },
+  {
+   "tipo": "pilula",
+   "em": 23.0,
+   "duracao": 3.6,
+   "texto": "Ajuste fino a cada sessão",
+   "ordem": 1
+  },
+  {
+   "tipo": "destaque",
+   "em": 26.8,
+   "duracao": 3.5000000000000027,
+   "valor": "💪",
+   "sub": "MAIS SEGURANÇA EM CADA PASSO",
+   "atraso": 0.2
+  },
+  {
+   "tipo": "pilula",
+   "em": 30.6,
+   "duracao": 3.9,
+   "texto": "Da avaliação ao treino",
+   "ordem": 0
+  },
+  {
+   "tipo": "pilula",
+   "em": 31.9,
+   "duracao": 2.6,
+   "texto": "com a mesma equipe 💚",
+   "ordem": 1
+  }
+ ],
+ "blocos": [
+  {
+   "id": "gancho",
+   "em": 0.0,
+   "duracao": 4.8,
+   "painel": null
+  },
+  {
+   "id": "problema",
+   "em": 4.8,
+   "duracao": 4.800000000000001,
+   "painel": null
+  },
+  {
+   "id": "avaliacao",
+   "em": 9.600000000000001,
+   "duracao": 4.800000000000001,
+   "painel": null
+  },
+  {
+   "id": "solucao",
+   "em": 14.400000000000002,
+   "duracao": 4.800000000000001,
+   "painel": null
+  },
+  {
+   "id": "treino",
+   "em": 19.200000000000003,
+   "duracao": 7.399999999999999,
+   "painel": null
+  },
+  {
+   "id": "resultado",
+   "em": 26.6,
+   "duracao": 3.700000000000003,
+   "painel": null
+  },
+  {
+   "id": "autoridade",
+   "em": 30.300000000000004,
+   "duracao": 4.200000000000003,
+   "painel": null
+  }
+ ],
+ "cta": {
+  "titulo": "Agende sua avaliação gratuita",
+  "botao": "Link na bio",
+  "rodape": "Próteses e reabilitação funcional",
+  "duracao": 3.0
+ },
+ "duracaoFala": 34.5,
+ "legendas": [],
+ "palavrasChave": [],
+ "impactos": [
+  0.1,
+  9.9,
+  26.8
+ ],
+ "trilha": null,
+ "semWhoosh": true
+}

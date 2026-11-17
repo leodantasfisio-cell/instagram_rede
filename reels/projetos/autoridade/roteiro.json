@@ -1,0 +1,27 @@
+{
+  "titulo": "Prótese e função: autoridade",
+  "marca": "centroAmputados",
+  "pasta": "media/autoridade",
+  "velocidadeFala": 1.0,
+  "legendas": false,
+  "semWhoosh": true,
+  "_obs": "Vídeo sem fala e sem música (pedido). Texto na tela com problema funcional -> avaliação -> órtese -> treino -> resultado.",
+  "blocos": [
+    {"id": "gancho", "ambiente": {"arquivo": "v", "de": 0.0, "ate": 4.8, "volume": 0},
+     "destaque": {"valor": "⚠️", "sub": "INSTABILIDADE AO CAMINHAR?", "atraso": 0.1}, "impacto": 0.1},
+    {"id": "problema", "ambiente": {"arquivo": "v", "de": 5.0, "ate": 9.8, "volume": 0},
+     "pilulas": [{"texto": "Prótese que não dá segurança", "emBloco": 0.3}, {"texto": "Medo de cair", "emBloco": 2.3}]},
+    {"id": "avaliacao", "ambiente": {"arquivo": "v", "de": 10.0, "ate": 14.8, "volume": 0},
+     "pilulas": [{"texto": "🔎 Avaliação funcional da marcha", "emBloco": 0.3}, {"texto": "Cada apoio é analisado", "emBloco": 2.4}], "impacto": 0.3},
+    {"id": "solucao", "ambiente": {"arquivo": "v", "de": 15.0, "ate": 19.8, "volume": 0},
+     "pilulas": [{"texto": "✅ Prótese ajustada para a função", "emBloco": 0.3}, {"texto": "✅ Alinhamento e estabilidade", "emBloco": 2.4}]},
+    {"id": "treino", "ambiente": {"trechos": [{"arquivo": "v", "de": 20.0, "ate": 23.7}, {"arquivo": "v", "de": 25.0, "ate": 28.7}], "volume": 0},
+     "pilulas": [{"texto": "Treino de marcha com a prótese", "emBloco": 0.3}, {"texto": "Ajuste fino a cada sessão", "emBloco": 3.8}]},
+    {"id": "resultado", "ambiente": {"arquivo": "v", "de": 30.0, "ate": 33.7, "volume": 0},
+     "destaque": {"valor": "💪", "sub": "MAIS SEGURANÇA EM CADA PASSO", "atraso": 0.2}, "impacto": 0.2},
+    {"id": "autoridade", "ambiente": {"arquivo": "v", "de": 35.0, "ate": 39.2, "volume": 0},
+     "pilulas": [{"texto": "Da avaliação ao treino", "emBloco": 0.3}, {"texto": "com a mesma equipe 💚", "emBloco": 1.6}]}
+  ],
+  "cta": {"titulo": "Agende sua avaliação gratuita", "botao": "Link na bio", "rodape": "Próteses e reabilitação funcional", "duracao": 3.0},
+  "clipes": {}
+}
