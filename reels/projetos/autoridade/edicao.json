@@ -73,57 +73,57 @@
    "tipo": "destaque",
    "em": 0.1,
    "duracao": 4.7,
-   "valor": "⚠️",
-   "sub": "INSTABILIDADE AO CAMINHAR?",
+   "valor": "PROBLEMA FUNCIONAL",
+   "sub": "Instabilidade ao caminhar?",
    "atraso": 0.1
   },
   {
    "tipo": "pilula",
    "em": 5.1,
    "duracao": 4.5,
-   "texto": "Prótese que não dá segurança",
+   "texto": "O QUE O PACIENTE SENTE|Prótese que não dá segurança",
    "ordem": 0
   },
   {
    "tipo": "pilula",
    "em": 7.1,
    "duracao": 2.5,
-   "texto": "Medo de cair",
+   "texto": "Medo de cair a cada passo",
    "ordem": 1
   },
   {
    "tipo": "pilula",
    "em": 9.9,
    "duracao": 4.5,
-   "texto": "🔎 Avaliação funcional da marcha",
+   "texto": "01 · AVALIAÇÃO|Análise funcional da marcha",
    "ordem": 0
   },
   {
    "tipo": "pilula",
    "em": 12.0,
    "duracao": 2.4,
-   "texto": "Cada apoio é analisado",
+   "texto": "Cada apoio é observado",
    "ordem": 1
   },
   {
    "tipo": "pilula",
    "em": 14.7,
    "duracao": 4.5,
-   "texto": "✅ Prótese ajustada para a função",
+   "texto": "02 · AJUSTE|Prótese alinhada à função",
    "ordem": 0
   },
   {
    "tipo": "pilula",
    "em": 16.8,
    "duracao": 2.4,
-   "texto": "✅ Alinhamento e estabilidade",
+   "texto": "Mais estabilidade no apoio",
    "ordem": 1
   },
   {
    "tipo": "pilula",
    "em": 19.5,
    "duracao": 7.1,
-   "texto": "Treino de marcha com a prótese",
+   "texto": "03 · TREINO|Reeducação da marcha",
    "ordem": 0
   },
   {
@@ -137,22 +137,22 @@
    "tipo": "destaque",
    "em": 26.8,
    "duracao": 3.5000000000000027,
-   "valor": "💪",
-   "sub": "MAIS SEGURANÇA EM CADA PASSO",
+   "valor": "RESULTADO",
+   "sub": "Mais segurança em cada passo",
    "atraso": 0.2
   },
   {
    "tipo": "pilula",
    "em": 30.6,
    "duracao": 3.9,
-   "texto": "Da avaliação ao treino",
+   "texto": "NOSSO MÉTODO|Da avaliação ao treino",
    "ordem": 0
   },
   {
    "tipo": "pilula",
    "em": 31.9,
    "duracao": 2.6,
-   "texto": "com a mesma equipe 💚",
+   "texto": "com a mesma equipe",
    "ordem": 1
   }
  ],
@@ -215,5 +215,6 @@
   26.8
  ],
  "trilha": null,
- "semWhoosh": true
+ "semWhoosh": true,
+ "estiloTexto": "pro"
 }

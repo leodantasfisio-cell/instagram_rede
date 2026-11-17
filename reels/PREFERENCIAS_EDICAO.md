@@ -258,3 +258,4 @@ olhar 1 quadro por vídeo, só dos mais recentes).
 ### Autoridade + solução funcional (prótese, paciente idoso nas barras)
 - Vídeo sem fala e sem música (pedido): texto na tela problema -> avaliação -> ajuste da prótese -> treino -> resultado -> "mesma equipe". Sem whoosh.
 - Confirmar se é prótese ou órtese antes de escrever: aqui era prótese.
+- Pediram textos "mais diferentes, mais profissionais": criado estilo `estiloTexto: "pro"` (tarja escura com barra verde, rótulo de etapa 01·AVALIAÇÃO / 02·AJUSTE / 03·TREINO, títulos centrais entre linhas, sem emoji).

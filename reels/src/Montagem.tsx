@@ -47,6 +47,7 @@ export type EdicaoMontagem = {
   impactos?: number[];
   trilha?: Trilha | null;
   semWhoosh?: boolean;
+  estiloTexto?: 'pro';
 };
 
 const DESCIDA = 470;
@@ -197,6 +198,53 @@ const Pilula: React.FC<{texto: string; ordem: number; duracao: number; topo?: nu
       >
         <div style={{width: 14, height: 54, borderRadius: 7, background: cores.azul}} />
         {texto}
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+// Estilo "pro": tarja escura com rótulo de seção (texto "RÓTULO|Frase"), revelada da esquerda.
+const PilulaPro: React.FC<{texto: string; ordem: number; duracao: number}> = ({texto, ordem, duracao}) => {
+  const frame = useCurrentFrame();
+  const {fps} = useVideoConfig();
+  const [rotulo, frase] = texto.includes('|') ? texto.split('|') : ['', texto];
+  const abre = interpolate(frame, [0, 12], [0, 100], {extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic)});
+  const barra = interpolate(frame, [0, 8], [0, 1], {extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic)});
+  const txt = interpolate(frame, [6, 16], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  const sai = interpolate(frame, [duracao * fps - 6, duracao * fps], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  return (
+    <AbsoluteFill style={{paddingTop: 1180 + ordem * 175, paddingLeft: 56, fontFamily: fonte, opacity: sai}}>
+      <div style={{alignSelf: 'flex-start', display: 'flex', maxWidth: 960, clipPath: `inset(0 ${100 - abre}% 0 0)`}}>
+        <div style={{width: 10, background: cores.azulClaro, transform: `scaleY(${barra})`, transformOrigin: 'top'}} />
+        <div style={{background: 'rgba(12, 22, 18, 0.78)', backdropFilter: 'blur(14px)', padding: rotulo ? '18px 36px 22px 28px' : '22px 36px 22px 28px', boxShadow: '0 18px 40px rgba(0,0,0,0.35)'}}>
+          {rotulo ? (
+            <div style={{color: cores.azulClaro, fontWeight: 700, fontSize: 26, letterSpacing: 5, marginBottom: 6, opacity: txt}}>{rotulo}</div>
+          ) : null}
+          <div style={{color: '#fff', fontWeight: 700, fontSize: frase.length > 28 ? 42 : 48, lineHeight: 1.15, opacity: txt, transform: `translateY(${interpolate(txt, [0, 1], [12, 0])}px)`}}>
+            {frase}
+          </div>
+        </div>
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+// Título central "pro": rótulo pequeno entre linhas + frase grande, sem emoji.
+const DestaquePro: React.FC<{valor: string; sub?: string; duracao: number}> = ({valor, sub, duracao}) => {
+  const frame = useCurrentFrame();
+  const {fps} = useVideoConfig();
+  const linha = interpolate(frame, [0, 14], [0, 1], {extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic)});
+  const e = spring({frame: frame - 4, fps, config: {damping: 16, stiffness: 140}});
+  const sai = interpolate(frame, [duracao * fps - 6, duracao * fps], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  return (
+    <AbsoluteFill style={{justifyContent: 'center', alignItems: 'center', fontFamily: fonte, opacity: sai, background: `rgba(0,0,0,${0.35 * linha})`}}>
+      <div style={{display: 'flex', alignItems: 'center', gap: 22}}>
+        <div style={{width: 120 * linha, height: 3, background: cores.azulClaro}} />
+        <div style={{color: cores.azulClaro, fontWeight: 700, fontSize: 30, letterSpacing: 6, opacity: linha}}>{valor}</div>
+        <div style={{width: 120 * linha, height: 3, background: cores.azulClaro}} />
+      </div>
+      <div style={{marginTop: 26, maxWidth: 900, textAlign: 'center', color: '#fff', fontWeight: 800, fontSize: 82, lineHeight: 1.05, textShadow: '0 10px 40px rgba(0,0,0,0.6)', opacity: e, transform: `translateY(${interpolate(e, [0, 1], [40, 0])}px)`}}>
+        {sub}
       </div>
     </AbsoluteFill>
   );
@@ -438,7 +486,11 @@ export const Montagem: React.FC<{edicao: EdicaoMontagem}> = ({edicao}) => {
 
       {edicao.textos.map((tx, i) => (
         <Sequence key={i} from={f(tx.em)} durationInFrames={f(tx.duracao)}>
-          {tx.tipo === 'destaque' ? (
+          {tx.tipo === 'destaque' && edicao.estiloTexto === 'pro' ? (
+            <DestaquePro valor={tx.valor} sub={tx.sub} duracao={tx.duracao} />
+          ) : tx.tipo === 'pilula' && edicao.estiloTexto === 'pro' ? (
+            <PilulaPro texto={tx.texto} ordem={tx.ordem} duracao={tx.duracao} />
+          ) : tx.tipo === 'destaque' ? (
             <Destaque valor={tx.valor} sub={tx.sub} duracao={tx.duracao} />
           ) : tx.tipo === 'seta' ? (
             <Seta texto={tx.texto} x={tx.x} y={tx.y} rotulo={tx.rotulo} duracao={tx.duracao} />
