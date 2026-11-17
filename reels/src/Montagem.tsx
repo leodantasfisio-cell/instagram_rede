@@ -216,11 +216,11 @@ const PilulaPro: React.FC<{texto: string; ordem: number; duracao: number}> = ({t
     <AbsoluteFill style={{paddingTop: 1180 + ordem * 175, paddingLeft: 56, fontFamily: fonte, opacity: sai}}>
       <div style={{alignSelf: 'flex-start', display: 'flex', maxWidth: 960, clipPath: `inset(0 ${100 - abre}% 0 0)`}}>
         <div style={{width: 10, background: cores.azulClaro, transform: `scaleY(${barra})`, transformOrigin: 'top'}} />
-        <div style={{background: 'rgba(12, 22, 18, 0.78)', backdropFilter: 'blur(14px)', padding: rotulo ? '18px 36px 22px 28px' : '22px 36px 22px 28px', boxShadow: '0 18px 40px rgba(0,0,0,0.35)'}}>
+        <div style={{background: 'rgba(255, 255, 255, 0.94)', padding: rotulo ? '18px 36px 22px 28px' : '22px 36px 22px 28px', boxShadow: '0 18px 40px rgba(0,0,0,0.35)'}}>
           {rotulo ? (
-            <div style={{color: cores.azulClaro, fontWeight: 700, fontSize: 26, letterSpacing: 5, marginBottom: 6, opacity: txt}}>{rotulo}</div>
+            <div style={{color: cores.azul, fontWeight: 800, fontSize: 26, letterSpacing: 5, marginBottom: 6, opacity: txt}}>{rotulo}</div>
           ) : null}
-          <div style={{color: '#fff', fontWeight: 700, fontSize: frase.length > 28 ? 42 : 48, lineHeight: 1.15, opacity: txt, transform: `translateY(${interpolate(txt, [0, 1], [12, 0])}px)`}}>
+          <div style={{color: '#1d2a24', fontWeight: 700, fontSize: frase.length > 28 ? 42 : 48, lineHeight: 1.15, opacity: txt, transform: `translateY(${interpolate(txt, [0, 1], [12, 0])}px)`}}>
             {frase}
           </div>
         </div>
@@ -237,7 +237,7 @@ const DestaquePro: React.FC<{valor: string; sub?: string; duracao: number}> = ({
   const e = spring({frame: frame - 4, fps, config: {damping: 16, stiffness: 140}});
   const sai = interpolate(frame, [duracao * fps - 6, duracao * fps], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
   return (
-    <AbsoluteFill style={{justifyContent: 'center', alignItems: 'center', fontFamily: fonte, opacity: sai, background: `rgba(0,0,0,${0.35 * linha})`}}>
+    <AbsoluteFill style={{justifyContent: 'center', alignItems: 'center', fontFamily: fonte, opacity: sai, background: `rgba(0,0,0,${0.12 * linha})`}}>
       <div style={{display: 'flex', alignItems: 'center', gap: 22}}>
         <div style={{width: 120 * linha, height: 3, background: cores.azulClaro}} />
         <div style={{color: cores.azulClaro, fontWeight: 700, fontSize: 30, letterSpacing: 6, opacity: linha}}>{valor}</div>

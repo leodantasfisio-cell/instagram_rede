@@ -95,7 +95,7 @@
    "tipo": "pilula",
    "em": 9.9,
    "duracao": 4.5,
-   "texto": "01 · AVALIAÇÃO|Análise funcional da marcha",
+   "texto": "AVALIAÇÃO|Análise funcional da marcha",
    "ordem": 0
   },
   {
@@ -109,7 +109,7 @@
    "tipo": "pilula",
    "em": 14.7,
    "duracao": 4.5,
-   "texto": "02 · AJUSTE|Prótese alinhada à função",
+   "texto": "AJUSTE|Prótese alinhada à função",
    "ordem": 0
   },
   {
@@ -123,7 +123,7 @@
    "tipo": "pilula",
    "em": 19.5,
    "duracao": 7.1,
-   "texto": "03 · TREINO|Reeducação da marcha",
+   "texto": "TREINO|Reeducação da marcha",
    "ordem": 0
   },
   {

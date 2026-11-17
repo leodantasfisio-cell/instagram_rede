@@ -51,7 +51,7 @@
       },
       "pilulas": [
         {
-          "texto": "01 · AVALIAÇÃO|Análise funcional da marcha",
+          "texto": "AVALIAÇÃO|Análise funcional da marcha",
           "emBloco": 0.3
         },
         {
@@ -71,7 +71,7 @@
       },
       "pilulas": [
         {
-          "texto": "02 · AJUSTE|Prótese alinhada à função",
+          "texto": "AJUSTE|Prótese alinhada à função",
           "emBloco": 0.3
         },
         {
@@ -99,7 +99,7 @@
       },
       "pilulas": [
         {
-          "texto": "03 · TREINO|Reeducação da marcha",
+          "texto": "TREINO|Reeducação da marcha",
           "emBloco": 0.3
         },
         {
