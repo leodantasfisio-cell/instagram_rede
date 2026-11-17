@@ -260,3 +260,4 @@ olhar 1 quadro por vídeo, só dos mais recentes).
 - Confirmar se é prótese ou órtese antes de escrever: aqui era prótese.
 - Pediram textos "mais diferentes, mais profissionais": criado estilo `estiloTexto: "pro"` (tarja escura com barra verde, rótulo de etapa 01·AVALIAÇÃO / 02·AJUSTE / 03·TREINO, títulos centrais entre linhas, sem emoji).
 - Acharam escuro: clarear o vídeo (eq brilho/gama), tarjas brancas com texto escuro e rótulo verde; sem numeração nas etapas.
+- Aprovado na prévia 3; final entregue (reel_autoridade.mp4 + legenda_autoridade.txt).
