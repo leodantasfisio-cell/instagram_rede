@@ -261,3 +261,9 @@ olhar 1 quadro por vídeo, só dos mais recentes).
 - Pediram textos "mais diferentes, mais profissionais": criado estilo `estiloTexto: "pro"` (tarja escura com barra verde, rótulo de etapa 01·AVALIAÇÃO / 02·AJUSTE / 03·TREINO, títulos centrais entre linhas, sem emoji).
 - Acharam escuro: clarear o vídeo (eq brilho/gama), tarjas brancas com texto escuro e rótulo verde; sem numeração nas etapas.
 - Aprovado na prévia 3; final entregue (reel_autoridade.mp4 + legenda_autoridade.txt).
+
+## @rede_escoliose_rn
+### Escoliose no adulto (colete 3D), tela dividida
+- Modelo pedido: metade de cima mídias, metade de baixo o especialista falando; legenda palavra a palavra na linha do meio (aqui PEDIRAM legenda). Componente `src/Dividido.tsx`.
+- Mídias de pessoas DIFERENTES e SEM ROSTO: enquadrar no tronco (campo `pos` por cena). Evitar clipes com acompanhantes/rostos ao fundo.
+- Transições básicas (cortina alternada), selos: título, pergunta, "SIM", chips com ✓, barra de progresso, CTA em círculo.
