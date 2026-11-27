@@ -274,3 +274,4 @@ olhar 1 quadro por vídeo, só dos mais recentes).
 - Reclamaram que os textos cobriam o vídeo: tarjas menores, no rodapé ou no topo conforme onde está o pé/paciente (`textoNoTopo`); cadeia de consequências no topo.
 - Refeito: mantida só a tela dividida; SEM legenda; fala cortada para ~51 s; estilo limpo (fundido suave, divisória branca fina, sem barra de progresso); só 4–5 títulos curtos; só adultos nas mídias.
 - Depois pediram: SEM tela dividida, só o áudio do especialista com mídias em tela cheia (`telaCheia`). Enquadrar com `zoom`/`origem` para o colete aparecer e o rosto do paciente ficar fora; evitar trechos com o paciente longe (colete pequeno).
+- Aprovado na prévia 4; final entregue (reel_escoliose_adulto.mp4 + legenda).
