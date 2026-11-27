@@ -13,7 +13,7 @@ import {
 import {aplicarMarca, cores, fonte, marcaAtiva} from './marca';
 
 // Tela dividida: mídias em cima, especialista falando embaixo, legenda na linha do meio.
-type Cena = {arquivo: string; em: number; ate: number; de: number; pos?: string};
+type Cena = {arquivo: string; em: number; ate: number; de: number; pos?: string; zoom?: number; origem?: string};
 type Palavra = {texto: string; inicio: number; fim: number};
 type Grupo = {inicio: number; fim: number; palavras: Palavra[]};
 type Selo = {em: number; ate: number; texto: string; tipo: 'titulo' | 'pergunta' | 'resposta' | 'chip'};
@@ -26,10 +26,11 @@ export type EdicaoDividido = {
   selos: Selo[];
   cta: {titulo: string; botao: string; duracao: number};
   estilo?: 'limpo';
+  telaCheia?: boolean;
 };
 
 const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
-const MEIO = 960;
+let MEIO = 960;
 const SOBRE = 0.35; // sobreposição entre cenas para a transição
 
 const Midia: React.FC<{c: Cena; i: number; limpo?: boolean}> = ({c, i, limpo}) => {
@@ -46,7 +47,7 @@ const Midia: React.FC<{c: Cena; i: number; limpo?: boolean}> = ({c, i, limpo}) =
         src={staticFile(c.arquivo)}
         trimBefore={Math.round(c.de * fps)}
         muted
-        style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: c.pos ?? '50% 40%', transform: `scale(${zoom})`}}
+        style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: c.pos ?? '50% 40%', transform: `scale(${zoom * (c.zoom ?? 1)})`, transformOrigin: c.origem ?? '50% 50%'}}
       />
     </AbsoluteFill>
   );
@@ -169,6 +170,7 @@ const Som: React.FC<{arquivo: string; em: number; volume: number}> = ({arquivo, 
 
 export const DivididoReel: React.FC<{edicao: EdicaoDividido}> = ({edicao}) => {
   aplicarMarca('redeEscoliose');
+  MEIO = edicao.telaCheia ? 1920 : 960;
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const f = (s: number) => Math.round(s * fps);
@@ -177,9 +179,13 @@ export const DivididoReel: React.FC<{edicao: EdicaoDividido}> = ({edicao}) => {
   return (
     <AbsoluteFill style={{backgroundColor: '#000'}}>
       {/* especialista, metade de baixo */}
-      <AbsoluteFill style={{top: MEIO, height: 1920 - MEIO, overflow: 'hidden'}}>
-        <OffthreadVideo src={staticFile(edicao.fala)} style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: '50% 26%'}} />
-      </AbsoluteFill>
+      {edicao.telaCheia ? (
+        <Audio src={staticFile(edicao.fala)} />
+      ) : (
+        <AbsoluteFill style={{top: MEIO, height: 1920 - MEIO, overflow: 'hidden'}}>
+          <OffthreadVideo src={staticFile(edicao.fala)} style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: '50% 26%'}} />
+        </AbsoluteFill>
+      )}
       {/* mídias, metade de cima */}
       {edicao.cenas.map((c, i) => {
         const ini = i === 0 ? c.em : c.em - SOBRE;
@@ -189,7 +195,7 @@ export const DivididoReel: React.FC<{edicao: EdicaoDividido}> = ({edicao}) => {
           </Sequence>
         );
       })}
-      <AbsoluteFill style={edicao.estilo === 'limpo' ? {top: MEIO - 2, height: 4, background: '#fff'} : {top: MEIO - 3, height: 6, background: cores.azulClaro, boxShadow: `0 0 18px ${cores.azulClaro}`}} />
+      {edicao.telaCheia ? null : <AbsoluteFill style={edicao.estilo === 'limpo' ? {top: MEIO - 2, height: 4, background: '#fff'} : {top: MEIO - 3, height: 6, background: cores.azulClaro, boxShadow: `0 0 18px ${cores.azulClaro}`}} />}
       {/* barra de progresso e marca */}
       {edicao.estilo === 'limpo' ? null : <AbsoluteFill style={{height: 8, width: 1080 * progresso, background: cores.azulClaro}} />}
       <AbsoluteFill style={{top: 60, left: 'auto', right: 40, width: 'auto', height: 'auto'}}>
