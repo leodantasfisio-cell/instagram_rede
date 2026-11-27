@@ -25,13 +25,14 @@ export type EdicaoDividido = {
   legendas: Grupo[];
   selos: Selo[];
   cta: {titulo: string; botao: string; duracao: number};
+  estilo?: 'limpo';
 };
 
 const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
 const MEIO = 960;
 const SOBRE = 0.35; // sobreposição entre cenas para a transição
 
-const Midia: React.FC<{c: Cena; i: number}> = ({c, i}) => {
+const Midia: React.FC<{c: Cena; i: number; limpo?: boolean}> = ({c, i, limpo}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const total = (c.ate - c.em + SOBRE) * fps;
@@ -40,7 +41,7 @@ const Midia: React.FC<{c: Cena; i: number}> = ({c, i}) => {
   // alterna a direção da cortina
   const clip = i % 2 ? `inset(0 0 0 ${100 - abre}%)` : `inset(0 ${100 - abre}% 0 0)`;
   return (
-    <AbsoluteFill style={{height: MEIO, overflow: 'hidden', clipPath: clip}}>
+    <AbsoluteFill style={{height: MEIO, overflow: 'hidden', clipPath: limpo ? undefined : clip, opacity: limpo ? abre / 100 : 1}}>
       <OffthreadVideo
         src={staticFile(c.arquivo)}
         trimBefore={Math.round(c.de * fps)}
@@ -184,13 +185,13 @@ export const DivididoReel: React.FC<{edicao: EdicaoDividido}> = ({edicao}) => {
         const ini = i === 0 ? c.em : c.em - SOBRE;
         return (
           <Sequence key={i} from={f(ini)} durationInFrames={f(c.ate) - f(ini)} layout="none">
-            <Midia c={c} i={i} />
+            <Midia c={c} i={i} limpo={edicao.estilo === 'limpo'} />
           </Sequence>
         );
       })}
-      <AbsoluteFill style={{top: MEIO - 3, height: 6, background: cores.azulClaro, boxShadow: `0 0 18px ${cores.azulClaro}`}} />
+      <AbsoluteFill style={edicao.estilo === 'limpo' ? {top: MEIO - 2, height: 4, background: '#fff'} : {top: MEIO - 3, height: 6, background: cores.azulClaro, boxShadow: `0 0 18px ${cores.azulClaro}`}} />
       {/* barra de progresso e marca */}
-      <AbsoluteFill style={{height: 8, width: 1080 * progresso, background: cores.azulClaro}} />
+      {edicao.estilo === 'limpo' ? null : <AbsoluteFill style={{height: 8, width: 1080 * progresso, background: cores.azulClaro}} />}
       <AbsoluteFill style={{top: 60, left: 'auto', right: 40, width: 'auto', height: 'auto'}}>
         <div style={{fontFamily: fonte, fontWeight: 700, fontSize: 30, color: '#fff', background: 'rgba(11,46,102,0.7)', padding: '8px 20px', borderRadius: 999}}>{marcaAtiva.handle}</div>
       </AbsoluteFill>

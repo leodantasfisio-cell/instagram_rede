@@ -272,3 +272,4 @@ olhar 1 quadro por vídeo, só dos mais recentes).
 - As "gravações de tela" eram a câmera traseira de marcha (pernas na esteira), não o mapa de pressão: usada como janela "REC · câmera de marcha".
 - Cores do exame explicadas com mapa de pressão animado (SVG) marcado "exemplo ilustrativo". Textos grandes em tarjas, sem narração. Componente `src/PisadaTela.tsx`.
 - Reclamaram que os textos cobriam o vídeo: tarjas menores, no rodapé ou no topo conforme onde está o pé/paciente (`textoNoTopo`); cadeia de consequências no topo.
+- Refeito: mantida só a tela dividida; SEM legenda; fala cortada para ~51 s; estilo limpo (fundido suave, divisória branca fina, sem barra de progresso); só 4–5 títulos curtos; só adultos nas mídias.
