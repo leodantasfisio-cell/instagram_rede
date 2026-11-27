@@ -7,6 +7,8 @@ import protese3dJson from '../projetos/protese3d/edicao.json';
 import dennisJson from '../projetos/dennis/edicao.json';
 import autoridadeJson from '../projetos/autoridade/edicao.json';
 import escAdultoJson from '../projetos/escadulto/edicao.json';
+import pisTelaJson from '../projetos/pisada_tela/edicao.json';
+import {PisadaTelaReel, EdicaoPisadaTela, duracaoPisadaTela} from './PisadaTela';
 import {DivididoReel, EdicaoDividido} from './Dividido';
 import pisadaJson from '../projetos/pisada/edicao.json';
 import {CapaMontagem, Montagem, type EdicaoMontagem} from './Montagem';
@@ -82,6 +84,15 @@ export const Root: React.FC = () => (
         sub: 'de diferença entre as pernas',
         etiqueta: 'Órtese sob medida',
       }}
+    />
+    <Composition
+      id="PisadaTela"
+      component={PisadaTelaReel}
+      width={1080}
+      height={1920}
+      fps={30}
+      durationInFrames={Math.round(duracaoPisadaTela(pisTelaJson as unknown as EdicaoPisadaTela) * 30)}
+      defaultProps={{edicao: pisTelaJson as unknown as EdicaoPisadaTela}}
     />
     <Composition
       id="EscAdulto"

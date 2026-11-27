@@ -267,3 +267,7 @@ olhar 1 quadro por vídeo, só dos mais recentes).
 - Modelo pedido: metade de cima mídias, metade de baixo o especialista falando; legenda palavra a palavra na linha do meio (aqui PEDIRAM legenda). Componente `src/Dividido.tsx`.
 - Mídias de pessoas DIFERENTES e SEM ROSTO: enquadrar no tronco (campo `pos` por cena). Evitar clipes com acompanhantes/rostos ao fundo.
 - Transições básicas (cortina alternada), selos: título, pergunta, "SIM", chips com ✓, barra de progresso, CTA em círculo.
+
+### Amo Meu Pé: "Seu pé na tela" (scanner + baropodômetro)
+- As "gravações de tela" eram a câmera traseira de marcha (pernas na esteira), não o mapa de pressão: usada como janela "REC · câmera de marcha".
+- Cores do exame explicadas com mapa de pressão animado (SVG) marcado "exemplo ilustrativo". Textos grandes em tarjas, sem narração. Componente `src/PisadaTela.tsx`.
