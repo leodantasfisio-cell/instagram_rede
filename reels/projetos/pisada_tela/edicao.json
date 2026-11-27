@@ -1,14 +1,119 @@
 {
  "cenas": [
-  {"tipo": "video", "arquivo": "media/pistela/v031033.mp4", "de": 0.0, "dur": 3.2, "gancho": "Seu pé está te contando algo que você não percebe."},
-  {"tipo": "video", "arquivo": "media/pistela/v031037.mp4", "de": 0.5, "dur": 3.5, "textos": [{"em": 0.3, "rotulo": "BAROPODÔMETRO", "texto": "Primeiro, a pisada parada"}]},
-  {"tipo": "video", "arquivo": "media/pistela/v031042.mp4", "de": 0.0, "dur": 2.8, "textos": [{"em": 0.2, "texto": "Mede quanto peso cada parte do pé recebe"}]},
-  {"tipo": "mapa", "dur": 6.5},
-  {"tipo": "video", "arquivo": "media/pistela/v031033.mp4", "de": 8.0, "dur": 4.5, "textos": [{"em": 0.3, "rotulo": "SCANNER PLANTAR", "texto": "Mostra o formato do pé"}, {"em": 1.8, "texto": "Arco, apoio, pisada para dentro ou para fora"}]},
-  {"tipo": "janela", "arquivo": "media/pistela/cam.mp4", "de": 2.0, "dur": 4.0, "textos": [{"em": 0.4, "rotulo": "EM MOVIMENTO", "texto": "A câmera registra o alinhamento a cada passo"}]},
-  {"tipo": "video", "arquivo": "media/pistela/v031028.mp4", "de": 10.0, "dur": 3.0, "textos": [{"em": 0.2, "texto": "Correndo, o impacto aumenta e o padrão muda"}]},
-  {"tipo": "video", "arquivo": "media/pistela/v031010.mp4", "de": 2.0, "dur": 5.0, "pos": "40% 50%", "cadeia": {"titulo": "Pressão demais num ponto", "itens": ["Dor no pé", "Sobrecarga no joelho", "Compensação na coluna"]}},
-  {"tipo": "video", "arquivo": "media/pistela/v031041.mp4", "de": 6.0, "dur": 3.8, "pos": "45% 50%", "textos": [{"em": 0.3, "rotulo": "CADA PISADA É ÚNICA", "texto": "A gente explica tudo com você"}]}
+  {
+   "tipo": "video",
+   "arquivo": "media/pistela/v031033.mp4",
+   "de": 0.0,
+   "dur": 3.2,
+   "gancho": "Seu pé está te contando algo que você não percebe."
+  },
+  {
+   "tipo": "video",
+   "arquivo": "media/pistela/v031037.mp4",
+   "de": 0.5,
+   "dur": 3.5,
+   "textos": [
+    {
+     "em": 0.3,
+     "rotulo": "BAROPODÔMETRO",
+     "texto": "Primeiro, a pisada parada"
+    }
+   ],
+   "textoNoTopo": true
+  },
+  {
+   "tipo": "video",
+   "arquivo": "media/pistela/v031042.mp4",
+   "de": 0.0,
+   "dur": 2.8,
+   "textos": [
+    {
+     "em": 0.2,
+     "texto": "Mede quanto peso cada parte do pé recebe"
+    }
+   ]
+  },
+  {
+   "tipo": "mapa",
+   "dur": 6.5
+  },
+  {
+   "tipo": "video",
+   "arquivo": "media/pistela/v031033.mp4",
+   "de": 8.0,
+   "dur": 4.5,
+   "textos": [
+    {
+     "em": 0.3,
+     "rotulo": "SCANNER PLANTAR",
+     "texto": "Mostra o formato do pé"
+    },
+    {
+     "em": 1.8,
+     "texto": "Arco, apoio, pisada para dentro ou para fora"
+    }
+   ],
+   "textoNoTopo": true
+  },
+  {
+   "tipo": "janela",
+   "arquivo": "media/pistela/cam.mp4",
+   "de": 2.0,
+   "dur": 4.0,
+   "textos": [
+    {
+     "em": 0.4,
+     "rotulo": "EM MOVIMENTO",
+     "texto": "A câmera registra o alinhamento a cada passo"
+    }
+   ]
+  },
+  {
+   "tipo": "video",
+   "arquivo": "media/pistela/v031028.mp4",
+   "de": 10.0,
+   "dur": 3.0,
+   "textos": [
+    {
+     "em": 0.2,
+     "texto": "Correndo, o impacto aumenta e o padrão muda"
+    }
+   ]
+  },
+  {
+   "tipo": "video",
+   "arquivo": "media/pistela/v031010.mp4",
+   "de": 2.0,
+   "dur": 5.0,
+   "pos": "40% 50%",
+   "cadeia": {
+    "titulo": "Pressão demais num ponto",
+    "itens": [
+     "Dor no pé",
+     "Sobrecarga no joelho",
+     "Compensação na coluna"
+    ]
+   }
+  },
+  {
+   "tipo": "video",
+   "arquivo": "media/pistela/v031041.mp4",
+   "de": 6.0,
+   "dur": 3.8,
+   "pos": "45% 50%",
+   "textos": [
+    {
+     "em": 0.3,
+     "rotulo": "CADA PISADA É ÚNICA",
+     "texto": "A gente explica tudo com você"
+    }
+   ],
+   "textoNoTopo": true
+  }
  ],
- "cta": {"titulo": "Agende sua avaliação da pisada", "rodape": "Scanner plantar + baropodômetro", "duracao": 3.2}
+ "cta": {
+  "titulo": "Agende sua avaliação da pisada",
+  "rodape": "Scanner plantar + baropodômetro",
+  "duracao": 3.2
+ }
 }

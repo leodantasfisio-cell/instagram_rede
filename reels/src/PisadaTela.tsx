@@ -23,25 +23,26 @@ type Cena = {
   gancho?: string;
   textos?: Texto[];
   cadeia?: {titulo: string; itens: string[]};
+  textoNoTopo?: boolean;
 };
 export type EdicaoPisadaTela = {cenas: Cena[]; cta: {titulo: string; rodape: string; duracao: number}};
 
 const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
 const T = 0.3; // transição
 
-const Tarja: React.FC<{t: Texto; ordem: number; fim: number}> = ({t, ordem, fim}) => {
+const Tarja: React.FC<{t: Texto; ordem: number; fim: number; topo?: boolean}> = ({t, ordem, fim, topo}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const abre = interpolate(frame, [0, 10], [0, 100], {...clamp, easing: Easing.out(Easing.cubic)});
   const txt = interpolate(frame, [5, 14], [0, 1], clamp);
   const sai = interpolate(frame, [fim * fps - 6, fim * fps], [1, 0], clamp);
   return (
-    <AbsoluteFill style={{top: 1180 + ordem * 200, paddingLeft: 50, paddingRight: 50, opacity: sai}}>
+    <AbsoluteFill style={{top: (topo ? 230 : 1480) + ordem * 150, paddingLeft: 50, paddingRight: 50, opacity: sai}}>
       <div style={{alignSelf: 'flex-start', display: 'flex', clipPath: `inset(0 ${100 - abre}% 0 0)`}}>
         <div style={{width: 12, background: cores.azulClaro}} />
-        <div style={{background: 'rgba(255,255,255,0.96)', padding: '20px 34px 22px 26px', boxShadow: '0 16px 40px rgba(0,0,0,0.35)'}}>
-          {t.rotulo ? <div style={{fontFamily: fonte, fontWeight: 800, fontSize: 30, letterSpacing: 5, color: cores.azul, opacity: txt}}>{t.rotulo}</div> : null}
-          <div style={{fontFamily: fonte, fontWeight: 800, fontSize: 56, lineHeight: 1.12, color: cores.azulEscuro, opacity: txt, maxWidth: 900}}>{t.texto}</div>
+        <div style={{background: 'rgba(255,255,255,0.96)', padding: '14px 28px 16px 22px', boxShadow: '0 16px 40px rgba(0,0,0,0.35)'}}>
+          {t.rotulo ? <div style={{fontFamily: fonte, fontWeight: 800, fontSize: 24, letterSpacing: 4, color: cores.azul, opacity: txt}}>{t.rotulo}</div> : null}
+          <div style={{fontFamily: fonte, fontWeight: 800, fontSize: 44, lineHeight: 1.12, color: cores.azulEscuro, opacity: txt, maxWidth: 900}}>{t.texto}</div>
         </div>
       </div>
     </AbsoluteFill>
@@ -74,15 +75,15 @@ const Cadeia: React.FC<{titulo: string; itens: string[]}> = ({titulo, itens}) =>
   const {fps} = useVideoConfig();
   const t0 = spring({frame, fps, config: {damping: 14}});
   return (
-    <AbsoluteFill style={{top: 980, alignItems: 'center'}}>
-      <div style={{fontFamily: fonte, fontWeight: 800, fontSize: 54, color: '#fff', background: cores.azul, padding: '16px 34px', borderRadius: 18, opacity: t0, transform: `scale(${interpolate(t0, [0, 1], [0.8, 1])})`, boxShadow: '0 16px 40px rgba(0,0,0,0.4)'}}>{titulo}</div>
+    <AbsoluteFill style={{top: 230, alignItems: 'center'}}>
+      <div style={{fontFamily: fonte, fontWeight: 800, fontSize: 46, color: '#fff', background: cores.azul, padding: '12px 30px', borderRadius: 18, opacity: t0, transform: `scale(${interpolate(t0, [0, 1], [0.8, 1])})`, boxShadow: '0 16px 40px rgba(0,0,0,0.4)'}}>{titulo}</div>
       {itens.map((it, k) => {
         const e = spring({frame: frame - 18 - k * 14, fps, config: {damping: 13}});
         const seta = interpolate(frame, [12 + k * 14, 20 + k * 14], [0, 1], clamp);
         return (
           <div key={k} style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-            <div style={{width: 6, height: 44 * seta, background: '#fff', marginTop: 8}} />
-            <div style={{fontFamily: fonte, fontWeight: 800, fontSize: 52, color: cores.azulEscuro, background: '#fff', padding: '14px 32px', borderRadius: 999, opacity: e, transform: `scale(${e})`, boxShadow: '0 14px 30px rgba(0,0,0,0.35)'}}>{it}</div>
+            <div style={{width: 6, height: 30 * seta, background: '#fff', marginTop: 8}} />
+            <div style={{fontFamily: fonte, fontWeight: 800, fontSize: 42, color: cores.azulEscuro, background: '#fff', padding: '10px 28px', borderRadius: 999, opacity: e, transform: `scale(${e})`, boxShadow: '0 14px 30px rgba(0,0,0,0.35)'}}>{it}</div>
           </div>
         );
       })}
@@ -183,7 +184,7 @@ const CenaView: React.FC<{c: Cena; i: number}> = ({c, i}) => {
       {c.gancho ? <Gancho texto={c.gancho} /> : null}
       {(c.textos ?? []).map((t, k) => (
         <Sequence key={k} from={Math.round(t.em * fps)} durationInFrames={Math.round((c.dur + T - t.em) * fps)} layout="none">
-          <Tarja t={t} ordem={k} fim={c.dur + T - t.em} />
+          <Tarja t={t} ordem={k} fim={c.dur + T - t.em} topo={c.textoNoTopo} />
         </Sequence>
       ))}
       {c.cadeia ? <Cadeia titulo={c.cadeia.titulo} itens={c.cadeia.itens} /> : null}
